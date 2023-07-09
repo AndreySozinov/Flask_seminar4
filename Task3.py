@@ -31,10 +31,9 @@ async def download(url):
 async def main():
     tasks = []
     for url in urls:
-        task = asyncio.ensure_future(download(url))
+        task = asyncio.create_task(download(url))
         tasks.append(task)
     await asyncio.gather(*tasks)
 
 if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    asyncio.run(main())

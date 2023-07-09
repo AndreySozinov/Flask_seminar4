@@ -27,13 +27,12 @@ def download(url):
         print(f'Downloaded {url}')
 
 
-threads = []
-
 if __name__ == '__main__':
+    threads = []
     for url in urls:
-        thread = threading.Thread(target=download, args=[url])
-        threads.append(thread)
+        thread = threading.Thread(target=download, args=[url, ])
         thread.start()
+        threads.append(thread)
 
     for thread in threads:
         thread.join()

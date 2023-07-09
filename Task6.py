@@ -13,7 +13,6 @@ async def count_words(file_path):
 
 
 async def main():
-    processes = []
     dir_path = Path('.')
     file_paths = [file_path for file_path in dir_path.iterdir() if file_path.is_file()]
     tasks = [asyncio.create_task(count_words(file_path)) for file_path in file_paths]
