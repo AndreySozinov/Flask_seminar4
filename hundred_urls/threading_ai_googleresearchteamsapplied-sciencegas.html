@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+      <meta name="google-site-verification" content="o6SchIZo_wF_qwuEKN7nxFBlyY8AvT5tkTVk2PuMP4c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, height=device-height">
+    <title>Applied Science â Google Research</title>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Google Research",
+        "url": "https://research.google",
+        "logo": "https://research.google/static/images/share-9cd7266ef5001b20f98e01062c26189fa69ed6c784df04caf809668887fd339a.png"
+      }
+    </script>
+
+      <meta property="og:image" content="https://research.google/static/images/share-9cd7266ef5001b20f98e01062c26189fa69ed6c784df04caf809668887fd339a.png">
+    <meta property="og:title" content="Applied Science â Google Research">
+    <meta property="og:site_name" content="Google Research">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://research.google/teams/applied-science/">
+
+      <meta name="description" content="The Applied Science team combines computer science with physics and biology to create breakthroughs that help the world.">
+      <meta property="og:description" content="The Applied Science team combines computer science with physics and biology to create breakthroughs that help the world.">
+      <link rel="shortcut icon" href="/static/images/favicon-6da5620880159634213e197fafca1dde0272153be3e4590818533fab8d040770.ico"  type="image/x-icon">
+
+
+
+
+    <link href="/css/main_min_css.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:+400,500,700|Product+Sans:400|Roboto:300,400,500,700|Roboto+Mono:500&display=swap" media="all" rel="stylesheet">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K8QBZ7Q');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- HaTS API Integration -->
+    <script type="text/javascript" src="https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js"></script>
+    <script>
+    helpApi = window.help.service.Lazy.create(0, {
+      apiKey: 'AIzaSyCgcNNO1BZRnCa4-sjjn8ewMlOYKxhf5zQ',
+      locale: 'en-US'
+    });
+
+    helpApi.requestSurvey({
+      triggerId: '6yDZq5xbt0swmDLBAx70RnjScuNU',
+      callback: function(requestSurveyCallbackParam) {
+        if (!requestSurveyCallbackParam.surveyData) {
+          return;
+        }
+        helpApi.presentSurvey({
+          surveyData: requestSurveyCallbackParam.surveyData,
+          colorScheme: 1, // light
+          customZIndex: 10000,
+        });
+      }
+    });
+    </script>
+    <!-- End HaTS API Integration -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8QBZ7Q"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<header ng-controller="HeaderController as headerCtrl">
+  <div class="header__top">
+    <a href="" class="header__hamburger" ng-click="headerCtrl.open()" aria-expanded="false" aria-label="Open the navigation drawer" aria-controls="header__nav">
+      <div class="header__hamburger-burger"></div>
+    </a>
+
+    <a href="/" class="header__lockup">
+      <span class="off-screen">Google Research</span>
+      <div class="header__logo">
+        <img src="/static/images/google_research_lockup-121987c06c0aa0ab26ca8716a0f2e7945d1cbf82077bbab9f914dac0a0bf099f.svg" alt="Google Research Logo">
+      </div>
+    </a>
+
+    <nav class="header__nav" id="header__nav" aria-label="Navigation">
+      <a href="/" class="header__lockup">
+        <span class="off-screen">Google Research</span>
+        <div class="header__logo">
+          <img src="/static/images/google_research_lockup-121987c06c0aa0ab26ca8716a0f2e7945d1cbf82077bbab9f914dac0a0bf099f.svg" alt="Google Research Logo">
+        </div>
+      </a>
+
+      <div class="header__items">
+            <div class="header__item" aria-level="1">
+              <a href="/philosophy/" class="header__link">
+                Philosophy
+              </a>
+
+            </div>
+            <div class="header__item" aria-level="1">
+              <a href="/research-areas/" class="header__link">
+                Research Areas
+              </a>
+
+            </div>
+            <div class="header__item" aria-level="1">
+              <a href="/pubs/" class="header__link">
+                Publications
+              </a>
+
+            </div>
+            <div class="header__item" aria-level="1">
+              <a href="/people/" class="header__link">
+                People
+              </a>
+
+            </div>
+            <div class="header__item" aria-level="1">
+              <a href="/resources/" class="header__link">
+                Resources
+              </a>
+
+            </div>
+            <div class="header__item" aria-level="1">
+              <a href="/outreach/" class="header__link">
+                Outreach
+              </a>
+
+            </div>
+            <div class="header__item" aria-level="1">
+              <a href="/careers/" class="header__link">
+                Careers
+              </a>
+
+            </div>
+        <div class="header__item" aria-level="1">
+          <a href="https://ai.googleblog.com" class="header__link">
+            Blog
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="header__overlay" ng-click="headerCtrl.close()"></div>
+</header>
+    <main class="section-wrapper" ng-controller="MainController as mainCtrl">
+
+<section
+    class="hero 
+    has-bg
+    has-mobile-bg
+    
+    no-border-bottom"
+>
+
+    <div class="hero__background" data-ng-lazy-background="/static/images/research/teams/applied-science/applied-science_hero-542c92b5429324309fc00c0ad1cb08d15e770326de7088cbcb525adf471def40.jpg"></div>
+
+      <div class="hero__background--mobile" data-ng-lazy-background="/static/images/research/teams/applied-science/applied-science_hero-m-b21498e447ee2bd513c90af6c278437511f5ec1ad2ee05b3d1e4bfbf8f5c5aa2.jpg"></div>
+
+  <div class="white-overlay">
+    <div class="hero-meta">
+
+
+      <div class="hero-meta__wrapper">
+
+
+
+          
+<nav class="content__breadcrumbs">
+    <a href="/teams/">Teams</a>
+    &rsaquo;
+</nav>
+          <h1 class="hero__title">
+            <span class="wrap">Applied science</span>
+          </h1>
+      </div>
+    </div>
+  </div>
+
+    <div class="white-overlay">
+      <div class="hero__wrapper">
+            <div class="hero__content-wrapper">
+
+
+<div class="content hero__content     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+
+      </div>
+
+        <div class="content__body">
+              <p>Combining computer science with physics and biology to create breakthroughs that help the world.</p>
+        </div>
+    </div>
+
+</div>            </div>
+      </div>
+    </div>
+
+</section><section class="copy copy--   ">
+
+  <div class="copy__wrapper">
+
+
+
+<div class="content      "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <h2 class="content__title ">
+            About the team
+          </h2>
+
+      </div>
+
+        <div class="content__body">
+              <p>Computer science and natural science are complementary: breakthroughs in one can lead to remarkable advances in the other. The goal of the Applied Science organization at Google is to cross-fertilize these two fields. There are four main efforts in Applied Science: Quantum Computing, Google Accelerated Science, Climate and Energy, and Scientific Computing Tools.</p>
+              <p>Quantum Computing uses advances in applied physics to push the state-of-the-art in computation. Google Accelerated Science and Climate and Energy do the opposite: they use the latest advances in machine learning and artificial intelligence to accelerate progress in natural sciences, including societally-important areas such as biomedical research and zero-carbon energy sources. Finally, we supply Scientific Computing Tools such as <a href="https://colab.research.google.com/">Colab</a> to many internal groups to enhance their data and machine learning productivity.</p>
+        </div>
+    </div>
+
+</div>
+
+
+  </div>
+</section><section class="group group--default    has-grey-background"
+>
+
+  <div class="group__content-wrapper">
+
+
+
+<div class="content group__content     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <h2 class="content__title ">
+            Research areas
+          </h2>
+
+      </div>
+
+    </div>
+
+</div>
+  </div>
+
+      <div class="group__gallery-wrapper">
+
+
+
+
+<div class="gallery gallery--bar
+
+      gallery--2-columns
+
+
+
+
+    "
+
+    >
+
+  <div class="gallery__wrapper">
+
+
+
+
+        <div class="gallery__item " >
+<div class="bar bar--link bar--icon" id="algorithms-and-theory"
+>
+  <a class="bar__bar"
+  href="/research-areas/algorithms-and-theory/"
+>
+<span class="bar__icon icon icon--algorithms-and-theory"></span>    <h4 class="bar__title">Algorithms and theory</h4>
+    <span class="icon icon--right-arrow"></span>
+  </a>
+
+</div>        </div>
+        <div class="gallery__item " >
+<div class="bar bar--link bar--icon" id="general-science"
+>
+  <a class="bar__bar"
+  href="/research-areas/general-science/"
+>
+<span class="bar__icon icon icon--general-science"></span>    <h4 class="bar__title">General science</h4>
+    <span class="icon icon--right-arrow"></span>
+  </a>
+
+</div>        </div>
+        <div class="gallery__item " >
+<div class="bar bar--link bar--icon" id="health-bioscience"
+>
+  <a class="bar__bar"
+  href="/research-areas/health-bioscience/"
+>
+<span class="bar__icon icon icon--healthcare"></span>    <h4 class="bar__title">Health & bioscience</h4>
+    <span class="icon icon--right-arrow"></span>
+  </a>
+
+</div>        </div>
+        <div class="gallery__item " >
+<div class="bar bar--link bar--icon" id="machine-intelligence"
+>
+  <a class="bar__bar"
+  href="/research-areas/machine-intelligence/"
+>
+<span class="bar__icon icon icon--machine-intelligence"></span>    <h4 class="bar__title">Machine intelligence</h4>
+    <span class="icon icon--right-arrow"></span>
+  </a>
+
+</div>        </div>
+        <div class="gallery__item " >
+<div class="bar bar--link bar--icon" id="machine-perception"
+>
+  <a class="bar__bar"
+  href="/research-areas/machine-perception/"
+>
+<span class="bar__icon icon icon--machine-perception"></span>    <h4 class="bar__title">Machine perception</h4>
+    <span class="icon icon--right-arrow"></span>
+  </a>
+
+</div>        </div>
+        <div class="gallery__item " >
+<div class="bar bar--link bar--icon" id="quantum-computing"
+>
+  <a class="bar__bar"
+  href="/research-areas/quantum-computing/"
+>
+<span class="bar__icon icon icon--quantum-computing"></span>    <h4 class="bar__title">Quantum computing</h4>
+    <span class="icon icon--right-arrow"></span>
+  </a>
+
+</div>        </div>
+
+
+
+
+  </div>
+</div>      </div>
+
+</section><section class="group group--default   has-no-padding-top has-grey-background"
+>
+
+  <div class="group__content-wrapper">
+
+
+
+<div class="content group__content     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <h2 class="content__title ">
+            Team focus summaries
+          </h2>
+
+      </div>
+
+    </div>
+
+</div>
+  </div>
+
+      <div class="group__gallery-wrapper">
+
+
+
+
+<div class="gallery gallery--bar
+
+      gallery--2-columns
+
+
+
+
+    "
+
+    >
+
+  <div class="gallery__wrapper">
+
+
+
+
+        <div class="gallery__item " >
+<div class="bar bar--expandable " id="climate-and-energy"
+      ng-controller="ToggleController as expandCtrl"
+>
+  <a class="bar__bar"
+        ng-click="expandCtrl.toggle($event)"
+        ng-class="{'is-active': expandCtrl.active}"
+>
+    <h4 class="bar__title">Climate and energy</h4>
+    <span class="icon icon--expandable"></span>
+  </a>
+
+    <div class="bar__body" ng-class="{'is-active': expandCtrl.active}"
+        ng-style="expandCtrl.active ? {'height': expandCtrl.barHeight} : {}">
+
+
+<div class="content      "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+
+      </div>
+
+        <div class="content__body">
+              <p>The Climate &amp; Energy team is exploring how to use large-scale computing and machine intelligence to diminish or avoid climate disruption. We partner with fusion companies to accelerate the progress of commercially viable fusion, model techno-economic scenarios for decarbonization, research new techniques for carbon sequestration, and look for novel ways to improve our understanding of earth's ecosystem response to climate change.</p>
+        </div>
+    </div>
+
+</div>    </div>
+</div>        </div>
+        <div class="gallery__item " >
+<div class="bar bar--expandable " id="physics"
+      ng-controller="ToggleController as expandCtrl"
+>
+  <a class="bar__bar"
+        ng-click="expandCtrl.toggle($event)"
+        ng-class="{'is-active': expandCtrl.active}"
+>
+    <h4 class="bar__title">Physics</h4>
+    <span class="icon icon--expandable"></span>
+  </a>
+
+    <div class="bar__body" ng-class="{'is-active': expandCtrl.active}"
+        ng-style="expandCtrl.active ? {'height': expandCtrl.barHeight} : {}">
+
+
+<div class="content      "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+
+      </div>
+
+        <div class="content__body">
+              <p>The physics team seeks to combine advances in machine learning and other Google technologies to advance our understanding of the physical world. Current projects range from machine learning for scientific computing, developing efficient algorithms for solving nonlinear partial differential equations, applying differentiable algorithms to interpret microscopy data, enabling microscopy on phones, and building algorithms for understanding dysarthric speech.</p>
+        </div>
+    </div>
+
+</div>    </div>
+</div>        </div>
+        <div class="gallery__item " >
+<div class="bar bar--expandable " id="quantum-ai"
+      ng-controller="ToggleController as expandCtrl"
+>
+  <a class="bar__bar"
+        ng-click="expandCtrl.toggle($event)"
+        ng-class="{'is-active': expandCtrl.active}"
+>
+    <h4 class="bar__title">Quantum AI</h4>
+    <span class="icon icon--expandable"></span>
+  </a>
+
+    <div class="bar__body" ng-class="{'is-active': expandCtrl.active}"
+        ng-style="expandCtrl.active ? {'height': expandCtrl.barHeight} : {}">
+
+
+<div class="content      "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+
+      </div>
+
+        <div class="content__body">
+              <p>The Quantum AI Lab is building quantum processors and algorithms to dramatically accelerate computational tasks for machine intelligence. We are developing quantum algorithms with a particular focus on those which can already run on todayâs pre-error corrected quantum processors. Quantum algorithms for optimization, sampling, and quantum simulation hold the promise of dramatic speedups over the fastest classical computers.</p>
+        </div>
+    </div>
+    <div class="content__ctas">
+
+<a class="button  "
+  href="https://quantumai.google/" target="_blank"
+
+   >
+
+
+  Learn more
+</a>    </div>
+
+</div>    </div>
+</div>        </div>
+
+
+
+
+  </div>
+</div>      </div>
+
+</section><section class="group group--default    "
+>
+
+  <div class="group__content-wrapper">
+
+
+
+<div class="content group__content     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <h2 class="content__title ">
+            Highlighted projects
+          </h2>
+
+      </div>
+
+    </div>
+
+</div>
+  </div>
+
+      <div class="group__gallery-wrapper">
+
+
+
+
+<div class="gallery gallery--image-card
+          gallery--view-all
+
+
+
+
+
+    "
+
+    >
+
+  <div class="gallery__wrapper">
+
+        <div class="gallery__item ">
+  <div
+    class="card card--default     "
+    data-card-type="card">
+      <a class="card__link"   href="https://ai.googleblog.com/2023/02/suppressing-quantum-errors-by-scaling.html" target="_blank"
+ title="Suppressing quantum errors by scaling a surface code logical qubit"><span class="hidden-text">Suppressing quantum errors by scaling a surface code logical qubit</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/research/teams/applied-science/project-scaling-surface-code-logical-4e95ce500e1ac656fe8b7c47bf4e4a5edfb538d8a1046df4f19081feefc2a9cc.png)"></div>
+
+
+
+<div class="content      "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <div class="content__title ">
+            Suppressing quantum errors by scaling a surface code logical qubit
+          </div>
+
+      </div>
+
+        <div class="content__body">
+              <p>Large-scale quantum computer development requires qubits with much lower error rates. Our latest results demonstrate a logical qubit prototype, a milestone on the path toward scalable fault-tolerant quantum computing.</p>
+        </div>
+    </div>
+
+</div>  </div>
+        </div>
+        <div class="gallery__item ">
+  <div
+    class="card card--default     "
+    data-card-type="card">
+      <a class="card__link"   href="https://ai.googleblog.com/2022/09/tensorstore-for-high-performance.html" target="_blank"
+ title="TensorStore for High-Performance, Scalable Array Storage"><span class="hidden-text">TensorStore for High-Performance, Scalable Array Storage</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/research/teams/applied-science/project-tensorstore-for-high-performance-fb0e55f86213eb551f733d635b2504f513cae611eb604433931917ee5e04ee52.png)"></div>
+
+
+
+<div class="content      "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <div class="content__title ">
+            TensorStore for High-Performance, Scalable Array Storage
+          </div>
+
+      </div>
+
+        <div class="content__body">
+              <p>TensorStore, a library designed for storage and manipulation of n-dimensional data, addresses key engineering challenges in scientific computing through better management and processing of large peta-scale datasets and creation of LLMs, such as PaLM.</p>
+        </div>
+    </div>
+
+</div>  </div>
+        </div>
+        <div class="gallery__item last">
+  <div
+    class="card card--default     "
+    data-card-type="card">
+      <a class="card__link"   href="https://ai.googleblog.com/2022/06/quantum-advantage-in-learning-from.html" target="_blank"
+ title="Quantum Advantage in Learning from Experiments"><span class="hidden-text">Quantum Advantage in Learning from Experiments</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/research/teams/applied-science/project-quantum-advantage-in-experiments-72f7be1235b116665ae14a96fdc43c4356f5f65ee218f4ea88b88f3ba2d3933d.png)"></div>
+
+
+
+<div class="content      "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <div class="content__title ">
+            Quantum Advantage in Learning from Experiments
+          </div>
+
+      </div>
+
+        <div class="content__body">
+              <p>Quantum technology promises to revolutionize how we learn about the physical world. Researchers have shown that quantum ML algorithms can perform exponentially better than classical learning algorithms at many tasks.</p>
+        </div>
+    </div>
+
+</div>  </div>
+        </div>
+
+
+
+
+
+
+
+  </div>
+</div>      </div>
+
+</section><section class="group group--pub    has-grey-background"
+>
+  <div class="group__wrapper">
+
+  <div class="group__content-wrapper">
+
+
+
+<div class="content group__content     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <h2 class="content__title ">
+            Featured publications
+          </h2>
+
+      </div>
+
+    </div>
+
+</div>
+  </div>
+
+      <div class="group__gallery-wrapper">
+
+
+
+
+<div class="gallery gallery--pub
+
+      gallery--1-columns
+
+
+
+
+    "
+
+    >
+
+  <div class="gallery__wrapper">
+
+        <div class="gallery__item ">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub52251/" title="Exponential Quantum Speedup in Simulating Coupled Classical Oscillators"><span class="hidden-text">Exponential Quantum Speedup in Simulating Coupled Classical Oscillators</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>We present a quantum algorithm for simulating the classical dynamics of 2^n coupled oscillators (e.g., 2^n masses coupled by springs). Our approach leverages a mapping between the Schrodinger equation and Newton&#39;s equations for harmonic potentials such that the amplitudes of the evolved quantum state encode the momenta and displacements of the classical oscillators. When individual masses and...</p>
+            <a href="/pubs/pub52251/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content content--long-title">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub52251/" title="Exponential Quantum Speedup in Simulating Coupled Classical Oscillators">Exponential Quantum Speedup in Simulating Coupled Classical Oscillators</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span><a href="/people/RyanBabbush/" title="Ryan Babbush">Ryan Babbush</a></span><span>, </span>              <span>Dominic Berry</span><span>, </span>              <span><a href="/people/RobinKothari/" title="Robin Kothari">Robin Kothari</a></span><span>, </span>              <span>Rolando Somma</span><span>, </span>              <span>Nathan Wiebe</span>          </p>
+          <p class="content__venue"><span class="booktitle">arXiv:2303.13012</span> <span class="year">(2023)</span></p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="gallery__item ">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub52012/" title="Quantum Simulation of Exact Electron Dynamics can be more Efficient than Classical Mean-Field Methods"><span class="hidden-text">Quantum Simulation of Exact Electron Dynamics can be more Efficient than Classical Mean-Field Methods</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>Quantum algorithms for simulating electronic ground states are slower than popular classical mean-field algorithms such as Hartree-Fock and density functional theory, but offer higher accuracy. Accordingly, quantum computers have been predominantly regarded as competitors to only the most accurate and costly classical methods for treating electron correlation. However, here we tighten bounds...</p>
+            <a href="/pubs/pub52012/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content content--long-title">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub52012/" title="Quantum Simulation of Exact Electron Dynamics can be more Efficient than Classical Mean-Field Methods">Quantum Simulation of Exact Electron Dynamics can be more Efficient than Classical Mean-Field Methods</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span><a href="/people/RyanBabbush/" title="Ryan Babbush">Ryan Babbush</a></span><span>, </span>              <span>William J. Huggins</span><span>, </span>              <span>Dominic W. Berry</span><span>, </span>              <span>Shu Fay Ung</span><span>, </span>              <span>Andrew Zhao</span><span>, </span>              <span>David Reichman</span><span>, </span>              <span><a href="/people/HartmutNeven/" title="Hartmut Neven">Hartmut Neven</a></span><span>, </span>              <span>Andrew Baczewski</span><span>, </span>              <span>Joonho Lee</span>          </p>
+          <p class="content__venue"><span class="booktitle">arXiv:2301.01203</span> <span class="year">(2023)</span></p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="gallery__item ">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub52265/" title="Longitudinal fundus imaging and its genome-wide association analysis provides evidence for a human retinal aging clock"><span class="hidden-text">Longitudinal fundus imaging and its genome-wide association analysis provides evidence for a human retinal aging clock</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>Background Biological age, distinct from an individualâs chronological age, has been studied extensively through predictive aging clocks. However, these clocks have limited accuracy in short time-scales. Deep learning approaches on imaging datasets of the eye have proven powerful for a variety of quantitative phenotype inference and provide an opportunity to explore organismal aging and tissue...</p>
+            <a href="/pubs/pub52265/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content content--long-title">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub52265/" title="Longitudinal fundus imaging and its genome-wide association analysis provides evidence for a human retinal aging clock">Longitudinal fundus imaging and its genome-wide association analysis provides evidence for a human retinal aging clock</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span>Sara Ahadi</span><span>, </span>              <span>Kenneth A Wilson Jr,</span><span>, </span>              <span><a href="/people/BorisBabenko/" title="Boris Babenko">Boris Babenko</a></span><span>, </span>              <span><a href="/people/CoryMcLean/" title="Cory McLean">Cory McLean</a></span><span>, </span>              <span><a href="/people/DrewBryant/" title="Drew Bryant">Drew Bryant</a></span><span>, </span>              <span>Orion Pritchard</span><span>, </span>              <span>Ajay Kumar</span><span>, </span>              <span>Enrique M Carrera</span><span>, </span>              <span>Ricardo Lamy</span><span>, </span>              <span>Jay M Stewart</span><span>, </span>              <span>Avinash Varadarajan</span><span>, </span>              <span><a href="/people/105333/" title="Marc Berndl">Marc Berndl</a></span><span>, </span>              <span>Pankaj Kapahi</span><span>, </span>              <span>Ali Bashir</span>          </p>
+          <p class="content__venue"><span class="booktitle">eLife</span> <span class="year">(2023)</span></p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="gallery__item ">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub51899/" title="Estimates of broadband upwelling irradiance from GOES-16 ABI"><span class="hidden-text">Estimates of broadband upwelling irradiance from GOES-16 ABI</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>Satellite-derived estimates of the Earthâs radiation budget are crucial for understanding and predicting the weather and climate. However, existing satellite products measuring broadband outgoing longwave radiation (OLR) and reflected shortwave radiation (RSR) have spatio-temporal resolutions that are too coarse to evaluate important radiative forcers like aircraft condensation trails. We...</p>
+            <a href="/pubs/pub51899/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content ">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub51899/" title="Estimates of broadband upwelling irradiance from GOES-16 ABI">Estimates of broadband upwelling irradiance from GOES-16 ABI</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span><a href="/people/KevinMcCloskey/" title="Kevin James Fleming McCloskey">Kevin James Fleming McCloskey</a></span><span>, </span>              <span>Sixing Chen</span><span>, </span>              <span>Vincent Rudolf Meijer</span><span>, </span>              <span>Joe Ng</span><span>, </span>              <span>Geoff Davis</span><span>, </span>              <span>Carl Elkin</span><span>, </span>              <span><a href="/people/108209/" title="Christopher H Van Arsdale">Christopher H Van Arsdale</a></span><span>, </span>              <span><a href="/people/108189/" title="Scott Davidson Geraedts">Scott Davidson Geraedts</a></span>          </p>
+          <p class="content__venue"><span class="booktitle">Remote Sensing of Environment</span>, vol. 285 <span class="year">(2023)</span></p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="gallery__item ">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub52316/" title="Suppressing quantum errors by scaling a surface code logical qubit"><span class="hidden-text">Suppressing quantum errors by scaling a surface code logical qubit</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>Practical quantum computing will require error rates that are well below what is achievable with physical qubits. Quantum error correction [1, 2] offers a path to algorithmically-relevant error rates by encoding logical qubits within many physical qubits, where increasing the number of physical qubits enhances protection against physical errors. However, introducing more qubits also increases...</p>
+            <a href="/pubs/pub52316/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content ">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub52316/" title="Suppressing quantum errors by scaling a surface code logical qubit">Suppressing quantum errors by scaling a surface code logical qubit</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span><a href="/people/AbeAsfaw/" title="Abe Asfaw">Abe Asfaw</a></span><span>, </span>              <span>Anthony Megrant</span><span>, </span>              <span>Cody Jones</span><span>, </span>              <span><a href="/people/CraigMichaelGidney/" title="Craig Gidney">Craig Gidney</a></span><span>, </span>              <span><a href="/people/105078/" title="Dave Bacon">Dave Bacon</a></span><span>, </span>              <span><a href="/people/107411/" title="Dripto Debroy">Dripto Debroy</a></span><span>, </span>              <span><a href="/people/DvirKafri/" title="Dvir Kafri">Dvir Kafri</a></span><span>, </span>              <span><a href="/people/ErikLucero/" title="Erik Lucero">Erik Lucero</a></span><span>, </span>              <span><a href="/people/HartmutNeven/" title="Hartmut Neven">Hartmut Neven</a></span><span>, </span>              <span>Jeremy Hilton</span><span>, </span>              <span>Jimmy Chen</span><span>, </span>              <span><a href="/people/JohnPlatt/" title="John Platt">John Platt</a></span><span>, </span>              <span><a href="/people/107228/" title="Jonathan Gross">Jonathan Gross</a></span><span>, </span>              <span>Juan Atalaya</span><span>, </span>              <span><a href="/people/105027/" title="Julian Kelly">Julian Kelly</a></span><span>, </span>              <span>Kenny Lee</span><span>, </span>              <span><a href="/people/KevinSatzinger/" title="Kevin Satzinger">Kevin Satzinger</a></span><span>, </span>              <span>Michael Newman</span><span>, </span>              <span><a href="/people/SergioBoixo/" title="Sergio Boixo">Sergio Boixo</a></span><span>, </span>              <span>Vadim Smelyanskiy</span><span>, </span>              <span>Yu Chen</span><span>, </span>              <span><a href="/people/107719/" title="Catherine Vollgraff Heidweiller">Catherine Vollgraff Heidweiller</a></span>          </p>
+          <p class="content__venue"><span class="booktitle">Nature</span> <span class="year">(2023)</span></p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="gallery__item ">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub51588/" title="CO2 capture by pumping surface acidity to the deep ocean"><span class="hidden-text">CO2 capture by pumping surface acidity to the deep ocean</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>The majority of IPCC scenarios call for active CO2 removal (CDR) to remain below 2ÂºC of warming. On geological timescales, ocean uptake regulates atmospheric CO2 concentration, with two homeostats driving sequestration: dissolution of deep ocean calcite deposits and terrestrial weathering of silicate rocks, acting on 1ka to 100ka timescales. Many current ocean-based CDR proposals effectively...</p>
+            <a href="/pubs/pub51588/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content ">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub51588/" title="CO2 capture by pumping surface acidity to the deep ocean">CO2 capture by pumping surface acidity to the deep ocean</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span><a href="/people/108209/" title="Christopher H Van Arsdale">Christopher H Van Arsdale</a></span><span>, </span>              <span><a href="/people/JohnPlatt/" title="John Platt">John Platt</a></span><span>, </span>              <span><a href="/people/MikeTyka/" title="Mike Tyka">Mike Tyka</a></span>          </p>
+          <p class="content__venue"><span class="booktitle">Energy and Environmental Science (EES)</span> <span class="year">(2022)</span></p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="gallery__item ">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub51794/" title="Noise-resilient Majorana Edge Modes on a Chain of Superconducting Qubits"><span class="hidden-text">Noise-resilient Majorana Edge Modes on a Chain of Superconducting Qubits</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>Inherent symmetry of a quantum system may protect its otherwise fragile states. Leveraging such protection requires testing its robustness against uncontrolled environmental interactions. Using 47 superconducting qubits, we implement the kicked Ising model which exhibits Majorana edge modes (MEMs) protected by a $\mathbb{Z}_2$-symmetry. Remarkably, we find that any multi-qubit Pauli operator...</p>
+            <a href="/pubs/pub51794/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content content--long-title">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub51794/" title="Noise-resilient Majorana Edge Modes on a Chain of Superconducting Qubits">Noise-resilient Majorana Edge Modes on a Chain of Superconducting Qubits</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span><a href="/people/AbeAsfaw/" title="Abe Asfaw">Abe Asfaw</a></span><span>, </span>              <span><a href="/people/AdamZalcman/" title="Adam Jozef Zalcman">Adam Jozef Zalcman</a></span><span>, </span>              <span><a href="/people/107574/" title="Aditya Locharla">Aditya Locharla</a></span><span>, </span>              <span>Alejandro Grajales Dau</span><span>, </span>              <span>Alex Crook</span><span>, </span>              <span>Alex Opremcak</span><span>, </span>              <span>Alexa Rubinov</span><span>, </span>              <span>Alexander Korotkov</span><span>, </span>              <span>Alexandre Bourassa</span><span>, </span>              <span>Alexei Kitaev</span><span>, </span>              <span>Alexis Morvan</span><span>, </span>              <span>Andre Gregory Petukhov</span><span>, </span>              <span><a href="/people/AndreasBengtsson/" title="Andreas Bengtsson">Andreas Bengtsson</a></span><span>, </span>              <span>Andrew Dunsworth</span><span>, </span>              <span>Andrey Klots</span><span>, </span>              <span>Anthony Megrant</span><span>, </span>              <span>Ashley Anne Huff</span><span>, </span>              <span><a href="/people/105043/" title="Austin Fowler">Austin Fowler</a></span><span>, </span>              <span>Benjamin Chiaro</span><span>, </span>              <span><a href="/people/107523/" title="Benjamin Villalonga">Benjamin Villalonga</a></span><span>, </span>              <span>Bernardo Meurer Costa</span><span>, </span>              <span>Bob Benjamin Buckley</span><span>, </span>              <span><a href="/people/106859/" title="Brian Burkett">Brian Burkett</a></span><span>, </span>              <span>Brooks Foxen</span><span>, </span>              <span><a href="/people/CatherineErickson/" title="Catherine Erickson">Catherine Erickson</a></span><span>, </span>              <span><a href="/people/107719/" title="Catherine Vollgraff Heidweiller">Catherine Vollgraff Heidweiller</a></span><span>, </span>              <span>Charles Neill</span><span>, </span>              <span><a href="/people/ChrisQuintana/" title="Chris Quintana">Chris Quintana</a></span><span>, </span>              <span>Christopher Schuster</span><span>, </span>              <span>Cody Jones</span><span>, </span>              <span><a href="/people/CraigMichaelGidney/" title="Craig Michael Gidney">Craig Michael Gidney</a></span><span>, </span>              <span>Daniel Eppens</span><span>, </span>              <span><a href="/people/105029/" title="Daniel Sank">Daniel Sank</a></span><span>, </span>              <span>Dar Gilboa</span><span>, </span>              <span><a href="/people/105078/" title="Dave Bacon">Dave Bacon</a></span><span>, </span>              <span>Dave Landhuis</span><span>, </span>              <span><a href="/people/106602/" title="David A Buell">David A Buell</a></span><span>, </span>              <span>Dmitry Abanin</span><span>, </span>              <span>Doug Strain</span><span>, </span>              <span><a href="/people/107411/" title="Dripto M. Debroy">Dripto M. Debroy</a></span><span>, </span>              <span><a href="/people/DvirKafri/" title="Dvir Kafri">Dvir Kafri</a></span><span>, </span>              <span>Ebrahim Forati</span><span>, </span>              <span>Edward Farhi</span><span>, </span>              <span><a href="/people/107567/" title="Emily Mount">Emily Mount</a></span><span>, </span>              <span><a href="/people/ErikLucero/" title="Erik Lucero">Erik Lucero</a></span><span>, </span>              <span><a href="/people/EvanJeffrey/" title="Evan Jeffrey">Evan Jeffrey</a></span><span>, </span>              <span>Fedor Kostritsa</span><span>, </span>              <span>Frank Carlton Arute</span><span>, </span>              <span>Guifre Vidal</span><span>, </span>              <span><a href="/people/HartmutNeven/" title="Hartmut Neven">Hartmut Neven</a></span><span>, </span>              <span>Igor Aleiner</span><span>, </span>              <span>Jamie Yao</span><span>, </span>              <span><a href="/people/JarrodRMcClean/" title="Jarrod Ryan McClean">Jarrod Ryan McClean</a></span><span>, </span>              <span>Jeremy Patterson Hilton</span><span>, </span>              <span>Joao Basso</span><span>, </span>              <span><a href="/people/107147/" title="Joe Bardin">Joe Bardin</a></span><span>, </span>              <span>John Mark Kreikebaum</span><span>, </span>              <span><a href="/people/107228/" title="Jonathan Arthur Gross">Jonathan Arthur Gross</a></span><span>, </span>              <span>Joonho Lee</span><span>, </span>              <span>Juan Atalaya</span><span>, </span>              <span>Juhwan Yoo</span><span>, </span>              <span><a href="/people/105027/" title="Julian Kelly">Julian Kelly</a></span><span>, </span>              <span>Justin Thomas Iveland</span><span>, </span>              <span>Kannan Aryaperumal Sankaragomathi</span><span>, </span>              <span>Kenny Lee</span><span>, </span>              <span><a href="/people/KevinCMiao/" title="Kevin Miao">Kevin Miao</a></span><span>, </span>              <span><a href="/people/KevinSatzinger/" title="Kevin Satzinger">Kevin Satzinger</a></span><span>, </span>              <span>Kim Ming Lau</span><span>, </span>              <span>Kostyantyn Kechedzhi</span><span>, </span>              <span>Kunal Arya</span><span>, </span>              <span>Lara Faoro</span><span>, </span>              <span>Leon Brill</span><span>, </span>              <span><a href="/people/108076/" title="Leslie Flores">Leslie Flores</a></span><span>, </span>              <span><a href="/people/107187/" title="Lev Ioffe">Lev Ioffe</a></span><span>, </span>              <span>Marco Szalay</span><span>, </span>              <span><a href="/people/MarissaGiustina/" title="Marissa Giustina">Marissa Giustina</a></span><span>, </span>              <span><a href="/people/106708/" title="Markus Rudolf Hoffmann">Markus Rudolf Hoffmann</a></span><span>, </span>              <span>Masoud Mohseni</span><span>, </span>              <span><a href="/people/106600/" title="Matt McEwen">Matt McEwen</a></span><span>, </span>              <span><a href="/people/106603/" title="Matt P Harrigan">Matt P Harrigan</a></span><span>, </span>              <span><a href="/people/MatthewNeeley/" title="Matthew Neeley">Matthew Neeley</a></span><span>, </span>              <span>Michael Blythe Broughton</span><span>, </span>              <span>Michael Newman</span><span>, </span>              <span>Michel Henri Devoret</span><span>, </span>              <span>Mike Shearn</span><span>, </span>              <span><a href="/people/106582/" title="Murphy Yuezhen Niu">Murphy Yuezhen Niu</a></span><span>, </span>              <span>Nicholas Bushnell</span><span>, </span>              <span><a href="/people/106427/" title="Nicholas Rubin">Nicholas Rubin</a></span><span>, </span>              <span><a href="/people/105699/" title="Ofer Naaman">Ofer Naaman</a></span><span>, </span>              <span>Orion Martin</span><span>, </span>              <span>Paul Conner</span><span>, </span>              <span><a href="/people/PaulKlimov/" title="Paul Victor Klimov">Paul Victor Klimov</a></span><span>, </span>              <span>Pavel Laptev</span><span>, </span>              <span><a href="/people/108435/" title="Pedram Roushan">Pedram Roushan</a></span><span>, </span>              <span>Ping Yeh</span><span>, </span>              <span>Rajeev Acharya</span><span>, </span>              <span>Rebecca Potter</span><span>, </span>              <span>Reza Fatemi</span><span>, </span>              <span>Roberto Collins</span><span>, </span>              <span><a href="/people/RyanBabbush/" title="Ryan Babbush">Ryan Babbush</a></span><span>, </span>              <span><a href="/people/SabrinaHong/" title="Sabrina Hong">Sabrina Hong</a></span><span>, </span>              <span><a href="/people/107120/" title="Sean Demura">Sean Demura</a></span><span>, </span>              <span><a href="/people/106860/" title="Seon Kim">Seon Kim</a></span><span>, </span>              <span>Sergei Isakov</span><span>, </span>              <span><a href="/people/SergioBoixo/" title="Sergio Boixo">Sergio Boixo</a></span><span>, </span>              <span>Shirin Montazeri</span><span>, </span>              <span>Steve Habegger</span><span>, </span>              <span><a href="/people/107482/" title="Tanuj Khattar">Tanuj Khattar</a></span><span>, </span>              <span><a href="/people/105024/" title="Ted White">Ted White</a></span><span>, </span>              <span>Thomas E O&#39;Brien</span><span>, </span>              <span>Trent Huang</span><span>, </span>              <span>Trond Ikdahl Andersen</span><span>, </span>              <span>Vadim Smelyanskiy</span><span>, </span>              <span>Vladimir Shvarts</span><span>, </span>              <span>Wayne Liu</span><span>, </span>              <span>William Courtney</span><span>, </span>              <span>William Giang</span><span>, </span>              <span>William J. Huggins</span><span>, </span>              <span>Wojtek Mruczkiewicz</span><span>, </span>              <span>Xiao Mi</span><span>, </span>              <span>Yaxing Zhang</span><span>, </span>              <span>Yu Chen</span><span>, </span>              <span>Yuan Su</span><span>, </span>              <span><a href="/people/105870/" title="Zhang Jiang">Zhang Jiang</a></span><span>, </span>              <span>Zijun Chen</span>          </p>
+          <p class="content__venue"><span class="booktitle">Science</span> <span class="year">(2022)</span> (to appear)</p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="gallery__item ">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub51795/" title="Next Day Wildfire Spread: A Machine Learning Dataset to Predict Wildfire Spreading From Remote-Sensing Data"><span class="hidden-text">Next Day Wildfire Spread: A Machine Learning Dataset to Predict Wildfire Spreading From Remote-Sensing Data</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>Predicting wildfire spread is critical for land management and disaster preparedness. To this end, we present âNext Day Wildfire Spread,â a curated, large-scale, multivariate dataset of historical wildfires aggregating nearly a decade of remote-sensing data across the United States. In contrast to existing fire datasets based on Earth observation satellites, our dataset combines 2-D fire data...</p>
+            <a href="/pubs/pub51795/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content content--long-title">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub51795/" title="Next Day Wildfire Spread: A Machine Learning Dataset to Predict Wildfire Spreading From Remote-Sensing Data">Next Day Wildfire Spread: A Machine Learning Dataset to Predict Wildfire Spreading From Remote-Sensing Data</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span>Fantine Huot</span><span>, </span>              <span>Lily Hu</span><span>, </span>              <span><a href="/people/NitaGoyal/" title="Nita Goyal">Nita Goyal</a></span><span>, </span>              <span>Tharun Pratap Sankar</span><span>, </span>              <span>Matthias Ihme</span><span>, </span>              <span>Yi-fan Chen</span>          </p>
+          <p class="content__venue"><span class="booktitle">IEEE Transactions on Geoscience and Remote Sensing</span>, vol. 60 <span class="year">(2022)</span>, pp. 1-13</p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="gallery__item ">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub51853/" title="Comprehensive Imaging of C-2W Plasmas: Instruments and Applications"><span class="hidden-text">Comprehensive Imaging of C-2W Plasmas: Instruments and Applications</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>The C-2W device (âNormanâ), has produced and sustained beam-driven field-reversed configuration (FRC) plasmas embedded in a magnetic mirror geometry using neutral beams and end-bias electrodes located in expander divertors. Many discrete vessels comprise this device, and a suite of spatially and radiometrically calibrated, high-speed camera systems have been deployed to visualize the plasma...</p>
+            <a href="/pubs/pub51853/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content ">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub51853/" title="Comprehensive Imaging of C-2W Plasmas: Instruments and Applications">Comprehensive Imaging of C-2W Plasmas: Instruments and Applications</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span>Erik Granstedt</span><span>, </span>              <span>Deepak Gupta</span><span>, </span>              <span>James Sweeney</span><span>, </span>              <span>Matthew Tobin</span><span>, </span>              <span><a href="/people/106658/" title="Michael Dikovsky">Michael Dikovsky</a></span><span>, </span>              <span>the TAE team</span>          </p>
+          <p class="content__venue"><span class="booktitle">Review of Scientific Instruments</span>, vol. 92 <span class="year">(2021)</span>, pp. 043515</p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="gallery__item last">
+
+
+    <div
+      class="card card--publication  card--publication-list card--no-link"
+      data-card-type="list">
+        <a class="card__link" href="/pubs/pub51855/" title="A human-labeled Landsat contrails dataset"><span class="hidden-text">A human-labeled Landsat contrails dataset</span></a>
+
+      <div class="card__image"></div>
+
+        <div class="card__link--icon card__link--icon-abstract" ng-controller="AbstractPreviewController as AbstractPreviewCtrl" data-card-abstract>
+          <a class="icon icon--info card__link-info"
+            ng-click="AbstractPreviewCtrl.open($event)"
+          ></a>
+          <div class="card__link-tooltip">Preview Abstract</div>
+          <div
+            class="card__link-abstract t--card-description"
+          >
+            <a ng-click="AbstractPreviewCtrl.close($event)" class="icon icon--close card__link-abstract-close"></a>
+            <p>Contrails (condensation trails) are the ice clouds that trail behind aircraft as they fly through cold and moist regions of the atmosphere. Avoiding these regions could potentially be an inexpensive way to reduce over half of aviation&#39;s impact on global warming. Development and evaluation of these avoidance strategies greatly benefits from the ability to detect contrails on satellite imagery....</p>
+            <a href="/pubs/pub51855/">View details</a>
+          </div>
+        </div>
+
+      <div class="content card__content ">
+        <div class="content__title">
+          <a class="card__title" href="/pubs/pub51855/" title="A human-labeled Landsat contrails dataset">A human-labeled Landsat contrails dataset</a>
+        </div>
+        <div class="content__body">
+          <p class="content__authors">
+              <span><a href="/people/KevinMcCloskey/" title="Kevin James Fleming McCloskey">Kevin James Fleming McCloskey</a></span><span>, </span>              <span><a href="/people/108189/" title="Scott Davidson Geraedts">Scott Davidson Geraedts</a></span><span>, </span>              <span><a href="/people/107496/" title="Brendan Henry Jackman">Brendan Henry Jackman</a></span><span>, </span>              <span>Vincent Rudolf Meijer</span><span>, </span>              <span>Erica Wickstrom Brand</span><span>, </span>              <span><a href="/people/DavidFork/" title="David K. Fork">David K. Fork</a></span><span>, </span>              <span><a href="/people/JohnPlatt/" title="John Platt">John Platt</a></span><span>, </span>              <span>Carl Elkin</span><span>, </span>              <span><a href="/people/108209/" title="Christopher H Van Arsdale">Christopher H Van Arsdale</a></span>          </p>
+          <p class="content__venue"><span class="booktitle">ICML workshop on Climate Change 2021</span> <span class="year">(2021)</span></p>
+        </div>
+      </div>
+    </div>
+        </div>
+
+
+
+
+
+
+
+  </div>
+</div>      </div>
+
+  </div>
+</section><section class="group group--default    "
+>
+
+  <div class="group__content-wrapper">
+
+
+
+<div class="content group__content     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <h2 class="content__title ">
+            Some of our locations
+          </h2>
+
+      </div>
+
+    </div>
+
+</div>
+  </div>
+
+      <div class="group__carousel-wrapper">
+<div class="carousel carousel--locations carousel--random" ng-controller="CarouselController as carouselCtrl" data-movement="0.666" data-number-moving="2"ng-init="carouselCtrl.randomize()">
+  <div class="carousel__slider" ng-class="{'is-dragging': carouselCtrl.isDragging}" ng-touchstart="carouselCtrl.onDragStart($event)" ng-touchmove="carouselCtrl.onDragMove($event)" ng-touchend="carouselCtrl.onDragEnd($event)">
+
+        <div class="carousel__item">
+  <div
+    class="card card--location    card--in-carousel "
+    data-card-type="card">
+      <a class="card__link"   href="/locations/cambridge/"
+ title="Cambridge"><span class="hidden-text">Cambridge</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/research/join-us/cambridge/center-cambridge-photo0-b2aabb7c53d8b07cd56c6e55a521dc5c0362439c05000baacd8ee1877972d7a4.jpg)"></div>
+
+
+
+<div class="content card--in-carousel     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <div class="content__title ">
+            Cambridge
+          </div>
+
+      </div>
+
+    </div>
+
+</div>  </div>
+        </div>
+        <div class="carousel__item">
+  <div
+    class="card card--location    card--in-carousel "
+    data-card-type="card">
+      <a class="card__link"   href="/locations/sf-bay-area/"
+ title="San Francisco Bay Area"><span class="hidden-text">San Francisco Bay Area</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/research/join-us/bay-area/center-bay-area-photo0-1c760bbebf6afd857b981ad2fbe5728f3492f8cda606e4190d69efd76e7df069.jpg)"></div>
+
+
+
+<div class="content card--in-carousel     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <div class="content__title ">
+            San Francisco Bay Area
+          </div>
+
+      </div>
+
+    </div>
+
+</div>  </div>
+        </div>
+        <div class="carousel__item">
+  <div
+    class="card card--location    card--in-carousel "
+    data-card-type="card">
+      <a class="card__link"   href="/locations/seattle-kirkland/"
+ title="Seattle-Kirkland"><span class="hidden-text">Seattle-Kirkland</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/research/join-us/seattle-kirkland/center-seattle-kirkland-photo0-77af159e9aa7fbf0e4a7fb4e8d9981704a4cee3b9b8b60c8a4b2ea778fff9226.jpg)"></div>
+
+
+
+<div class="content card--in-carousel     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <div class="content__title ">
+            Seattle-Kirkland
+          </div>
+
+      </div>
+
+    </div>
+
+</div>  </div>
+        </div>
+        <div class="carousel__item">
+  <div
+    class="card card--location    card--in-carousel "
+    data-card-type="card">
+      <a class="card__link"   href="/locations/india/"
+ title="India"><span class="hidden-text">India</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/research/join-us/india/center-india-photo0-3d5d146e82997deae49849b8faf8ef506c5b1551e4ad376521d8b2891961e851.jpg)"></div>
+
+
+
+<div class="content card--in-carousel     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <div class="content__title ">
+            India
+          </div>
+
+      </div>
+
+    </div>
+
+</div>  </div>
+        </div>
+  </div>
+  <a class="carousel__button-left" href="" ng-click="carouselCtrl.prev()" ng-class="{'is-visible': carouselCtrl.prevVisible}" tabindex="-1"></a>
+  <a class="carousel__button-right" href="" ng-click="carouselCtrl.next()" ng-class="{'is-visible': carouselCtrl.nextVisible}" tabindex="-1"></a>
+</div>      </div>
+
+</section><section class="group group--default    has-grey-background"
+>
+
+  <div class="group__content-wrapper">
+
+
+
+<div class="content group__content     "
+>
+    <div class="content__text" >
+
+      <div class="content__header">
+          <h2 class="content__title ">
+            Some of our people
+          </h2>
+
+      </div>
+
+    </div>
+
+</div>
+  </div>
+
+      <div class="group__gallery-wrapper">
+
+
+
+
+<div class="gallery gallery--person
+
+      gallery--5-columns
+
+
+
+
+    "
+
+    >
+
+  <div class="gallery__wrapper">
+
+
+
+
+
+        <div class="gallery__item">    <a class="person"
+          href="/people/JohnPlatt/"
+        >
+      <div class="person__photo" style="background-image: url(https://storage.googleapis.com/pub-tools-public-publication-data/png/7d53a821efa3481a976a6485232398087eef8ee0.png)"></div>
+      <p class="person__name">John C. Platt</p>
+    </a>
+</div>
+        <div class="gallery__item">    <a class="person"
+          href="/people/JasonMiller/"
+        >
+      <div class="person__photo" style="background-image: url(https://storage.googleapis.com/pub-tools-public-publication-data/png/65b69f97156bbbc09241fc35a08edf47f9375909.png)"></div>
+      <p class="person__name">Jason Miller</p>
+    </a>
+</div>
+        <div class="gallery__item">    <a class="person"
+          href="/people/HartmutNeven/"
+        >
+      <div class="person__photo" style="background-image: url(https://storage.googleapis.com/pub-tools-public-publication-data/png/ae936fbd1b057dd7d1ae47d36146b896fc969847.png)"></div>
+      <p class="person__name">Hartmut Neven</p>
+    </a>
+</div>
+        <div class="gallery__item">    <a class="person"
+          href="/people/MarissaGiustina/"
+        >
+      <div class="person__photo" style="background-image: url(https://storage.googleapis.com/pub-tools-public-publication-data/png/2ad0a1179c665513ed0486c8f84dc1c58783405e.png)"></div>
+      <p class="person__name">Marissa Giustina</p>
+    </a>
+</div>
+        <div class="gallery__item">    <a class="person"
+          href="/people/105170/"
+        >
+      <div class="person__photo" style="background-image: url(https://storage.googleapis.com/pub-tools-public-publication-data/png/c124a153d6e110c20326ddbe0bb43cb35d001856.png)"></div>
+      <p class="person__name">Varun Gulshan</p>
+    </a>
+</div>
+        <div class="gallery__item">    <a class="person"
+          href="/people/106803/"
+        >
+      <div class="person__photo" style="background-image: url(https://storage.googleapis.com/pub-tools-public-publication-data/png/019c87f8d9daf3f9536b2bd24def5e7376a70cce.png)"></div>
+      <p class="person__name">Michael P Brenner</p>
+    </a>
+</div>
+        <div class="gallery__item">    <a class="person"
+          href="/people/AbeAsfaw/"
+        >
+      <div class="person__photo" style="background-image: url(https://storage.googleapis.com/pub-tools-public-publication-data/png/a2ac0f3c487681a0b2d4c94304744656c5a03419.png)"></div>
+      <p class="person__name">Abe Asfaw</p>
+    </a>
+</div>
+        <div class="gallery__item">    <a class="person"
+          href="/people/108209/"
+        >
+      <div class="person__photo" ></div>
+      <p class="person__name">Christopher H Van Arsdale</p>
+    </a>
+</div>
+        <div class="gallery__item">    <a class="person"
+          href="/people/SubhashiniVenugopalan/"
+        >
+      <div class="person__photo" style="background-image: url(https://storage.googleapis.com/pub-tools-public-publication-data/png/f72e0233ae30f019d6d4de4dd74fa752418b6c16.png)"></div>
+      <p class="person__name">Subhashini Venugopalan</p>
+    </a>
+</div>
+
+
+
+
+
+  </div>
+</div>      </div>
+
+</section>
+<div class="callout-push-down-spacer"></div>
+
+<section class="callout callout--fullwidth   ">
+<div class="block block--cta-left     ">
+      <div class="block__content-wrapper">
+
+
+<div class="content block__content     "
+>
+    <div class="content__text" >
+
+        <span class="content__brow">
+            Join us
+        </span>
+      <div class="content__header">
+          <h3 class="content__title ">
+            We're looking for talented people to join our team
+          </h3>
+
+      </div>
+
+    </div>
+    <div class="content__ctas">
+
+<a class="button button--light "
+  href="/careers/"
+
+   >
+
+
+  See opportunities
+</a>    </div>
+
+</div>      </div>
+</div></section>    </main>
+
+<footer>
+  <a href="https://www.google.com" target="_blank" aria-label="Google" class="footer__logo">
+    <img src="/static/images/google_lockup_grey-c55a858d36d74fd790953e6d5cbab45ac99bd5bd8c2b764768258ec732ad42ad.svg" alt="Google">
+  </a>
+
+  <div class="footer__links">
+      <a   href="https://policies.google.com/privacy" target="_blank"
+ class="footer__link">Privacy</a>
+      <a   href="https://policies.google.com/terms" target="_blank"
+ class="footer__link">Terms</a>
+      <a   href="https://about.google/" target="_blank"
+ class="footer__link">About Google</a>
+      <a   href="https://about.google/intl/en/products/" target="_blank"
+ class="footer__link">Google Products</a>
+  </div>
+
+  <div class="footer__tertiary">
+
+    <a href="" class="footer__link footer__link--support" onclick="sendFeedback()">
+      Feedback
+    </a>
+  </div>
+
+  <script>
+    function sendFeedback() {
+      var config = {
+        'productId': '5137383',
+        'bucket': 'site',
+        'allowNonLoggedInFeedback' : true
+      };
+      userfeedback.api.startFeedback(config);
+    }
+  </script>
+</footer>
+    <div id="breakpoints"></div>
+
+      <script src="/js/main_min_js.js"></script>
+
+  </body>
+</html>

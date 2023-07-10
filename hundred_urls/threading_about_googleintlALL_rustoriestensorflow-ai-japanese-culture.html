@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="ru" dir="ltr" class="google glue-flexbox spa"  locale="ALL_ru" user-region="europe" path="/stories/tensorflow-ai-japanese-culture/">
+  <head>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+
+        <title>ÐÐ°Ðº Ð¿Ð»Ð°ÑÑÐ¾ÑÐ¼Ð° TensorFlow Ð¿Ð¾Ð¼Ð¾Ð³Ð°ÐµÑ Ð² ÑÐ¾ÑÑÐ°Ð½ÐµÐ½Ð¸Ð¸ ÐºÑÐ»ÑÑÑÑÐ½Ð¾Ð³Ð¾ Ð½Ð°ÑÐ»ÐµÐ´Ð¸Ñ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸ - Google</title>
+
+        <meta name="description" content="ÐÑÑÐ»ÐµÐ´Ð¾Ð²Ð°ÑÐµÐ»ÑÐ½Ð¸ÑÐ° ÑÐ¿Ð¾Ð½ÑÐºÐ¾Ð¹ Ð»Ð¸ÑÐµÑÐ°ÑÑÑÑ Ð½Ð°ÑÑÐ¸Ð»Ð°ÑÑ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÑ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑÐ¸ Ð¸ÑÐºÑÑÑÑÐ²ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¸Ð½ÑÐµÐ»Ð»ÐµÐºÑÐ° TensorFlow Ð´Ð»Ñ ÑÐ°ÑÐ¿Ð¾Ð·Ð½Ð°Ð²Ð°Ð½Ð¸Ñ Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÐ¾Ð², Ð½Ð°Ð¿Ð¸ÑÐ°Ð½Ð½ÑÑ Ð² ÑÑÐ¸Ð»Ðµ ÐºÑÐ´Ð·ÑÑÐ¸Ð´Ð·Ð¸. Ð­ÑÐ¾ ÑÐµÑÐ½Ð¸ÑÐµÑÐºÐ¾Ðµ Ð´Ð¾ÑÑÐ¸Ð¶ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð¶ÐµÑ ÑÑÐ°ÑÑ Ð·Ð½Ð°ÑÐ¸ÑÐµÐ»ÑÐ½ÑÐ¼ ÑÐ°Ð³Ð¾Ð¼ Ð² Ð¸Ð·ÑÑÐµÐ½Ð¸Ð¸ ÐºÑÐ»ÑÑÑÑÑ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸.">
+
+<script type="text/javascript" nonce="kbkzNLjXRd2LOFWrtiB_IQ">
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+   'gtm.blacklist':['customScripts','nonGoogleScripts','nonGooglePixels','customPixels']
+},{
+   'locale_fallback': (document.childNodes[1].attributes.locale || {}).value
+});
+</script>
+<!-- Google Tag Manager -->
+<script nonce="kbkzNLjXRd2LOFWrtiB_IQ">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQZB4J');</script>
+<!-- End Google Tag Manager -->
+<script nonce="kbkzNLjXRd2LOFWrtiB_IQ">
+window.dataLayer.push({
+    event: 'coinToss5050',
+    action: Math.random() > .5 ? 'group1': 'group2'
+});
+</script>
+        <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans+Text:400,500,700,400i,500i,700i|Google+Sans:400,500|Google+Sans+Display:400|Product+Sans:400&amp;lang=en" rel="stylesheet" nonce="kbkzNLjXRd2LOFWrtiB_IQ">
+
+        <link href="/assets-smalls/css/main.min.css?cache=1423eb7" rel="stylesheet" nonce="kbkzNLjXRd2LOFWrtiB_IQ">
+
+
+      <meta property="og:description" content="ÐÑÑÐ»ÐµÐ´Ð¾Ð²Ð°ÑÐµÐ»ÑÐ½Ð¸ÑÐ° ÑÐ¿Ð¾Ð½ÑÐºÐ¾Ð¹ Ð»Ð¸ÑÐµÑÐ°ÑÑÑÑ Ð½Ð°ÑÑÐ¸Ð»Ð°ÑÑ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÑ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑÐ¸ Ð¸ÑÐºÑÑÑÑÐ²ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¸Ð½ÑÐµÐ»Ð»ÐµÐºÑÐ° TensorFlow Ð´Ð»Ñ ÑÐ°ÑÐ¿Ð¾Ð·Ð½Ð°Ð²Ð°Ð½Ð¸Ñ Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÐ¾Ð², Ð½Ð°Ð¿Ð¸ÑÐ°Ð½Ð½ÑÑ Ð² ÑÑÐ¸Ð»Ðµ ÐºÑÐ´Ð·ÑÑÐ¸Ð´Ð·Ð¸. Ð­ÑÐ¾ ÑÐµÑÐ½Ð¸ÑÐµÑÐºÐ¾Ðµ Ð´Ð¾ÑÑÐ¸Ð¶ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð¶ÐµÑ ÑÑÐ°ÑÑ Ð·Ð½Ð°ÑÐ¸ÑÐµÐ»ÑÐ½ÑÐ¼ ÑÐ°Ð³Ð¾Ð¼ Ð² Ð¸Ð·ÑÑÐµÐ½Ð¸Ð¸ ÐºÑÐ»ÑÑÑÑÑ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸.">
+      <meta property="og:title" content="ÐÐ°Ðº Ð¿Ð»Ð°ÑÑÐ¾ÑÐ¼Ð° TensorFlow Ð¿Ð¾Ð¼Ð¾Ð³Ð°ÐµÑ Ð² ÑÐ¾ÑÑÐ°Ð½ÐµÐ½Ð¸Ð¸ ÐºÑÐ»ÑÑÑÑÐ½Ð¾Ð³Ð¾ Ð½Ð°ÑÐ»ÐµÐ´Ð¸Ñ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸ - Google">
+      <meta property="og:image" content="https://lh3.googleusercontent.com/cAdENbAO0BcerHhYgEXGSi6xSaehRXYu9zTG6oMmvoPcRpyB0vczoycTwHtJnJ7017zc34BgMsUEt1YeBPTuyOvUMohBive66ejgHzVdmFcV5kxWbb6p=w600-l80-sg-rj">
+      <meta property="og:image:width" content="600">
+      <meta property="og:image:height" content="312">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@google">
+      <meta name="twitter:title" content="ÐÐ°Ðº Ð¿Ð»Ð°ÑÑÐ¾ÑÐ¼Ð° TensorFlow Ð¿Ð¾Ð¼Ð¾Ð³Ð°ÐµÑ Ð² ÑÐ¾ÑÑÐ°Ð½ÐµÐ½Ð¸Ð¸ ÐºÑÐ»ÑÑÑÑÐ½Ð¾Ð³Ð¾ Ð½Ð°ÑÐ»ÐµÐ´Ð¸Ñ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸ - Google">
+      <meta name="twitter:description" content="ÐÐ°Ðº Ð¶ÐµÐ½ÑÐ¸Ð½Ð°-Ð»Ð¸ÑÐµÑÐ°ÑÑÑÐ¾Ð²ÐµÐ´ Ð¿Ð¾Ð¼Ð¾Ð³Ð°ÐµÑ ÑÐµÑÐ°ÑÑ Ð·Ð°Ð³Ð°Ð´ÐºÐ¸ Ð¿ÑÐ¾ÑÐ»Ð¾Ð³Ð¾ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸, Ð¸ÑÐ¿Ð¾Ð»ÑÐ·ÑÑ Ð¼Ð°ÑÐ¸Ð½Ð½Ð¾Ðµ Ð¾Ð±ÑÑÐµÐ½Ð¸Ðµ">
+      <meta name="twitter:image" content="https://lh3.googleusercontent.com/cAdENbAO0BcerHhYgEXGSi6xSaehRXYu9zTG6oMmvoPcRpyB0vczoycTwHtJnJ7017zc34BgMsUEt1YeBPTuyOvUMohBive66ejgHzVdmFcV5kxWbb6p=w600-l80-sg-rj">
+      <meta property="google:search-sre-monitor" content="ALL_ru">
+
+      <link rel="apple-touch-icon" href="https://www.gstatic.com/images/branding/googleg/2x/googleg_standard_color_120dp.png">
+      <link rel="apple-touch-icon-precomposed" href="https://www.gstatic.com/images/branding/googleg/2x/googleg_standard_color_120dp.png">
+
+        <link rel="canonical" href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/">
+
+      <script nonce="kbkzNLjXRd2LOFWrtiB_IQ">
+(function(){document.documentElement.classList.remove("google");document.documentElement.classList.add("google-js");}).call(window)      </script>
+
+      <script src="/assets-smalls/js/viewport-units.min.js?cache=3dc1e8b" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+
+  </head>
+
+  <body data-ng-controller="MainCtrl as mainCtrl">
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQZB4J"
+    height="0" width=0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<header
+    class="header header--inactive"
+    data-about-nav
+    >
+  <div class="header-inner">
+    <button class="nav-toggle-button outside" data-about-nav-toggle aria-label="ÐÑÐºÑÑÑÑ Ð¸Ð»Ð¸ Ð·Ð°ÐºÑÑÑÑ Ð¼ÐµÐ½Ñ Ð½Ð°Ð²Ð¸Ð³Ð°ÑÐ¸Ð¸"
+    
+      data-g-category="header"
+      data-g-action="navigation"
+      data-g-label="Navigation menu toggle"
+        data-g-module-type="Main Nav"
+>
+        <svg alt="ÐÑÐºÑÑÑÑ Ð¼ÐµÐ½Ñ Ð½Ð°Ð²Ð¸Ð³Ð°ÑÐ¸Ð¸"  class="menu-bars" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+  </svg>
+  <img alt="ÐÑÐºÑÑÑÑ Ð¼ÐµÐ½Ñ Ð½Ð°Ð²Ð¸Ð³Ð°ÑÐ¸Ð¸"  class="menu-bars" src="/assets-smalls/img/menu.png?cache=38c6aed" height="24" width="24">
+
+        <svg alt="ÐÐ°ÐºÑÑÑÑ Ð¼ÐµÐ½Ñ Ð½Ð°Ð²Ð¸Ð³Ð°ÑÐ¸Ð¸"  class="menu-close" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+  </svg>
+  <img alt="ÐÐ°ÐºÑÑÑÑ Ð¼ÐµÐ½Ñ Ð½Ð°Ð²Ð¸Ð³Ð°ÑÐ¸Ð¸"  class="menu-close" src="/assets-smalls/img/close.png?cache=5628868" height="24" width="24">
+
+    </button>
+    <div class="product-logo">
+      <a href="../../" 
+          target="_self"
+          aria-label="Google"
+          data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="google logo"
+  data-g-label="header"
+>
+          <svg alt="Google"  class="logo-svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 24">
+    <path fill="#4285F4" d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z"></path>
+    <path fill="#EA4335" d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+    <path fill="#4285F4" d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"></path>
+    <path fill="#FBBC05" d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+    <path fill="#34A853" d="M58 .24h2.51v17.57H58z"></path>
+    <path fill="#EA4335" d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"></path>
+  </svg>
+
+      </a>
+    </div>
+    <nav class="top-nav">
+      <div class="product-logo">
+        <a href="../../"
+            target="_self"
+            data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="google logo"
+  data-g-label="header"
+>
+            <svg alt="Google"  class="logo-svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 24">
+    <path fill="#4285F4" d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z"></path>
+    <path fill="#EA4335" d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+    <path fill="#4285F4" d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"></path>
+    <path fill="#FBBC05" d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+    <path fill="#34A853" d="M58 .24h2.51v17.57H58z"></path>
+    <path fill="#EA4335" d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"></path>
+  </svg>
+
+        </a>
+      </div>
+
+      <ul class="main-nav" role="menu">
+          <li class="_-home"
+              
+              role="none">
+              <a href="../../"
+                  target="_self"
+                  role="menuitem"
+                  data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="home"
+  data-g-label="header"
+>
+                ÐÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ñ
+              </a>
+            </li>
+          <li class="_-products"
+              
+              role="none">
+              <a href="../../products/"
+                  target="_self"
+                  role="menuitem"
+                  data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="products"
+  data-g-label="header"
+>
+                ÐÑÐ¾Ð´ÑÐºÑÑ
+              </a>
+            </li>
+          <li class="_-commitments"
+              
+              role="none">
+              <a href="../../commitments/"
+                  target="_self"
+                  role="menuitem"
+                  data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="commitments"
+  data-g-label="header"
+>
+                ÐÐºÐ»Ð°Ð´ Ð² Ð±ÑÐ´ÑÑÐµÐµ
+              </a>
+            </li>
+          <li class="selected-page _-stories"
+              
+              role="none">
+              <a href="../../stories/"
+                  target="_self"
+                  role="menuitem"
+                  data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="stories"
+  data-g-label="header"
+>
+                ÐÑÑÐ¾ÑÐ¸Ð¸
+              </a>
+            </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+        <main class="static-content-view" data-ui-view="main">
+  <style>
+    .smalls-page__headline--accent,
+    .smalls-page__headline--accent a,
+    .smalls-page__headline--accent a:hover,
+    .smalls-page__headline--accent a:visited {
+      color: #a50e0e;
+    }
+
+    .smalls-page__headline.smalls-page__headline--accent a {
+      border-color: #a50e0e;
+    }
+
+    .smalls-page__module--accent {
+      background-color: #fce8e6;
+    }
+  </style>
+
+  <div data-slide-counter class="smalls-page smalls-page--intro _-kuzushiji21_smalls"
+      data-track-page-load
+      data-track-page-load_author-team="about"
+      data-track-page-load_char-feature="Kuzushiji"
+      data-track-page-load_content-market="global"
+      data-track-page-load_content-market-country="limited"
+      data-track-page-load_content-market-region="apac"
+      data-track-page-load_content-type="editorial"
+      data-track-page-load_feature-type="brand"
+      data-track-page-load_format-type="editorial"
+      data-track-page-load_geo-feature="jp"
+      data-track-page-load_page-type="story"
+      data-track-page-load_product-feature="tensorflow"
+      data-track-page-load_series-type="smalls"
+      data-track-page-load_word-count="220"
+    data-track-page-load_read-time="58"
+    data-track-page-load_topic="ai"
+>
+    <div class="smalls-page__slides">
+          <div class="smalls-page__slide" data-target-blank>
+  <style>
+    @keyframes bgColor {
+      from {background-color: #a50e0e;}
+      to {background-color: #fff;}
+    }
+
+    @keyframes headlineTop {
+      from {color: #fce8e6;}
+      to {color: #a50e0e;}
+    }
+
+    @keyframes headlineBottom {
+      from {color: #fff;}
+      /* glue-grey-700 */
+      to {color: #5f6368;}
+    }
+
+    @keyframes imageMask {
+      from {background-color: #a50e0e;}
+      to {background-color: #000;}
+    }
+
+    @keyframes imageBg {
+      from {
+        background-blend-mode: luminosity;
+        background-color: #fce8e6;
+      }
+      to {
+        background-blend-mode: normal;
+        background-color: transparent;
+      }
+    }
+
+    @keyframes primaryTag {
+      from {color: #ffff}
+      /* $glue-grey-900 */
+      to {color: #202124;}
+    }
+
+    @keyframes blendMode {
+      from {background-blend-mode: luminosity;}
+      to {background-blend-mode: normal;}
+    }
+
+    .smalls-opener  {
+      animation-name: bgColor;
+      background-color: #a50e0e;
+    }
+
+    .smalls-opener__headline-1.smalls-page__headline--accent {
+      animation-name: headlineTop;
+      color: #fad2cf;
+    }
+
+    .smalls-page--intro .smalls-page__counter,
+    .smalls-page--intro .story__persistent-share-bar .share-button__mobile,
+    .smalls-opener__headline-2.smalls-page__headline--small {
+      animation-name: headlineBottom;
+      color: #fff;
+    }
+
+    .smalls-opener__image-mask {
+      animation: imageMask 3s 1s 1 forwards;
+      background-color: #a50e0e;
+    }
+
+    .smalls-opener__background-image {
+      animation: imageBg 3s 1s 1 forwards;
+      background-blend-mode: luminosity;
+      background-color: #fce8e6;
+      will-change: background-blend-mode;
+    }
+
+    .smalls-opener__primary-tag {
+      animation-name: primaryTag;
+      color: #fff;
+    }
+  </style>
+
+<section class="smalls-page__module
+    smalls-opener
+    smalls-opener--image-bottom
+    _-kuzushiji21_smalls_opener">
+  <div class="h-c-page">
+    <div class="h-c-grid">
+      <div class="h-c-grid__col h-c-grid__col--10 h-c-grid__col--offset-1 h-c-grid__col-l--6 h-c-grid__col-l--offset-0">
+          <div class="smalls-opener__primary-tag-link">
+            <a class="smalls-opener__primary-tag" href="../../stories/ai/" target="_self">AI</a>
+          </div>
+
+        <div class="smalls-opener__headline-1 smalls-page__headline--small smalls-page__headline--accent">
+          ÐÐ°Ðº Ð¶ÐµÐ½ÑÐ¸Ð½Ð°-Ð»Ð¸ÑÐµÑÐ°ÑÑÑÐ¾Ð²ÐµÐ´ Ð¿Ð¾Ð¼Ð¾Ð³Ð°ÐµÑ ÑÐµÑÐ°ÑÑ Ð·Ð°Ð³Ð°Ð´ÐºÐ¸ Ð¿ÑÐ¾ÑÐ»Ð¾Ð³Ð¾ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸, Ð¸ÑÐ¿Ð¾Ð»ÑÐ·ÑÑ Ð¼Ð°ÑÐ¸Ð½Ð½Ð¾Ðµ Ð¾Ð±ÑÑÐµÐ½Ð¸Ðµ
+        </div>
+          <div class="smalls-opener__headline-2 smalls-page__headline--small">
+            Ñ Ð¿Ð¾Ð¼Ð¾ÑÑÑ TensorFlow
+          </div>
+      </div>
+
+        <div class="smalls-opener__image-col
+            h-c-grid__col h-c-grid__col--12
+            h-c-grid__col-l--6"
+            data-ng-class="{'smalls-image--animated': slideCounterCtrl.hasAnimated}">
+          <div class="smalls-opener__image-mask">
+            <style>
+
+
+
+
+
+      @media screen  {
+ .smalls-image--c53df5c {
+          background-image: url(https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w600-l80-sg-rj-c0xffffff);
+        }
+      }
+
+        @media screen  and (min-resolution: 192dpi) {
+ .smalls-image--c53df5c {
+            background-image: url(https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w1200-l80-sg-rj-c0xffffff);
+          }
+        }
+
+
+
+
+
+
+      @media screen and (min-width: 600px) {
+ .smalls-image--c53df5c {
+          background-image: url(https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w1024-l80-sg-rj-c0xffffff);
+        }
+      }
+
+        @media screen and (min-width: 600px) and (min-resolution: 192dpi) {
+ .smalls-image--c53df5c {
+            background-image: url(https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w2048-l80-sg-rj-c0xffffff);
+          }
+        }
+
+
+
+
+
+
+      @media screen and (min-width: 1024px) {
+ .smalls-image--c53df5c {
+          background-image: url(https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w1440-l80-sg-rj-c0xffffff);
+        }
+      }
+
+        @media screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+ .smalls-image--c53df5c {
+            background-image: url(https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w2880-l80-sg-rj-c0xffffff);
+          }
+        }
+
+  </style>
+            <div class="smalls-opener__background-image
+                smalls-page__image"
+                data-ng-class="{'smalls-image--c53df5c': !slideCounterCtrl.hasAnimated}">
+              
+  <picture  >
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+
+
+      <source srcset="https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w1440, https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w2880 2x" media="(min-width: 1024px)" >
+
+
+      <source srcset="https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w1024, https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w2048 2x" media="(min-width: 800px)" >
+
+
+      <source srcset="https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w800, https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w1600 2x"  >
+    <!--[if IE 9]></video><![endif]-->
+
+    <img src="https://lh3.googleusercontent.com/WFc-bpC-hY8Z_Va2n3DojTFWXnCvEALd0cQ9fy8YWwiDMLgEprXMuae65Favucc44l0XpEPIXpmOlhmYucGP1puVD7K2a1FGs1byCqxhqY9iV55NijA=w800" class="smalls-opener__placeholder"  aria-hidden="true">
+  </picture>
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>          </div>
+          <div class="smalls-page__slide" data-target-blank>
+<section class="smalls-page__module
+    smalls-page__module--white
+    smalls-text-and-image
+    smalls-text-and-image--image-top
+    _-kuzushiji21_smalls_frame2">
+  <div class="h-c-page">
+    <div class="h-c-grid">
+      <div class="h-c-grid__col h-c-grid__col--10 h-c-grid__col--offset-1 h-c-grid__col-l--6 h-c-grid__col-l--offset-0">
+        <div class="smalls-text-and-image__headline-1
+            smalls-page__headline
+            smalls-page__headline--small
+            smalls-page__headline--accent">
+          ÐÑÐ´Ð·ÑÑÐ¸Ð´Ð·Ð¸Â â ÑÑÐ¾ Ð´ÑÐµÐ²Ð½Ð¸Ð¹ ÑÐ¿Ð¾Ð½ÑÐºÐ¸Ð¹ ÑÑÐ¸Ð»Ñ Ð¿Ð¸ÑÑÐ¼Ð°, ÐºÐ¾ÑÐ¾ÑÑÐ¹ Ð¿Ð¾Ð»Ð½Ð¾ÑÑÑÑ Ð²ÑÑÐµÐ» Ð¸Ð· ÑÐ¿Ð¾ÑÑÐµÐ±Ð»ÐµÐ½Ð¸Ñ Ð¸ Ð¿ÑÐ°ÐºÑÐ¸ÑÐµÑÐºÐ¸ Ð·Ð°Ð±ÑÑ.
+        </div>
+      </div>
+
+      <div class="smalls-page__image-container h-c-grid__col h-c-grid__col--12 h-c-grid__col-l--6
+">
+  <picture  >
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+
+
+      <source srcset="https://lh3.googleusercontent.com/s4zTSVfuezjkxLZmw3oBfmxuMG00A2iiJZ923xtwdM-LU0HQCaPFnGfh8IwPBBxcUrgZUY6lSUnLBGtC5jUmC95uB6LBlNrqd2QuGKbHthwoWJRziV4=w1440, https://lh3.googleusercontent.com/s4zTSVfuezjkxLZmw3oBfmxuMG00A2iiJZ923xtwdM-LU0HQCaPFnGfh8IwPBBxcUrgZUY6lSUnLBGtC5jUmC95uB6LBlNrqd2QuGKbHthwoWJRziV4=w2880 2x" media="(min-width: 1024px)" >
+
+
+      <source srcset="https://lh3.googleusercontent.com/s4zTSVfuezjkxLZmw3oBfmxuMG00A2iiJZ923xtwdM-LU0HQCaPFnGfh8IwPBBxcUrgZUY6lSUnLBGtC5jUmC95uB6LBlNrqd2QuGKbHthwoWJRziV4=w1024, https://lh3.googleusercontent.com/s4zTSVfuezjkxLZmw3oBfmxuMG00A2iiJZ923xtwdM-LU0HQCaPFnGfh8IwPBBxcUrgZUY6lSUnLBGtC5jUmC95uB6LBlNrqd2QuGKbHthwoWJRziV4=w2048 2x" media="(min-width: 600px)" >
+
+
+      <source srcset="https://lh3.googleusercontent.com/s4zTSVfuezjkxLZmw3oBfmxuMG00A2iiJZ923xtwdM-LU0HQCaPFnGfh8IwPBBxcUrgZUY6lSUnLBGtC5jUmC95uB6LBlNrqd2QuGKbHthwoWJRziV4=w600, https://lh3.googleusercontent.com/s4zTSVfuezjkxLZmw3oBfmxuMG00A2iiJZ923xtwdM-LU0HQCaPFnGfh8IwPBBxcUrgZUY6lSUnLBGtC5jUmC95uB6LBlNrqd2QuGKbHthwoWJRziV4=w1200 2x"  >
+    <!--[if IE 9]></video><![endif]-->
+
+    <img src="https://lh3.googleusercontent.com/s4zTSVfuezjkxLZmw3oBfmxuMG00A2iiJZ923xtwdM-LU0HQCaPFnGfh8IwPBBxcUrgZUY6lSUnLBGtC5jUmC95uB6LBlNrqd2QuGKbHthwoWJRziV4=w600" class="smalls-text-and-image__image"  aria-hidden="true">
+  </picture>
+      </div>
+    </div>
+  </div>
+</section>          </div>
+          <div class="smalls-page__slide" data-target-blank>
+<section class="smalls-page__module
+    smalls-page__module--white
+    smalls-text-and-image
+    smalls-text-and-image--image-bottom
+    _-kuzushiji21_smalls_frame3">
+  <div class="h-c-page">
+    <div class="h-c-grid">
+      <div class="h-c-grid__col h-c-grid__col--10 h-c-grid__col--offset-1 h-c-grid__col-l--6 h-c-grid__col-l--offset-0">
+        <div class="smalls-text-and-image__headline-1
+            smalls-page__headline
+            smalls-page__headline--small
+            smalls-page__headline--accent">
+          ÐÐ¸ÑÐµÑÐ°ÑÑÑÐ¾Ð²ÐµÐ´ Ð¢Ð°ÑÐ¸Ð½ ÐÐ»Ð°Ð½ÑÐ²Ð°Ñ Ð¾ÑÐ½Ð¾ÑÐ¸ÑÑÑ Ðº Ð½ÐµÐ¼Ð½Ð¾Ð³Ð¾ÑÐ¸ÑÐ»ÐµÐ½Ð½ÑÐ¼ Ð¿ÑÐµÐ´ÑÑÐ°Ð²Ð¸ÑÐµÐ»ÑÐ¼ Ð½Ð°ÑÑÐ½Ð¾Ð³Ð¾ Ð¼Ð¸ÑÐ°, ÑÐ¼ÐµÑÑÐ¸Ð¼ ÑÐ¸ÑÐ°ÑÑ ÐºÑÐ´Ð·ÑÑÐ¸Ð´Ð·Ð¸.
+        </div>
+      </div>
+
+      <div class="smalls-page__image-container h-c-grid__col h-c-grid__col--12 h-c-grid__col-l--6
+">
+  <picture  >
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+
+
+      <source srcset="https://lh3.googleusercontent.com/JBrWZfmXfnVp7IiOj28VePNP6wCgUVSgSeQxlvpt-BuQ49bd4lLeH1yKF8w8GXDMrrk-LlriycB0Y6m4gTM5C2xrSIfly2oaAvOHyL7vtLxIhbgpbVPr=w1440, https://lh3.googleusercontent.com/JBrWZfmXfnVp7IiOj28VePNP6wCgUVSgSeQxlvpt-BuQ49bd4lLeH1yKF8w8GXDMrrk-LlriycB0Y6m4gTM5C2xrSIfly2oaAvOHyL7vtLxIhbgpbVPr=w2880 2x" media="(min-width: 1024px)" >
+
+
+      <source srcset="https://lh3.googleusercontent.com/JBrWZfmXfnVp7IiOj28VePNP6wCgUVSgSeQxlvpt-BuQ49bd4lLeH1yKF8w8GXDMrrk-LlriycB0Y6m4gTM5C2xrSIfly2oaAvOHyL7vtLxIhbgpbVPr=w1024, https://lh3.googleusercontent.com/JBrWZfmXfnVp7IiOj28VePNP6wCgUVSgSeQxlvpt-BuQ49bd4lLeH1yKF8w8GXDMrrk-LlriycB0Y6m4gTM5C2xrSIfly2oaAvOHyL7vtLxIhbgpbVPr=w2048 2x" media="(min-width: 600px)" >
+
+
+      <source srcset="https://lh3.googleusercontent.com/JBrWZfmXfnVp7IiOj28VePNP6wCgUVSgSeQxlvpt-BuQ49bd4lLeH1yKF8w8GXDMrrk-LlriycB0Y6m4gTM5C2xrSIfly2oaAvOHyL7vtLxIhbgpbVPr=w600, https://lh3.googleusercontent.com/JBrWZfmXfnVp7IiOj28VePNP6wCgUVSgSeQxlvpt-BuQ49bd4lLeH1yKF8w8GXDMrrk-LlriycB0Y6m4gTM5C2xrSIfly2oaAvOHyL7vtLxIhbgpbVPr=w1200 2x"  >
+    <!--[if IE 9]></video><![endif]-->
+
+    <img src="https://lh3.googleusercontent.com/JBrWZfmXfnVp7IiOj28VePNP6wCgUVSgSeQxlvpt-BuQ49bd4lLeH1yKF8w8GXDMrrk-LlriycB0Y6m4gTM5C2xrSIfly2oaAvOHyL7vtLxIhbgpbVPr=w600" class="smalls-text-and-image__image"  aria-hidden="true">
+  </picture>
+      </div>
+    </div>
+  </div>
+</section>          </div>
+          <div class="smalls-page__slide" data-target-blank>
+<section class="smalls-page__module
+    smalls-page__module--white
+    smalls-text-and-image
+    smalls-text-and-image--image-top
+    _-kuzushiji21_smalls_frame4">
+  <div class="h-c-page">
+    <div class="h-c-grid">
+      <div class="h-c-grid__col h-c-grid__col--10 h-c-grid__col--offset-1 h-c-grid__col-l--6 h-c-grid__col-l--offset-0">
+        <div class="smalls-text-and-image__headline-1
+            smalls-page__headline
+            smalls-page__headline--small
+            smalls-page__headline--accent">
+          Ð¡ÑÐ¸Ð»Ñ ÐºÑÐ´Ð·ÑÑÐ¸Ð´Ð·Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°Ð»ÑÑ Ð¿ÑÐ¸ Ð½Ð°Ð¿Ð¸ÑÐ°Ð½Ð¸Ð¸ Ð¼Ð¸Ð»Ð»Ð¸Ð°ÑÐ´Ð¾Ð² Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÐ¾Ð². Ð§ÑÐ¾Ð±Ñ ÑÐ´ÐµÐ»Ð°ÑÑ Ð¸Ñ Ð¿Ð¾Ð½ÑÑÐ½ÑÐ¼Ð¸ Ð´Ð»Ñ ÑÐµÑ, ÐºÑÐ¾ Ð·Ð½Ð°ÐµÑ ÑÐ¾Ð²ÑÐµÐ¼ÐµÐ½Ð½ÑÐ¹ ÑÐ¿Ð¾Ð½ÑÐºÐ¸Ð¹ ÑÐ·ÑÐº, Ð¢Ð°ÑÐ¸Ð½ Ð¾ÑÐ²Ð¾Ð¸Ð»Ð° TensorFlow. Ð¢Ð°Ðº Ð½Ð°Ð·ÑÐ²Ð°ÐµÑÑÑ ÑÐ°Ð·ÑÐ°Ð±Ð¾ÑÐ°Ð½Ð½Ð°Ñ ÐºÐ¾Ð¼Ð¿Ð°Ð½Ð¸ÐµÐ¹ Google Ð¿Ð»Ð°ÑÑÐ¾ÑÐ¼Ð° Ð¼Ð°ÑÐ¸Ð½Ð½Ð¾Ð³Ð¾ Ð¾Ð±ÑÑÐµÐ½Ð¸Ñ Ñ Ð¾ÑÐºÑÑÑÑÐ¼ Ð¸ÑÑÐ¾Ð´Ð½ÑÐ¼ ÐºÐ¾Ð´Ð¾Ð¼.
+        </div>
+      </div>
+
+      <div class="smalls-page__image-container h-c-grid__col h-c-grid__col--12 h-c-grid__col-l--6
+ ambient-video"><video class="smalls__video-ambient-video"
+    loop
+    muted
+    playsinline
+    preload="auto">
+    <source src="https://kstatic.googleusercontent.com/files/4e8f0ddc5c4aee0a0dbff263fa22af90293220d335eda9d5f72f5dd982860631dd674ccc768a3a1c58ff637b219f1e6cc1bae590db6e231604fd4327a44ba596" type="video/mp4">
+      <source src="https://kstatic.googleusercontent.com/files/30eced6691b7de8ad66c57cc4e250b5f78a480e262fd89aef8ef4eb50529c15e55f99a52220df744731e5fbe12280c685cbaeb9c5b8420ab925db8658ef7d41a" type="video/webm">
+</video>      </div>
+    </div>
+  </div>
+</section>          </div>
+          <div class="smalls-page__slide" data-target-blank>
+<section class="smalls-page__module
+    smalls-page__module--white
+    smalls-text-and-image
+    smalls-text-and-image--image-bottom
+    _-kuzushiji21_smalls_frame5">
+  <div class="h-c-page">
+    <div class="h-c-grid">
+      <div class="h-c-grid__col h-c-grid__col--10 h-c-grid__col--offset-1 h-c-grid__col-l--6 h-c-grid__col-l--offset-0">
+        <div class="smalls-text-and-image__headline-1
+            smalls-page__headline
+            smalls-page__headline--small
+            smalls-page__headline--accent">
+          Ð­ÑÐ° Ð³Ð¸Ð±ÐºÐ°Ñ Ð¿Ð»Ð°ÑÑÐ¾ÑÐ¼Ð°, Ð´Ð¾ÑÑÑÐ¿Ð½Ð°Ñ Ð´Ð»Ñ Ð¸ÑÑÐ»ÐµÐ´Ð¾Ð²Ð°ÑÐµÐ»ÐµÐ¹ Ð¸Ð· ÑÐ°Ð·Ð½ÑÑ ÑÑÑÐ°Ð½, Ð¿Ð¾Ð¼Ð¾Ð¶ÐµÑ ÑÐ·Ð½Ð°ÑÑ Ð¼Ð½Ð¾Ð³Ð¾ Ð½Ð¾Ð²Ð¾Ð³Ð¾ Ð¾Ð± Ð¸ÑÑÐ¾ÑÐ¸Ð¸, Ð½Ð°ÑÐºÐµ Ð¸ ÐºÑÐ»ÑÑÑÑÐµ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸ Ð½Ð°ÑÐ¸Ð½Ð°Ñ Ñ VIII Ð²ÐµÐºÐ°.
+        </div>
+      </div>
+
+      <div class="smalls-page__image-container h-c-grid__col h-c-grid__col--12 h-c-grid__col-l--6
+">
+  <picture  >
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+
+
+      <source srcset="https://lh3.googleusercontent.com/szrrk0pcCsVqxmiJNaRtXaZeYwcVjstNq1E3jaKi8cGROheJabXkedCVgWsNasEusLBTp_dWXSBv7uh0gVFqS9Nz_AOQLimXOjeLWVKeRFHa70ZNjBM4=w1440, https://lh3.googleusercontent.com/szrrk0pcCsVqxmiJNaRtXaZeYwcVjstNq1E3jaKi8cGROheJabXkedCVgWsNasEusLBTp_dWXSBv7uh0gVFqS9Nz_AOQLimXOjeLWVKeRFHa70ZNjBM4=w2880 2x" media="(min-width: 1024px)" >
+
+
+      <source srcset="https://lh3.googleusercontent.com/szrrk0pcCsVqxmiJNaRtXaZeYwcVjstNq1E3jaKi8cGROheJabXkedCVgWsNasEusLBTp_dWXSBv7uh0gVFqS9Nz_AOQLimXOjeLWVKeRFHa70ZNjBM4=w1024, https://lh3.googleusercontent.com/szrrk0pcCsVqxmiJNaRtXaZeYwcVjstNq1E3jaKi8cGROheJabXkedCVgWsNasEusLBTp_dWXSBv7uh0gVFqS9Nz_AOQLimXOjeLWVKeRFHa70ZNjBM4=w2048 2x" media="(min-width: 600px)" >
+
+
+      <source srcset="https://lh3.googleusercontent.com/szrrk0pcCsVqxmiJNaRtXaZeYwcVjstNq1E3jaKi8cGROheJabXkedCVgWsNasEusLBTp_dWXSBv7uh0gVFqS9Nz_AOQLimXOjeLWVKeRFHa70ZNjBM4=w600, https://lh3.googleusercontent.com/szrrk0pcCsVqxmiJNaRtXaZeYwcVjstNq1E3jaKi8cGROheJabXkedCVgWsNasEusLBTp_dWXSBv7uh0gVFqS9Nz_AOQLimXOjeLWVKeRFHa70ZNjBM4=w1200 2x"  >
+    <!--[if IE 9]></video><![endif]-->
+
+    <img src="https://lh3.googleusercontent.com/szrrk0pcCsVqxmiJNaRtXaZeYwcVjstNq1E3jaKi8cGROheJabXkedCVgWsNasEusLBTp_dWXSBv7uh0gVFqS9Nz_AOQLimXOjeLWVKeRFHa70ZNjBM4=w600" class="smalls-text-and-image__image"  aria-hidden="true">
+  </picture>
+      </div>
+    </div>
+  </div>
+</section>          </div>
+          <div class="smalls-page__slide" data-target-blank>
+<section class="smalls-page__module
+    smalls-page__module--accent
+    smalls-text _-kuzushiji21_smalls_frame6">
+  <div class="h-c-page">
+    <div class="h-c-grid">
+      <div class="h-c-grid__col
+        h-c-grid__col--10
+        h-c-grid__col--offset-1
+        h-c-grid__col-l--8
+        h-c-grid__col-l--offset-2">
+        <div class="smalls-text__headline
+            smalls-page__headline
+            smalls-page__headline--large
+            smalls-page__headline--accent">
+          ÐÐ»Ð°Ð³Ð¾Ð´Ð°ÑÑ ÑÐµÑÐ½Ð¾Ð»Ð¾Ð³Ð¸ÑÐ¼ Ð¼Ð°ÑÐ¸Ð½Ð½Ð¾Ð³Ð¾ Ð¾Ð±ÑÑÐµÐ½Ð¸Ñ Ð¢Ð°ÑÐ¸Ð½ ÑÑÐ¼ÐµÐ»Ð° ÑÐ´ÐµÐ»Ð°ÑÑ ÑÑÐ¸Ð»Ñ Ð¿Ð¸ÑÑÐ¼Ð° ÐºÑÐ´Ð·ÑÑÐ¸Ð´Ð·Ð¸ Ð±Ð¾Ð»ÐµÐµ Ð¿Ð¾Ð½ÑÑÐ½ÑÐ¼ Ð´Ð»Ñ Ð½Ð°ÑÐ¸Ñ ÑÐ¾Ð²ÑÐµÐ¼ÐµÐ½Ð½Ð¸ÐºÐ¾Ð².
+        </div>        <div class="smalls-text__headline
+            smalls-page__headline
+            smalls-page__headline--large
+            smalls-page__headline--accent">
+            ð
+          </div>
+</div>
+    </div>
+  </div>
+</section>          </div>
+
+      <div class="smalls-page__slide">
+<section class="smalls-page__module smalls-footer">
+  <div class="h-c-page">
+    <div class="h-c-grid">
+      <div class="smalls-footer__share-wrapper
+          h-c-grid__col
+          h-c-grid__col--8
+          h-c-grid__col--offset-2">
+        <div class="smalls-footer__eyebrow">
+          ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ
+        </div>
+<div data-ng-controller="PersistentShareCtrl as persistentShareCtrl"
+    class="story__persistent-share-bar story__persistent-share-bar--static"
+>
+    <div class="story__persistent-share-bar">
+      <div class="persistent-share-bar__widget"
+          data-ng-class="{'touch-enabled': persistentShareCtrl.isTouchDevice}">
+        <ul class="persistent-share-bar__widget-icons">
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-email w-animate-opacity"
+                    target="_blank"
+                    href="mailto:?subject=ÐÑÑÐ»ÐµÐ´Ð¾Ð²Ð°ÑÐµÐ»ÑÐ½Ð¸ÑÐ° ÑÐ¿Ð¾Ð½ÑÐºÐ¾Ð¹ Ð»Ð¸ÑÐµÑÐ°ÑÑÑÑ Ð½Ð°ÑÑÐ¸Ð»Ð°ÑÑ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÑ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑÐ¸ Ð¸ÑÐºÑÑÑÑÐ²ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¸Ð½ÑÐµÐ»Ð»ÐµÐºÑÐ° TensorFlow Ð´Ð»Ñ ÑÐ°ÑÐ¿Ð¾Ð·Ð½Ð°Ð²Ð°Ð½Ð¸Ñ Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÐ¾Ð², Ð½Ð°Ð¿Ð¸ÑÐ°Ð½Ð½ÑÑ Ð² ÑÑÐ¸Ð»Ðµ ÐºÑÐ´Ð·ÑÑÐ¸Ð´Ð·Ð¸. Ð­ÑÐ¾ ÑÐµÑÐ½Ð¸ÑÐµÑÐºÐ¾Ðµ Ð´Ð¾ÑÑÐ¸Ð¶ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð¶ÐµÑ ÑÑÐ°ÑÑ Ð·Ð½Ð°ÑÐ¸ÑÐµÐ»ÑÐ½ÑÐ¼ ÑÐ°Ð³Ð¾Ð¼ Ð² Ð¸Ð·ÑÑÐµÐ½Ð¸Ð¸ ÐºÑÐ»ÑÑÑÑÑ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸.&amp;body=https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/%3Futm_source%3Dabout.google%26utm_medium%3Dsocial%26utm_campaign%3Demail-link"
+                  aria-label="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email</title>
+    <defs>
+      <path d="M14.9 0H2.1C1.22 0 .5.72.5 1.601v9.608c0 .88.72 1.601 1.6 1.601h12.8c.88 0 1.6-.72 1.6-1.6V1.6C16.5.721 15.78 0 14.9 0zm-.64 1.601L8.5 5.444 2.74 1.601h11.52zM2.1 11.21V3.1l6.4 4.267 6.4-4.267v8.11H2.1z" id="a"></path>
+    </defs>
+    <use fill="#df4b31" fill-rule="nonzero" transform="translate(7 9)" href="#a"></use>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email</title>
+    <defs>
+      <path d="M14.9 0H2.1C1.22 0 .5.72.5 1.601v9.608c0 .88.72 1.601 1.6 1.601h12.8c.88 0 1.6-.72 1.6-1.6V1.6C16.5.721 15.78 0 14.9 0zm-.64 1.601L8.5 5.444 2.74 1.601h11.52zM2.1 11.21V3.1l6.4 4.267 6.4-4.267v8.11H2.1z" id="b"></path>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#df4b31"></path>
+      <use fill="#fff" fill-rule="nonzero" transform="translate(7 9)" href="#b"></use>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-copy w-animate-opacity"
+                    href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+                    data-share-url="Ð¡ÑÑÐ»ÐºÐ° ÑÐºÐ¾Ð¿Ð¸ÑÐ¾Ð²Ð°Ð½Ð° Ð² Ð±ÑÑÐµÑ Ð¾Ð±Ð¼ÐµÐ½Ð°."
+                    data-is-persistent-share
+                  aria-label="ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°</title>
+    <defs>
+      <path d="M10.45 0v2h3.8c1.568 0 2.85 1.35 2.85 3s-1.282 3-2.85 3h-3.8v2h3.8C16.872 10 19 7.76 19 5s-2.128-5-4.75-5h-3.8zm-5.7 0C2.129 0 0 2.24 0 5s2.128 5 4.75 5h3.8V8h-3.8C3.184 8 1.9 6.65 1.9 5s1.283-3 2.85-3h3.8V0h-3.8zm.95 6h7.6V4H5.7v2z" id="c"></path>
+    </defs>
+    <use fill="#9aa0a6" fill-rule="evenodd" transform="translate(6 11)" href="#c"></use>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°</title>
+    <defs>
+      <path d="M16.45 11v2h3.8c1.568 0 2.85 1.35 2.85 3s-1.282 3-2.85 3h-3.8v2h3.8c2.622 0 4.75-2.24 4.75-5s-2.128-5-4.75-5h-3.8zm-5.7 0C8.129 11 6 13.24 6 16s2.128 5 4.75 5h3.8v-2h-3.8c-1.567 0-2.85-1.35-2.85-3s1.283-3 2.85-3h3.8v-2h-3.8zm.95 6h7.6v-2h-7.6v2z" id="d"></path>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#9aa0a6"></path>
+      <use fill="#fff" href="#d"></use>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-facebook w-animate-opacity"
+                    target="_blank"
+                    href="http://www.facebook.com/sharer.php?u=https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/%3Futm_source%3Dfacebook.com%26utm_medium%3Dsocial%26utm_campaign%3Dstory-share"
+                    data-share-content
+                  aria-label="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook</title>
+    <path d="M19 12.807h-2.384v-1.541c0-.579.39-.713.663-.713h1.683V8.009L16.645 8c-2.572 0-3.158 1.897-3.158 3.111v1.696H12v2.62h1.487v7.417h3.129v-7.416h2.111L19 12.807z" fill="#2e4d9e" fill-rule="nonzero"></path>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook</title>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#2e4d9e"></path>
+      <path d="M19 12.807h-2.384v-1.541c0-.579.39-.713.663-.713h1.683V8.009L16.645 8c-2.572 0-3.158 1.897-3.158 3.111v1.696H12v2.62h1.487v7.417h3.129v-7.416h2.111L19 12.807z" fill="#fff" fill-rule="nonzero"></path>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-linkedin w-animate-opacity"
+                    target="_blank"
+                    href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/%3Futm_source%3Dlinkedin.com%26utm_medium%3Dsocial%26utm_campaign%3Dstory-share"
+                    data-share-content
+                  aria-label="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn</title>
+    <g fill="#0073b2" fill-rule="evenodd">
+      <path d="M8.74 21.483h3.013v-9.674H8.74v9.674zM10.246 7c.963 0 1.745.781 1.745 1.743 0 .963-.782 1.744-1.745 1.744a1.744 1.744 0 1 1 0-3.487zM13.636 11.76h2.873v1.33h.041c.4-.765 1.379-1.57 2.837-1.57 3.035 0 3.596 2.012 3.596 4.63v5.333h-2.997v-4.728c0-1.128-.02-2.578-1.558-2.578-1.56 0-1.798 1.228-1.798 2.497v4.809h-2.994V11.76z"></path>
+    </g>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn</title>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#0073b2"></path>
+      <path d="M8.74 21.483h3.013v-9.674H8.74v9.674zM10.246 7c.963 0 1.745.781 1.745 1.743 0 .963-.782 1.744-1.745 1.744a1.744 1.744 0 1 1 0-3.487zM13.636 11.76h2.873v1.33h.041c.4-.765 1.379-1.57 2.837-1.57 3.035 0 3.596 2.012 3.596 4.63v5.333h-2.997v-4.728c0-1.128-.02-2.578-1.558-2.578-1.56 0-1.798 1.228-1.798 2.497v4.809h-2.994V11.76z" fill="#fff"></path>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-twitter w-animate-opacity"
+                    target="_blank"
+                    href="http://twitter.com/share?url=https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/%3Futm_source%3Dtwitter.com%26utm_medium%3Dsocial%26utm_campaign%3Dstory-share&amp;text=%D0%9A%D0%B0%D0%BA%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D0%B0-%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%20%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D0%B5%D1%82%20%D1%80%D0%B5%D1%88%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B3%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%BF%D1%80%D0%BE%D1%88%D0%BB%D0%BE%D0%B3%D0%BE%20%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D0%B8%2C%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8F%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%40Google"
+                    data-share-content
+                  aria-label="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter</title>
+    <path d="M23.736 10.483a6.516 6.516 0 0 1-1.824.495 3.172 3.172 0 0 0 1.397-1.739 6.61 6.61 0 0 1-2.02.756A3.181 3.181 0 0 0 18.97 9c-1.754 0-3.177 1.407-3.177 3.14 0 .249.029.488.082.717a9.034 9.034 0 0 1-6.55-3.273c-.275.461-.43.997-.43 1.58 0 1.092.563 2.052 1.414 2.616a3.195 3.195 0 0 1-1.44-.393v.039c0 1.522 1.094 2.792 2.55 3.082a3.261 3.261 0 0 1-1.43.054 3.184 3.184 0 0 0 2.974 2.182 6.42 6.42 0 0 1-3.94 1.344 6.82 6.82 0 0 1-.756-.043 9.114 9.114 0 0 0 4.88 1.41c5.847 0 9.04-4.786 9.04-8.93 0-.133 0-.268-.009-.402a6.377 6.377 0 0 0 1.589-1.627l-.03-.013z" fill="#569ed5" fill-rule="nonzero"></path>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter</title>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#569ed5"></path>
+      <path d="M23.736 10.483a6.516 6.516 0 0 1-1.824.495 3.172 3.172 0 0 0 1.397-1.739 6.61 6.61 0 0 1-2.02.756A3.181 3.181 0 0 0 18.97 9c-1.754 0-3.177 1.407-3.177 3.14 0 .249.029.488.082.717a9.034 9.034 0 0 1-6.55-3.273c-.275.461-.43.997-.43 1.58 0 1.092.563 2.052 1.414 2.616a3.195 3.195 0 0 1-1.44-.393v.039c0 1.522 1.094 2.792 2.55 3.082a3.261 3.261 0 0 1-1.43.054 3.184 3.184 0 0 0 2.974 2.182 6.42 6.42 0 0 1-3.94 1.344 6.82 6.82 0 0 1-.756-.043 9.114 9.114 0 0 0 4.88 1.41c5.847 0 9.04-4.786 9.04-8.93 0-.133 0-.268-.009-.402a6.377 6.377 0 0 0 1.589-1.627l-.03-.013z" fill="#fff" fill-rule="nonzero"></path>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</div>      </div>
+    </div>
+    <div class="h-c-grid">
+      <div class="h-c-grid__col
+          h-c-grid__col--8
+          h-c-grid__col--offset-2
+          h-c-grid__col-l--12
+          h-c-grid__col-l--offset-0">
+        <div class="smalls-footer__eyebrow">
+          ÐÑÑÐ³Ð¸Ðµ Ð¸ÑÑÐ¾ÑÐ¸Ð¸
+        </div>
+      </div>
+
+        <div class="h-c-grid__col
+            h-c-grid__col--8
+            h-c-grid__col--offset-2
+            h-c-grid__col-l--6
+            h-c-grid__col-l--offset-0
+            related-stories">
+          <a href="../../stories/save-the-bees/" class="smalls-footer__tile" target="_self">
+            <div class="smalls-footer__story-title" data-unite-orphan unite-child-orphans>
+              ÐÐ°Ðº Ð¼Ð°ÑÐ¸Ð½Ð½Ð¾Ðµ Ð¾Ð±ÑÑÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð¼Ð¾Ð³Ð°ÐµÑ ÑÐ¿Ð°ÑÐ°ÑÑ Ð¿ÑÐµÐ» Ð²Ð¾ Ð²ÑÐµÐ¼ Ð¼Ð¸ÑÐµ
+            </div>
+            <div class="smalls-footer__image">
+                <picture  >
+      <source srcset="https://lh3.googleusercontent.com/dTH5_J82_TqXaLW_Hzq1rbMVqfzRWG9PkcKgHdjXphAy9M4MZF5Q7_cQZeM1kbqEYMysrBLlY4szACDZwIbP7Jm17BnGNjT0Tht8Qw=w600-h400-n-l50-sg-rj
+,https://lh3.googleusercontent.com/dTH5_J82_TqXaLW_Hzq1rbMVqfzRWG9PkcKgHdjXphAy9M4MZF5Q7_cQZeM1kbqEYMysrBLlY4szACDZwIbP7Jm17BnGNjT0Tht8Qw=w1200-h800-n-l50-sg-rj 2x"
+          >
+    <img 
+        src="https://lh3.googleusercontent.com/dTH5_J82_TqXaLW_Hzq1rbMVqfzRWG9PkcKgHdjXphAy9M4MZF5Q7_cQZeM1kbqEYMysrBLlY4szACDZwIbP7Jm17BnGNjT0Tht8Qw=w600"
+        class=""
+        alt="ÐÐ°Ðº Ð¼Ð°ÑÐ¸Ð½Ð½Ð¾Ðµ Ð¾Ð±ÑÑÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð¼Ð¾Ð³Ð°ÐµÑ ÑÐ¿Ð°ÑÐ°ÑÑ Ð¿ÑÐµÐ» Ð²Ð¾ Ð²ÑÐµÐ¼ Ð¼Ð¸ÑÐµ">
+  </picture>
+
+            </div>
+            <div class="smalls-footer__time-label">
+              Ð§ÑÐµÐ½Ð¸Ðµ ÑÑÐ°ÑÑÐ¸ Ð·Ð°Ð¹Ð¼ÐµÑ Ð¾ÐºÐ¾Ð»Ð¾ 2Â Ð¼Ð¸Ð½.
+            </div>
+          </a>
+        </div>
+        <div class="h-c-grid__col
+            h-c-grid__col--8
+            h-c-grid__col--offset-2
+            h-c-grid__col-l--6
+            h-c-grid__col-l--offset-0
+            related-stories">
+          <a href="../../stories/weekendwanderers/" class="smalls-footer__tile" target="_self">
+            <div class="smalls-footer__story-title" data-unite-orphan unite-child-orphans>
+              ÐÐ°Ðº Google ÐÐ»Ð°Ð½ÐµÑÐ° ÐÐµÐ¼Ð»Ñ Ð¸ Ð¼ÐµÑÐ°Ð»Ð»Ð¾Ð¸ÑÐºÐ°ÑÐµÐ»Ñ Ð¿Ð¾Ð¼Ð¾Ð³Ð°ÑÑ ÑÐ½ÑÑÐ·Ð¸Ð°ÑÑÐ°Ð¼ Ð·Ð°Ð³Ð»ÑÐ½ÑÑÑ Ð² Ð¿ÑÐ¾ÑÐ»Ð¾Ðµ
+            </div>
+            <div class="smalls-footer__image">
+                <picture  >
+      <source srcset="https://lh3.googleusercontent.com/28Oz2dCnjBeY_6hY93Qs02ls0ahZ3dF6suAMxyBTASQLvq1IEOy7hd6-5E_bnSlhkWhtp2QuLX_6h4czXBqegZZPHMqCYe6690WJ=w600-h400-n-l50-sg-rj
+,https://lh3.googleusercontent.com/28Oz2dCnjBeY_6hY93Qs02ls0ahZ3dF6suAMxyBTASQLvq1IEOy7hd6-5E_bnSlhkWhtp2QuLX_6h4czXBqegZZPHMqCYe6690WJ=w1200-h800-n-l50-sg-rj 2x"
+          >
+    <img 
+        src="https://lh3.googleusercontent.com/28Oz2dCnjBeY_6hY93Qs02ls0ahZ3dF6suAMxyBTASQLvq1IEOy7hd6-5E_bnSlhkWhtp2QuLX_6h4czXBqegZZPHMqCYe6690WJ=w600"
+        class=""
+        alt="ÐÐ°Ðº Google ÐÐ»Ð°Ð½ÐµÑÐ° ÐÐµÐ¼Ð»Ñ Ð¸ Ð¼ÐµÑÐ°Ð»Ð»Ð¾Ð¸ÑÐºÐ°ÑÐµÐ»Ñ Ð¿Ð¾Ð¼Ð¾Ð³Ð°ÑÑ ÑÐ½ÑÑÐ·Ð¸Ð°ÑÑÐ°Ð¼ Ð·Ð°Ð³Ð»ÑÐ½ÑÑÑ Ð² Ð¿ÑÐ¾ÑÐ»Ð¾Ðµ">
+  </picture>
+
+            </div>
+            <div class="smalls-footer__time-label">
+              Ð§ÑÐµÐ½Ð¸Ðµ ÑÑÐ°ÑÑÐ¸ Ð·Ð°Ð¹Ð¼ÐµÑ Ð¾ÐºÐ¾Ð»Ð¾ 2Â Ð¼Ð¸Ð½.
+            </div>
+          </a>
+        </div>
+    </div>
+  </div>
+
+<footer class="footer">
+  <div class="main">
+    <div class="main-inner">
+      <section class="foot">
+        <div class="product-logo">
+          <a href="../../"
+              class="footer-link"
+              target="_self"
+              aria-label="Google"
+              data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="google logo"
+  data-g-label="footer"
+>
+                <svg alt="Google"  class="logo-svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 24">
+    <path fill="#4285F4" d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z"></path>
+    <path fill="#EA4335" d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+    <path fill="#4285F4" d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"></path>
+    <path fill="#FBBC05" d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+    <path fill="#34A853" d="M58 .24h2.51v17.57H58z"></path>
+    <path fill="#EA4335" d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"></path>
+  </svg>
+
+          </a>
+        </div>
+        <ul class="bottom-links">
+
+<li>
+  <a href="https://support.google.com?hl=ru"
+      class="footer-link"
+target="_blank"      data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="bottom footer - help"
+  data-g-label="footer"
+>
+        <svg alt=""  class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="#000">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+  </svg>
+
+Ð¡Ð¿ÑÐ°Ð²ÐºÐ°
+  </a>
+</li>
+<li>
+  <a href="https://www.google.com/policies/privacy/"
+      class="footer-link"
+target="_blank"      data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="bottom footer - privacy"
+  data-g-label="footer"
+>
+ÐÐ¾Ð½ÑÐ¸Ð´ÐµÐ½ÑÐ¸Ð°Ð»ÑÐ½Ð¾ÑÑÑ
+  </a>
+</li>
+<li>
+  <a href="https://www.google.com/policies/terms/"
+      class="footer-link"
+target="_blank"      data-g-nav-link
+  data-g-category="site navigation"
+  data-g-action="bottom footer - terms"
+  data-g-label="footer"
+>
+Ð£ÑÐ»Ð¾Ð²Ð¸Ñ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ
+  </a>
+</li>        </ul>
+        <hr class="border"/>
+      </section>
+    </div>
+  </div>
+</footer></section>      </div>
+    </div>
+
+<div data-ng-controller="PersistentShareCtrl as persistentShareCtrl"
+    class="story__persistent-share-bar"
+ng-show="persistentShareCtrl.show" ng-cloak>
+    <div class="story__persistent-share-bar">
+        <button class="share-button__mobile persistent-share-bar__widget"
+            data-ng-class="{'active': persistentShareCtrl.mobileOpen}">
+          ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ
+        </button>
+      <div class="persistent-share-bar__widget"
+          data-ng-class="{'touch-enabled': persistentShareCtrl.isTouchDevice}">
+        <ul class="persistent-share-bar__widget-icons">
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-email w-animate-opacity"
+                    target="_blank"
+                    href="mailto:?subject=ÐÑÑÐ»ÐµÐ´Ð¾Ð²Ð°ÑÐµÐ»ÑÐ½Ð¸ÑÐ° ÑÐ¿Ð¾Ð½ÑÐºÐ¾Ð¹ Ð»Ð¸ÑÐµÑÐ°ÑÑÑÑ Ð½Ð°ÑÑÐ¸Ð»Ð°ÑÑ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÑ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑÐ¸ Ð¸ÑÐºÑÑÑÑÐ²ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¸Ð½ÑÐµÐ»Ð»ÐµÐºÑÐ° TensorFlow Ð´Ð»Ñ ÑÐ°ÑÐ¿Ð¾Ð·Ð½Ð°Ð²Ð°Ð½Ð¸Ñ Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÐ¾Ð², Ð½Ð°Ð¿Ð¸ÑÐ°Ð½Ð½ÑÑ Ð² ÑÑÐ¸Ð»Ðµ ÐºÑÐ´Ð·ÑÑÐ¸Ð´Ð·Ð¸. Ð­ÑÐ¾ ÑÐµÑÐ½Ð¸ÑÐµÑÐºÐ¾Ðµ Ð´Ð¾ÑÑÐ¸Ð¶ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð¶ÐµÑ ÑÑÐ°ÑÑ Ð·Ð½Ð°ÑÐ¸ÑÐµÐ»ÑÐ½ÑÐ¼ ÑÐ°Ð³Ð¾Ð¼ Ð² Ð¸Ð·ÑÑÐµÐ½Ð¸Ð¸ ÐºÑÐ»ÑÑÑÑÑ Ð¯Ð¿Ð¾Ð½Ð¸Ð¸.&amp;body=https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/%3Futm_source%3Dabout.google%26utm_medium%3Dsocial%26utm_campaign%3Demail-link"
+                  aria-label="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email</title>
+    <defs>
+      <path d="M14.9 0H2.1C1.22 0 .5.72.5 1.601v9.608c0 .88.72 1.601 1.6 1.601h12.8c.88 0 1.6-.72 1.6-1.6V1.6C16.5.721 15.78 0 14.9 0zm-.64 1.601L8.5 5.444 2.74 1.601h11.52zM2.1 11.21V3.1l6.4 4.267 6.4-4.267v8.11H2.1z" id="a"></path>
+    </defs>
+    <use fill="#df4b31" fill-rule="nonzero" transform="translate(7 9)" href="#a"></use>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Email</title>
+    <defs>
+      <path d="M14.9 0H2.1C1.22 0 .5.72.5 1.601v9.608c0 .88.72 1.601 1.6 1.601h12.8c.88 0 1.6-.72 1.6-1.6V1.6C16.5.721 15.78 0 14.9 0zm-.64 1.601L8.5 5.444 2.74 1.601h11.52zM2.1 11.21V3.1l6.4 4.267 6.4-4.267v8.11H2.1z" id="b"></path>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#df4b31"></path>
+      <use fill="#fff" fill-rule="nonzero" transform="translate(7 9)" href="#b"></use>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-copy w-animate-opacity"
+                    href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+                    data-share-url="Ð¡ÑÑÐ»ÐºÐ° ÑÐºÐ¾Ð¿Ð¸ÑÐ¾Ð²Ð°Ð½Ð° Ð² Ð±ÑÑÐµÑ Ð¾Ð±Ð¼ÐµÐ½Ð°."
+                    data-is-persistent-share
+                  aria-label="ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°</title>
+    <defs>
+      <path d="M10.45 0v2h3.8c1.568 0 2.85 1.35 2.85 3s-1.282 3-2.85 3h-3.8v2h3.8C16.872 10 19 7.76 19 5s-2.128-5-4.75-5h-3.8zm-5.7 0C2.129 0 0 2.24 0 5s2.128 5 4.75 5h3.8V8h-3.8C3.184 8 1.9 6.65 1.9 5s1.283-3 2.85-3h3.8V0h-3.8zm.95 6h7.6V4H5.7v2z" id="c"></path>
+    </defs>
+    <use fill="#9aa0a6" fill-rule="evenodd" transform="translate(6 11)" href="#c"></use>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÑÑÐ»ÐºÑ Ð¾Ð±ÑÐµÐ³Ð¾ Ð´Ð¾ÑÑÑÐ¿Ð°</title>
+    <defs>
+      <path d="M16.45 11v2h3.8c1.568 0 2.85 1.35 2.85 3s-1.282 3-2.85 3h-3.8v2h3.8c2.622 0 4.75-2.24 4.75-5s-2.128-5-4.75-5h-3.8zm-5.7 0C8.129 11 6 13.24 6 16s2.128 5 4.75 5h3.8v-2h-3.8c-1.567 0-2.85-1.35-2.85-3s1.283-3 2.85-3h3.8v-2h-3.8zm.95 6h7.6v-2h-7.6v2z" id="d"></path>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#9aa0a6"></path>
+      <use fill="#fff" href="#d"></use>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-facebook w-animate-opacity"
+                    target="_blank"
+                    href="http://www.facebook.com/sharer.php?u=https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/%3Futm_source%3Dfacebook.com%26utm_medium%3Dsocial%26utm_campaign%3Dstory-share"
+                    data-share-content
+                  aria-label="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook</title>
+    <path d="M19 12.807h-2.384v-1.541c0-.579.39-.713.663-.713h1.683V8.009L16.645 8c-2.572 0-3.158 1.897-3.158 3.111v1.696H12v2.62h1.487v7.417h3.129v-7.416h2.111L19 12.807z" fill="#2e4d9e" fill-rule="nonzero"></path>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Facebook</title>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#2e4d9e"></path>
+      <path d="M19 12.807h-2.384v-1.541c0-.579.39-.713.663-.713h1.683V8.009L16.645 8c-2.572 0-3.158 1.897-3.158 3.111v1.696H12v2.62h1.487v7.417h3.129v-7.416h2.111L19 12.807z" fill="#fff" fill-rule="nonzero"></path>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-linkedin w-animate-opacity"
+                    target="_blank"
+                    href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/%3Futm_source%3Dlinkedin.com%26utm_medium%3Dsocial%26utm_campaign%3Dstory-share"
+                    data-share-content
+                  aria-label="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn</title>
+    <g fill="#0073b2" fill-rule="evenodd">
+      <path d="M8.74 21.483h3.013v-9.674H8.74v9.674zM10.246 7c.963 0 1.745.781 1.745 1.743 0 .963-.782 1.744-1.745 1.744a1.744 1.744 0 1 1 0-3.487zM13.636 11.76h2.873v1.33h.041c.4-.765 1.379-1.57 2.837-1.57 3.035 0 3.596 2.012 3.596 4.63v5.333h-2.997v-4.728c0-1.128-.02-2.578-1.558-2.578-1.56 0-1.798 1.228-1.798 2.497v4.809h-2.994V11.76z"></path>
+    </g>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - LinkedIn</title>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#0073b2"></path>
+      <path d="M8.74 21.483h3.013v-9.674H8.74v9.674zM10.246 7c.963 0 1.745.781 1.745 1.743 0 .963-.782 1.744-1.745 1.744a1.744 1.744 0 1 1 0-3.487zM13.636 11.76h2.873v1.33h.041c.4-.765 1.379-1.57 2.837-1.57 3.035 0 3.596 2.012 3.596 4.63v5.333h-2.997v-4.728c0-1.128-.02-2.578-1.558-2.578-1.56 0-1.798 1.228-1.798 2.497v4.809h-2.994V11.76z" fill="#fff"></path>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+            <li>
+              <p class="persistent-share-bar__widget-icon-placeholder"><!----></p>
+              <a class="persistent-share-bar__widget-icon-link persistent-share-bar__widget-icon-twitter w-animate-opacity"
+                    target="_blank"
+                    href="http://twitter.com/share?url=https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/%3Futm_source%3Dtwitter.com%26utm_medium%3Dsocial%26utm_campaign%3Dstory-share&amp;text=%D0%9A%D0%B0%D0%BA%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D0%B0-%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%20%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D0%B5%D1%82%20%D1%80%D0%B5%D1%88%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B3%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%BF%D1%80%D0%BE%D1%88%D0%BB%D0%BE%D0%B3%D0%BE%20%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D0%B8%2C%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8F%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%40Google"
+                    data-share-content
+                  aria-label="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter"
+                  
+      data-g-category="persistent-share-bar-widget"
+      data-g-action="persistent-share-bar-click"
+      data-g-label="smalls-persistent-share"
+        data-g-name="smalls-persistent-share"
+        data-g-href="https://about.google/intl/ALL_ru/stories/tensorflow-ai-japanese-culture/"
+>
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter</title>
+    <path d="M23.736 10.483a6.516 6.516 0 0 1-1.824.495 3.172 3.172 0 0 0 1.397-1.739 6.61 6.61 0 0 1-2.02.756A3.181 3.181 0 0 0 18.97 9c-1.754 0-3.177 1.407-3.177 3.14 0 .249.029.488.082.717a9.034 9.034 0 0 1-6.55-3.273c-.275.461-.43.997-.43 1.58 0 1.092.563 2.052 1.414 2.616a3.195 3.195 0 0 1-1.44-.393v.039c0 1.522 1.094 2.792 2.55 3.082a3.261 3.261 0 0 1-1.43.054 3.184 3.184 0 0 0 2.974 2.182 6.42 6.42 0 0 1-3.94 1.344 6.82 6.82 0 0 1-.756-.043 9.114 9.114 0 0 0 4.88 1.41c5.847 0 9.04-4.786 9.04-8.93 0-.133 0-.268-.009-.402a6.377 6.377 0 0 0 1.589-1.627l-.03-.013z" fill="#569ed5" fill-rule="nonzero"></path>
+  </svg>
+
+                  <svg alt="ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter" class="persistent-share-bar__widget-icon" height="31px" viewBox="0 0 31 31" width="31px">
+    <title>ÐÐ¾Ð´ÐµÐ»Ð¸ÑÑÑÑ - Twitter</title>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M31 15.5C31 24.06 24.06 31 15.5 31 6.94 31 0 24.06 0 15.5 0 6.94 6.94 0 15.5 0 24.06 0 31 6.94 31 15.5" fill="#569ed5"></path>
+      <path d="M23.736 10.483a6.516 6.516 0 0 1-1.824.495 3.172 3.172 0 0 0 1.397-1.739 6.61 6.61 0 0 1-2.02.756A3.181 3.181 0 0 0 18.97 9c-1.754 0-3.177 1.407-3.177 3.14 0 .249.029.488.082.717a9.034 9.034 0 0 1-6.55-3.273c-.275.461-.43.997-.43 1.58 0 1.092.563 2.052 1.414 2.616a3.195 3.195 0 0 1-1.44-.393v.039c0 1.522 1.094 2.792 2.55 3.082a3.261 3.261 0 0 1-1.43.054 3.184 3.184 0 0 0 2.974 2.182 6.42 6.42 0 0 1-3.94 1.344 6.82 6.82 0 0 1-.756-.043 9.114 9.114 0 0 0 4.88 1.41c5.847 0 9.04-4.786 9.04-8.93 0-.133 0-.268-.009-.402a6.377 6.377 0 0 0 1.589-1.627l-.03-.013z" fill="#fff" fill-rule="nonzero"></path>
+    </g>
+  </svg>
+
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</div>
+    <div class="smalls-page__counter-container">
+      <div class="h-c-page">
+        <span ng-cloak class="smalls-page__counter" ng-if="slideCounterCtrl.showCounter">
+          {[slideCounterCtrl.currentSlide + 1]} / {[slideCounterCtrl.slideCount]}
+        </span>
+      </div>
+    </div>
+  </div>
+        </main>
+
+
+
+      <script nonce="kbkzNLjXRd2LOFWrtiB_IQ">window.optimizeWhitelist = [];
+          window.optimizeTestModules = [];
+      </script>
+
+      <!--[if gt IE 8]><!-->
+        <script src="//www.gstatic.com/external_hosted/picturefill/picturefill.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-touch.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-sanitize.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//www.gstatic.com/external_hosted/ng_ui_router/release/angular-ui-router.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//www.gstatic.com/external_hosted/gsap/v1_18_0/TweenMax.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//www.gstatic.com/external_hosted/gsap/v1_18_0/plugins/ScrollToPlugin.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//www.gstatic.com/external_hosted/scrollmagic/ScrollMagic.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//www.gstatic.com/external_hosted/scrollmagic/animation.gsap.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//www.gstatic.com/external_hosted/intersectionobserver_polyfill/intersection-observer.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//www.gstatic.com/external_hosted/pixi/pixi.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//www.google.com/jsapi" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="//www.gstatic.com/feedback/js/help/prod/service/lazy.min.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="/assets-smalls/js/main.min.js?cache=59415ed" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script src="/assets-smalls/js/detect.min.js?cache=c84f19a" nonce="kbkzNLjXRd2LOFWrtiB_IQ"></script>
+        <script
+            data-autoload-cookie-consent-bar="true"
+            data-autoload-cookie-consent-bar-intl-code=""
+            src="https://www.gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar.v3.js" nonce="kbkzNLjXRd2LOFWrtiB_IQ">
+        </script>
+      <!--<![endif]-->
+  </body>
+</html>
