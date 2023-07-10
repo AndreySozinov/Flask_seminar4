@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<!--
+        _______________________________________________________________________________________
+   MMM/   ____ ____    _    ____ _  _ ____    ____ _  _ ___     ___ _  _ ____ _  _ _  _ ____    \MMM
+   MM|    [__  |  |    |    |  | |\ | | __    |__| |\ | |  \     |  |__| |__| |\ | |_/  [__      |MM
+   MM|    ___] |__|    |___ |__| | \| |__]    |  | | \| |__/     |  |  | |  | | \| | \_ ___]     |MM
+   MM|                                                                                           |MM
+   MM|   ____ ____ ____    ____ _    _       ___ _  _ ____    ____ ____ ____ ____ _ ____ ____    |MM
+   MM|   |___ |  | |__/    |__| |    |        |  |__| |___    [__  |__| [__  [__  | |___ [__     |MM
+   MM|   |    |__| |  \    |  | |___ |___     |  |  | |___    ___] |  | ___] ___] | |___ ___]    |MM
+   MMM\ ____       ____________________________________________________________________________ /MMM
+   MMMMMMMMM\     |MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMM\     \MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNWMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMM`     `MMMMMMMMMMMMMMMMMMMMMMMMWNWMMMMMMMMMMMMMMMMMMMMW0oc:oXMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMM`     `MMMMMMMMMMMMMMMMMMMMMWx;coxKNNXNMMMMMMMMMMMWKo;,co;:KMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMM`  __` >MMMMW0k0NMMMMMMM0oc;,,,:c;,:xXMMMMMMMMWk;,,:xkd::0MMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMXo'.'cOWMWNXKl.:ooc;:c,.'';llllllloc',,';cddo;:KMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMNl..,,''clll:'',,,':oollcccllllllcclcc:;:,':lll,;d0WMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMNd..',;cc,:looc:,..,lxxxxxddddddddoodddddodo:,cl'..,0MMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMWk'':loooddddddxdlloxxxxxxxxxxxdddddxddddxkxdclo;'.cXMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMO,:dooddddddxxxxxxxxxxxxxxxxxxxkkkkxddxdddxkkxdoo,cNMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMk':ddddddxxxxxxxxxxxxxxxxxxxkOxoclk0kdxxxdddkOkdc.;KMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMx':dddddxxxxxxdl;,:oxxxxxxkOx:,'.;k0OddxxxxddxOOx:'dWMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMk';xkxxxxddxxl,',,'':xkxxxOO:..':x00kdxxxxxxddxOOkl,dNMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMM0,:xxdxkOkxdc'',;;;,.:dxxxk0xolx00OxxxxxxxxxxddxOOOl,dWMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMNc',...'lOOl..'..''..;dxkxxkkOOOkxxxxxxxxxxxdxddkOOOc,kMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMx':c:;;:xko;...'''.'okkkkkxxxxxxxkxxxxxxxxxkOOkkOOOk;;KMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMK;,dkkxxxdxxl;.....lxkkkkkkkkkkkkkxkdoxxxxkOOOOOOOOOd'lNMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMWd.:xxxxxxxxxxo:''cxkkkkkkkkkkkxkkdl:cdxkO0OOOOOOOOOO:,OMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMK;.cdxxxxxxkkdccollxkkkkkkkkkxol::cdkOOOOOOOOOOOOOOOd'oWMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMWx',codxxxkkkxl:ccoxkkkkkkdl:::ldkO0000O0OOOOOOOOOOOk;;KMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMXc.;:clodxxkkkxxxkkxxdlc::cokO000000OkkxxxxxxxxkOOOOc,kMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO,':::::cllllccccllllloxO000OO00OkxxxxxxxxxxxddxkOOo'dWMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl.,::;,,,;:clodkkOOOOOkkkkkxxkkxxxkkkkxxxxxxxxxdxOd'cNMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk..',:codxkkkkkkxxxxxxxxkkkxxddxkkkkkxkkxxxxxxxxdxd,;XMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMWXkoc:coxkkkxxxxxxkkkkkkkkkkkkxxolxkkkkkkkkkxxxxxxxxxdo;;0MMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMNOl::ldxxxxxxkkkkkkkkkkkkkkkkkkxdlcokkkkkkkkkkxxxxxxxxxdo;,OMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMNkc;cdxxxxkkkxkkkkkkkkkkkkkkkkkkdl:cdkkkkkkkkkkkxxxxxxxxxxxc,OMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMWOc;ldxdxxxkkkxkkkkkkkkkkkkkkkkkko::lxkkkkkkkkkkkkxxxxxxxxxxxc,kMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMXo;cddxxxxxxkkkkkkkkkkkkkkkkkkkkko;:okkkkkkkkkkkkkkkxxxxxxxxxxc'xMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMWO:;odxxxxxxxxkkkkkkkkkkkkkkkkkkkkl;cdkkkkkkkkkkkkkkkkxxxxxxxxxxc'xMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMWk,;odxxxxxxxxkkkkkkkkkkkkkkkkkkkko:lxkkkkkkkkkkkkkkkkxxxxxxxxxxd,.kMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMWO,;odxxxxxxxxxxkkkkkkkkkkkkkkkkkkd:lxkkkkkkkkkkkkkkkkkxxxxxxxxxxl.'OMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMK;'odxxxxxxxxxxxkkkkkkkkkkkkkkkkkdclxkkkkkkkkkkkkkkkkkxxxxxxxxxxo:.;KMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMWo.;dxxxxxxxxxxxxkkkkkkkkkkkkkkkxdllxkkkkkkkkkkkkkkkkkkxxxxxxxxxdc'.lNMMMMMMMMMMMM
+   MMMMMMMMMMMMMMM0,.cdxxxxxxxxxxxxkkkkkkkkkkkkkkko:lxkkkkkkkkkkkkkkkkkkxxxxxxxxxdc;..xMMMMMMMMMMMMM
+   MMMMMMMMMMMWXK0l.'cdxxxxxxxxxxxxxxkkkkkkkkkkkkxlcdkkkkkkkkkkkkkkkkkxxxxxxxxxxdc;;.;KMMMMMMMMMMMMM
+   MMMMMMMMMXk:.....;:oxxxxxxxxxxxxxxkkkkkkkkkkkkddxxkkkkkkkkkkkkkkkkxxxxxxxxxxdc;;'.xWMMMMMMMMMMMMM
+   MMMMMMMMWd..,:,.';:lxxxxxxxxxxxxxxxxkkkkkkkkkkdxkkkkkkkkkkkkkkkkxxxxxxxxxxxdc;;,..;OWMMMMMMMMMMMM
+   MMMMMMMMWo'lkx:.,;;cdxxxxxxxxxxxxxxxxxxkkkkkkkxxkkkkkkkkkkkkxxxxxxxxxxxxxxo:;:;... '0MMMMMMMMMMMM
+   MMMMMMMMWd,od:..,;;;cdxxxxxxxxxxxxxxxxxxxxxxkxxkkkkkkkkxxxxxxxxxxxxxxxxxdl:;:;'.:c..dMMMMMMMMMMMM
+   MMMMMMMMMO,:l;..';;;;coxxxxxxxxxxxxxxxxxxxxxxxxxkxxxxxxxxxxxxxxxxxxxxxdl:;;::'.,dl.;KMMMMMMMMMMMM
+   MMMMMMMMMWx;,;;..;;;;;:codxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdlc:;;::'.,cc',OMMMMMMMMMMMMM
+   MMMMMMMMMMMXxc;...,;;;;;;clodxxxxxxxxxxxxxxxxdooxxxxxxxxxxxxxxxxxdoc:;;::;,...'',l0WMMMMMMMMMMMMM
+   MMMMMMMMMMMMMWX0xolc;,',,;;::cllodddddddollloocccoxxxxxxxxxxddolc:::::;,...,:cdOXWMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMWX0xoc:;,'''',;::::;;:cccclollc::cllllllcc::;;;,,,;:ldOKNWMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMWNX0kxolc:;,'..;lddxxddl:;'.',,''''''',;:cox0XWMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNK0o,.,,;,,,,,;:clllllodxkO0KXWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkdooodkOXWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+-->
+<head>
+  <meta charset="utf-8">
+  <title>Hire by Google - Farewell</title>
+  <meta name="description" content="Hire by Google is no longer available. Hire by Google was sunset on September 1, 2020. We are deeply grateful to our customers who have joined and supported us along the way.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Hire by Google - Farewell">
+  <meta property="og:description" content="Hire by Google is no longer available. Hire by Google was sunset on September 1, 2020. We are deeply grateful to our customers who have joined and supported us along the way.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hire.google.com/">
+  <meta property="og:image" content="https://hire.google.com/images/hire_logo_og_image.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans:400" rel="stylesheet" nonce="n77xrnwh8A5G5TAenDyEwA">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" nonce="n77xrnwh8A5G5TAenDyEwA">
+
+  <link rel="stylesheet" href="/css/style.css" nonce="n77xrnwh8A5G5TAenDyEwA">
+</head>
+<body>
+  <header class="header">
+    <img class="header-image" src="/images/hire_logo_text.svg" alt="">
+  </header>
+
+  <main class="content">
+    <section class="announcement">
+      <img class="announcement-image" src="/images/hire_logo.svg" alt="">
+      <h1 class="announcement-title">Hire by Google is no longer available</h1>
+      <p class="announcement-description">
+        Hire by Google was sunset on September 1, 2020. We are deeply grateful to our customers who have joined and supported us along the way.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <a class="footer-link" href="https://www.google.com/" target="_blank">
+        <img class="footer-logo-image" src="/images/google_logo.svg" alt="">
+      </a>
+    </div>
+    <div class="footer-items">
+      <div class="footer-item">
+        <a class="footer-link" href="https://www.google.com/policies/privacy/" target="_blank">
+        Privacy
+        </a>
+      </div>
+      <div class="footer-item">
+        <a class="footer-link" href="https://www.google.com/policies/terms/" target="_blank">
+        Terms
+        </a>
+      </div>
+      <div class="footer-item">
+        <a class="footer-link" href="https://www.google.com/about/" target="_blank">
+        About Google
+        </a>
+      </div>
+      <div class="footer-item">
+        <a class="footer-link" href="https://www.google.com/about/products" target="_blank">
+        Google Products
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,918 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head data-admin="false" data-brand="content_brand" data-focus="333" data-content-role="355" data-status="200" data-nid="15921">
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"6ead9fff98",applicationID:"201767135"};;/*! For license information please see nr-loader-rum-1.236.0.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={5763:(e,t,n)=>{n.d(t,{P_:()=>f,Mt:()=>p,C5:()=>s,DL:()=>m,OP:()=>_,lF:()=>E,Yu:()=>y,Dg:()=>g,CX:()=>c,GE:()=>b,sU:()=>j});var r=n(8632),i=n(9567);const o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,r.Qy)(e,a[e],"info")}var d=n(7056);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},harvest:{tooManyRequestsDelay:60},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,u()),(0,r.Qy)(e,l[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var n=f(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const h={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function m(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,h),(0,r.Qy)(e,v[e],"loader_config")}const y=(0,r.mF)().o;var w=n(385),A=n(6818);const x={buildEnv:A.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:A.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:A.q4},D={};function _(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function j(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,x),(0,r.Qy)(e,D[e],"runtime")}function E(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(n).length?e:n;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?n[a]=i(e[a],t[a]):n[a]=e[a]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>o,q4:()=>r});const r="1.236.0",i="PROD",o="CDN"},385:(e,t,n)=>{n.d(t,{FN:()=>a,IF:()=>d,Nk:()=>l,Tt:()=>s,_A:()=>o,il:()=>r,pL:()=>c,v6:()=>i,w1:()=>u});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=""+o?.location,s=/iPad|iPhone|iPod/.test(navigator.userAgent),c=s&&"undefined"==typeof SharedWorker,d=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),u=Boolean(r&&window.document.documentMode),l=!!navigator.sendBeacon},1117:(e,t,n)=>{n.d(t,{w:()=>o});var r=n(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(2177),i=n(1284),o=n(4322),a=n(3325);const s={};function c(e,t){const n={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const n=[...s[e]];function a(t){const n=e?r.ee.get(e):r.ee,a=o.X.handlers;if(n.backlog&&a){var s=n.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete a[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],o=e[3],a=e[2];i.apply(o,a)}}))}},2177:(e,t,n)=>{n.d(t,{ee:()=>d});var r=n(8632),i=n(2210),o=n(1284),a=n(5763),s="nr@context";let c=(0,r.fP)();var d;function u(){}function l(){return new u}function f(){d.aborted=!0,d.backlog={}}c.ee?d=c.ee:(d=function e(t,n){var r={},c={},g={},p=!1;try{p=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var h={on:b,addEventListener:b,removeEventListener:y,emit:m,get:A,listeners:w,context:v,buffer:x,abort:f,aborted:!1,isBuffering:D,debugId:n,backlog:p?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function v(e){return e&&e instanceof u?e:e?(0,i.X)(e,s,l):l()}function m(e,n,r,i,o){if(!1!==o&&(o=!0),!d.aborted||i){t&&o&&t.emit(e,n,r);for(var a=v(r),s=w(e),u=s.length,l=0;l<u;l++)s[l].apply(a,n);var f=_()[c[e]];return f&&f.push([h,e,n,a]),a}}function b(e,t){r[e]=w(e).concat(t)}function y(e,t){var n=r[e];if(n)for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)}function w(e){return r[e]||[]}function A(t){return g[t]=g[t]||e(h,t)}function x(e,t){var n=_();h.aborted||(0,o.D)(e,(function(e,r){t=t||"feature",c[r]=t,t in n||(n[t]=[])}))}function D(e){return!!_()[c[e]]}function _(){return h.backlog}}(void 0,"globalEE"),c.ee=d)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(2177).ee.get("handle");function i(e,t,n,i,o){o?(o.buffer([e],i),o.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>o});var r=n(5546);o.on=a;var i=o.handlers={};function o(e,t,n,o){a(o||r.E,i,e,t,n)}function a(e,t,n,i,o){o||(o="feature"),e||(e=r.E);var a=t[o]=t[o]||{};(a[n]=a[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var r=n(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(n,r))}},4402:(e,t,n)=>{n.d(t,{Rl:()=>a,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++n).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(n,++i).toString(16));return a.join("")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>o,oD:()=>i});const r="NRBA",i=144e5,o=18e5},7894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(2177),i=n(5546),o=n(8e3),a=n(3325);const s={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]};function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(Object.entries(e).forEach((e=>{let[t,r]=e;void 0===d[t]&&(s[t]?s[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r))})),Object.keys(s).forEach((e=>{void 0===d[e]&&(s[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),(0,o.L)(t,a.D.pageViewEvent))}const d={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>o});var r=n(2177);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>a,b:()=>o});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,r.bP)("load",e,t)}function a(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>u,mF:()=>s});var r=n(7894),i=n(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[n]:t}},i}function d(e,t){a()[e]=t}function u(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>o,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>a});const r=n(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{n.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>r});const r=n(3325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>o});var r=n(5763),i=n(2177);class o{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},9144:(e,t,n)=>{n.d(t,{j:()=>v});var r=n(3325),i=n(5763),o=n(5546),a=n(2177),s=n(7894),c=n(8e3),d=n(3960),u=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...r))})),o.length>1?o:o[0]}(t,...r)}}))}var h=n(2587);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:v},exposed:x=!0}=t;const D=(0,g.gG)();y||(b=D.init,y=D.info,w=D.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),(0,i.sU)(e,A),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y),p();const _=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,o){const a=(0,i.C5)(e);return null===n?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:n}}),A(v,r,!0,o||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>g[e]=A(v,e,!0,"api"))),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,a="function"==typeof t;return(0,o.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],n),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(439).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>x()),!0):x(),g}(e,m);return(0,g.Qy)(e,_,"api"),(0,g.Qy)(e,x,"exposed"),(0,g.EZ)("activatedFeatures",h.T),_}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var o=r[e]={exports:{}};return n[e](o,o.exports,i),o.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",242:"session-manager",317:"jserrors-aggregate",348:"page_view_timing-aggregate",412:"lazy-feature-loader",439:"async-api",538:"recorder",590:"session_replay-aggregate",675:"compressor",733:"session_trace-aggregate",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"ac76d497",147:"3dc53903",148:"1a20d5fe",242:"2a64278a",317:"49e41428",348:"bd6de33a",412:"2f55ce66",439:"30bd804e",538:"1b18459f",590:"cf0efb30",675:"ae9f91a8",733:"83105561",786:"06482edd",860:"03a8b7a5",873:"e6b09d52",898:"998ef92b"}[e]+"-1.236.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(n,r,o,a)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.j=6,i.p="https://js-agent.newrelic.com/",(()=>{var e={6:0,352:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,o,[a,s,c]=n,d=0;if(a.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},n=window.webpackChunkNRBA=window.webpackChunkNRBA||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})();var o={};(()=>{i.r(o);var e=i(3325),t=i(5763);const n=Object.values(e.D);function r(e){const r={};return n.forEach((n=>{r[n]=function(e,n){return!1!==(0,t.Mt)(n,"".concat(e,".enabled"))}(n,e)})),r}var a=i(9144);var s=i(5546),c=i(385),d=i(8e3),u=i(5938),l=i(3960),f=i(50);class g extends u.W{constructor(e,t,n){let r=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=r,this.abortHandler,this.featAggregate,this.onAggregateImported,r&&(0,d.R)(e,n)}importAggregator(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;const n=c.il&&!0===(0,t.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let r;this.onAggregateImported=new Promise((e=>{r=e}));const o=async()=>{let t;try{if(n){const{setupAgentSession:e}=await Promise.all([i.e(860),i.e(242)]).then(i.bind(i,3228));t=e(this.agentIdentifier)}}catch(e){(0,f.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",e)}try{if(!this.shouldImportAgg(this.featureName,t))return void(0,d.L)(this.agentIdentifier,this.featureName);const{lazyFeatureLoader:n}=await i.e(412).then(i.bind(i,8582)),{Aggregate:o}=await n(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,e),r(!0)}catch(e){(0,f.Z)("Downloading and initializing ".concat(this.featureName," failed..."),e),this.abortHandler?.(),r(!1)}};c.il?(0,l.b)((()=>o()),!0):o()}shouldImportAgg(n,r){return n!==e.D.sessionReplay||!1!==(0,t.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!r?.isNew||!!r?.state.sessionReplay)}}var p=i(7633),h=i(7894);class v extends g{static featureName=p.t9;constructor(n,r){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(n,r,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||c.Tt)&&"undefined"!=typeof PerformanceTiming){const r=(0,t.OP)(n);r[p.Dz]=Math.max(Date.now()-r.offset,0),(0,l.K)((()=>r[p.qw]=Math.max((0,h.z)()-r[p.Dz],0))),(0,l.b)((()=>{const t=(0,h.z)();r[p.OJ]=Math.max(t-r[p.Dz],0),(0,s.p)("timing",["load",t],void 0,e.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var m=i(1117),b=i(1284);class y extends m.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var o=this.getBucket(e,t,n,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,b.D)(e,(function(e,n){t[e]=w(n,t[e])})),t}(r,o.metrics),o}merge(e,t,n,r,i){var o=this.getBucket(e,t,r,i);if(o.metrics){var a=o.metrics;a.count+=n.count,(0,b.D)(n,(function(e,t){if("count"!==e){var r=a[e],i=n[e];i&&!i.c?a[e]=w(i.t,r):a[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=w(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=x(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function x(e){return"object"!=typeof e?[]:(0,b.D)(e,D)}function D(e,t){return t}var _=i(8632),j=i(4402),E=i(4351);var k=i(7956),T=i(3239),I=i(9251);class N extends g{static featureName=I.t;constructor(e,n){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,n,I.t,r),c.il&&((0,t.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,k.N)((()=>(0,s.p)("docHidden",[(0,h.z)()],void 0,I.t,this.ee)),!0),(0,T.bP)("pagehide",(()=>(0,s.p)("winPagehide",[(0,h.z)()],void 0,I.t,this.ee))),this.importAggregator())}}var P=i(3081);class S extends g{static featureName=P.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t9,n),this.importAggregator()}}new class{constructor(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,j.ky)(16);c._A?(this.agentIdentifier=t,this.sharedAggregator=new y({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(v),Object.assign(this,(0,a.j)(this.agentIdentifier,e,e.loaderType||"agent")),this.start()):(0,f.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){const t="features";try{const n=r(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((t,n)=>e.p[t.featureName]-e.p[n.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===e.D.pageViewEvent){const r=function(t){switch(t){case e.D.ajax:return[e.D.jserrors];case e.D.sessionTrace:return[e.D.ajax,e.D.pageViewEvent];case e.D.sessionReplay:return[e.D.sessionTrace];case e.D.pageViewTiming:return[e.D.pageViewEvent];default:return[]}}(t.featureName);r.every((e=>n[e]))||(0,f.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(r),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(e){(0,f.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",e);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,_.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}}({features:[v,N,S],loaderType:"lite"})})(),window.NRBA=o})();</script>
+<link rel="canonical" href="https://www.edf.org/airqualitymaps" />
+<link rel="image_src" href="https://www.edf.org/sites/default/files/styles/share_1200_630_focal_point/public/2020-08/Houston_Unsplash_Full_Size.jpg?h=ec041e41&amp;itok=w_KXU4Jl" />
+<meta name="description" content="Our work with Google in Oakland and Houston uses new sensor technology that enables cities and residents to pinpoint air pollution with precision." />
+<meta property="og:site_name" content="Environmental Defense Fund" />
+<meta property="og:type" content="Article" />
+<meta property="og:url" content="https://www.edf.org/airqualitymaps" />
+<meta property="og:title" content="Why new technology is critical for tackling air pollution around the globe" />
+<meta property="og:description" content="Our work with Google in Oakland and Houston uses new sensor technology that enables cities and residents to pinpoint air pollution with precision." />
+<meta property="og:image" content="https://www.edf.org/sites/default/files/styles/share_1200_630_focal_point/public/2020-08/Houston_Unsplash_Full_Size.jpg?h=ec041e41&amp;itok=w_KXU4Jl" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Houston, Texas cityscape" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="EDF and Google Earth Outreach convened a mobile measurement team to assess air pollution at a level of detail that was nearly impossible before." />
+<meta name="twitter:site" content="@EnvDefenseFund" />
+<meta name="twitter:title" content="Mapping air pollution with new mobile sensors" />
+<meta name="twitter:site:id" content="20068053" />
+<meta name="twitter:creator" content="@EnvDefenseFund" />
+<meta name="twitter:creator:id" content="20068053" />
+<meta name="twitter:url" content="https://www.edf.org/airqualitymaps" />
+<meta name="twitter:image:alt" content="Houston, Texas cityscape" />
+<meta name="twitter:image:height" content="630" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image" content="https://d35frdwcqpifcr.cloudfront.net/sites/default/files/facebook_thumb/Houston_Unsplash_Full_Size.jpg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/sites/default/files/favicons/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/sites/default/files/favicons/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/sites/default/files/favicons/favicon-16x16.png"/>
+<link rel="manifest" href="/sites/default/files/favicons/site.webmanifest" crossorigin="use-credentials"/>
+<link rel="mask-icon" href="/sites/default/files/favicons/safari-pinned-tab.svg" color="#1232c4"/>
+<meta name="msapplication-TileColor" content="#1232c4"/>
+<meta name="theme-color" content="#ffffff"/>
+<meta name="favicon-generator" content="Drupal responsive_favicons + realfavicongenerator.net" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+		<meta property="og:image" content="https://www.edf.org/sites/default/files/facebook_thumb/Houston_Unsplash_Full_Size.jpg"/>
+    <meta property="og:image:secure_url" content="https://www.edf.org/sites/default/files/facebook_thumb/Houston_Unsplash_Full_Size.jpg"/>
+    <meta property="og:description" content="Our work with Google in Oakland and Houston uses new sensor technology that enables cities and residents to pinpoint air pollution with precision."/>
+    <link rel="image_src" href="https://www.edf.org/sites/default/files/facebook_thumb/Houston_Unsplash_Full_Size.jpg">
+
+		<title>Why new technology is critical for tackling air pollution globally - Environmental Defense Fund</title>
+
+        
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://utility.edf.org" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/edf/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/edf/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/themes/edf/favicon-16x16.png">
+    <link rel="manifest" href="/themes/edf/site.webmanifest">
+    <link rel="mask-icon" href="/themes/edf/safari-pinned-tab.svg" color="#1232c4">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if IE ]><script type="text/javascript" src="https://cdn.polyfill.io/v3/polyfill.min.js"></script><![endif]-->
+    <!--[if !IE]>--><script>
+        if (!Array.prototype.forEach || !Array.prototype.includes || !Object.assign || !Object.entries || !Object.keys || !document.querySelector || typeof navigator.sendBeacon !== 'function' || !JSON) {
+            document.write("<script src='https://polyfill.io/v3/polyfill.min.js?flags=gated%2Calways&features=Array.prototype.includes%2CArray.prototype.forEach%2CObject.assign%2CObject.entries%2CObject.keys%2CJSON%2Cnavigator.sendBeacon%2Cdocument.querySelector%2CURL'>\x3C/script>");
+        }
+    </script><!--<![endif]-->
+
+    <script type="text/javascript" src="https://browser.sentry-cdn.com/6.13.3/bundle.min.js"></script>
+    
+    <script type="text/javascript" src="/assets/global/dist/js/utilities.min.js?v=2023070810"></script>
+    <script>window.$EDF || document.write("<script src='/assets/global/dist/js/utilities.min.js?v=2023070810'>\x3C/script>")</script>
+
+    
+<script>!function(){var e=[{id:"breaking_news"},{id:"biden"},{id: "bar_drtv",publish:"2022-12-19", unpublish:"2023-01-02 01:30:00"},{id:"bar_newyorker"}],i=[{ id: "FY23_yearend-sf", cookie: "SFCR3", time: 7,unpublish: "2023-01-01 05:00:01"},{ id: "earthday_2022_unlock", cookie: "SFCR2", time: 7, publish: "2022-04-21 00:00:01",unpublish: "2022-04-25 07:00:01" },{ id: "flashmatch_unlock", cookie: "SFCR4", time: 1, publish: "2022-12-30 06:05:00", unpublish: "2023-01-05 05:00:00" }],o=!1;if(e.length&&SS_G("pushdown"))for(var t=0;t<e.length;t++)if(isPublishable(e[t])){o=!0;break}for(var n="",a=0;a<i.length;a++){var d=readCookie(i[a].cookie);(!0===window.block_default_overlay_displays||i[a].exclude||d&&!isNaN(d)&&gti()-parseInt(d)<864e5*i[a].time||!isPublishable(i[a])||o)&&(n+="#"+i[a].id+"{display:none}")}n&&injectCSS(n)}();</script>
+
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_MgDNCcagffiVEjRf8g-h5AAN1YFP2XMxaPTlHugRMsY.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_vOmdvD2HRaSUckcYfyZMzXCLlr-aOSZDwbkCytolg1s.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_gpvvjej6-qCFLWaqdC9CIChR0zQnJk1iG48aw3W-dF8.css" />
+
+    
+
+  </head>
+    <body class="drupal prod edf has-1col has-primary-img has-cards-bottom not-logged-in path-node page-node-type-standard-page section-airqualitymaps page-airqualitymaps no-js">
+        <div class="faux-body">
+            <a href="#main-content" class="visually-hidden focusable skip-link">
+                Skip to main content
+            </a>
+            
+              <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+                
+
+
+
+
+
+  
+
+
+
+<header  id="block-topnav-edf" class="site-header site-header--border" role="navigation">
+
+  <div class="hamburger-holder">
+    <button class="hamburger-toggle" aria-expanded="false" aria-controls="TopnavVerticals" id="HamburgerButton">
+      <span class="line top"></span>
+      <span class="line middle"></span>
+      <span class="line bottom"></span>
+    </button>
+  </div>
+
+  <div class="logo-holder">
+    <a href="/" class="site-logo__link" title="Environmental Defense Fund">
+      <span class="visually-hidden">Home</span>
+      <img class="site-logo full-logo" src="/themes/edf2020/images/source/site-logo--slogan.svg" alt="Environmental Defense Fund Logo" />
+    </a>
+  </div>
+
+      <ul class="c-site-nav__list topnav-verticals" id="TopnavVerticals">
+              <li class="c-site-nav__item vertical">
+
+                      <a class="c-site-nav__button vertical-click" href="/our-work">
+              <span>Our work</span>
+            </a>
+                  </li>
+              <li class="c-site-nav__item vertical">
+
+                      <a class="c-site-nav__button vertical-click" href="/impact">
+              <span>Our impact</span>
+            </a>
+                  </li>
+              <li class="c-site-nav__item vertical">
+
+                      <a class="c-site-nav__button vertical-click" href="/about">
+              <span>About us</span>
+            </a>
+                  </li>
+              <li class="c-site-nav__item vertical">
+
+                      <a class="c-site-nav__button vertical-click" href="/get-involved">
+              <span>Get involved</span>
+            </a>
+                  </li>
+            <li class="search-form-holder">
+        <form class="topnav-search-form" id="TopnavSearchForm">
+          <input type="search" placeholder="Search this site..." id="TopnavSearchFormInput">
+          <button type="submit" id="TopnavSearchFormSubmit">GO</button>
+        </form>
+      </li>
+    </ul>
+  
+  <div class="donate-and-search">
+    <a class="button donate mobile" href="https://edf.org/donate">
+      <span>Donate</span>
+    </a>
+    <div class="donate-form desktop">
+      <input type="hidden" class="starter-form_js" data-top_nav="true" data-default_selection="0"/>
+    </div>
+    <button class="search" id="DesktopSearchButton" aria-controls="TopnavSearchForm" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 21 20" fill="none">
+        <title>Magnifying Glass</title>
+        <path fill="#1332C3" fill-rule="evenodd" d="M15.94 8.25a6.75 6.75 0 1 1-13.5 0 6.75 6.75 0 0 1 13.5 0Zm-1.438 6.312a8.25 8.25 0 1 1 1.055-1.066L21 18.94 19.94 20l-5.438-5.438Z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </div>
+
+</header>
+
+<div class="topnav-blursheet" id="TopnavBlursheet"></div>
+
+    <div class="topnav-drawer " id="our-work">
+
+    <div class="close-drawer-holder">
+      <button class="close-drawer" aria-controls="our-work">
+        <span>Back</span>
+      </button>
+    </div>
+
+    <div class="drawer-sections">
+              <div class="topnav-drawer_pages">
+                <button class="close-button" aria-controls="our-work">
+          <span>Close</span>
+        </button>
+        
+          <div class="pages-overview">
+            <span class="primary-page">
+              <a href="/our-work">
+                Our work
+              </a>
+            </span>
+            <div class="summary">We deliver game-changing solutions that have a real impact for people around the globe. Our vision: A vital Earth. For everyone. </div>
+          </div>
+                  </div>
+      
+          </div>
+
+  </div>
+    <div class="topnav-drawer " id="our-impact">
+
+    <div class="close-drawer-holder">
+      <button class="close-drawer" aria-controls="our-impact">
+        <span>Back</span>
+      </button>
+    </div>
+
+    <div class="drawer-sections">
+              <div class="topnav-drawer_pages">
+                <button class="close-button" aria-controls="our-impact">
+          <span>Close</span>
+        </button>
+        
+          <div class="pages-overview">
+            <span class="primary-page">
+              <a href="/impact">
+                Our impact
+              </a>
+            </span>
+            <div class="summary"></div>
+          </div>
+                  </div>
+      
+          </div>
+
+  </div>
+    <div class="topnav-drawer " id="about-us">
+
+    <div class="close-drawer-holder">
+      <button class="close-drawer" aria-controls="about-us">
+        <span>Back</span>
+      </button>
+    </div>
+
+    <div class="drawer-sections">
+              <div class="topnav-drawer_pages">
+                <button class="close-button" aria-controls="about-us">
+          <span>Close</span>
+        </button>
+        
+          <div class="pages-overview">
+            <span class="primary-page">
+              <a href="/about">
+                About us
+              </a>
+            </span>
+            <div class="summary">Guided by science and economics, and committed to environmental justice, we work in the places, on the projects and with the people that can make the biggest difference.</div>
+          </div>
+                  </div>
+      
+          </div>
+
+  </div>
+    <div class="topnav-drawer " id="get-involved">
+
+    <div class="close-drawer-holder">
+      <button class="close-drawer" aria-controls="get-involved">
+        <span>Back</span>
+      </button>
+    </div>
+
+    <div class="drawer-sections">
+              <div class="topnav-drawer_pages">
+                <button class="close-button" aria-controls="get-involved">
+          <span>Close</span>
+        </button>
+        
+          <div class="pages-overview">
+            <span class="primary-page">
+              <a href="/get-involved">
+                Get involved
+              </a>
+            </span>
+            <div class="summary">If we act now — together — there’s still time to build a future where people, the economy and the Earth can all thrive. Every one of us has a role to play. Choose yours.</div>
+          </div>
+                  </div>
+      
+          </div>
+
+  </div>
+
+<div class="topnav-padding-offset"></div>
+
+
+
+
+
+
+<main id="content" class="row content" role="main" style="opacity:0;">
+    <div class="pageWidth">
+                    <div class="column breadcrumbs">
+                  <div class="region region-content-top">
+    <div id="block-breadcrumbs">
+  
+    
+        <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+    <ol>
+          <li>
+                  <a href="/">Home</a>
+              </li>
+          <li>
+                  <a href="https://www.edf.org/our-work">Our work</a>
+              </li>
+          <li>
+                  <a href="https://www.edf.org/health">Health</a>
+              </li>
+          <li>
+                  <a href="/node/3047">Cleaner air</a>
+              </li>
+          <li>
+                  Mapping air pollution
+              </li>
+        </ol>
+  </nav>
+
+  </div>
+<div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+            </div>
+        
+        
+
+        <a id="main-content" tabindex="-1"></a>
+        <div class="column content-intro" id="pageIntro">
+                        <h1>Why new technology is critical for tackling air pollution around the globe</h1>
+            
+    
+    
+    
+        <img class="lazy primaryLazy imgFlex caption" src="/themes/edf/images/transparent1px.png" data-src="/sites/default/files/primary_images_hero_one_col/Houston-AQ-670x300-vlad-busuioc-116873-unsplash.jpg" alt="Skyline view of Houston">
+
+    <noscript>
+        <img class="imgFlex caption" src="/sites/default/files/primary_images_hero_one_col/Houston-AQ-670x300-vlad-busuioc-116873-unsplash.jpg" alt="Skyline view of Houston">
+    </noscript>
+
+            <div class="creditAbove">
+                            <div class="captionSrc">We tested air quality sensors on city fleet vehicles in Houston, Texas, to prove this approach can be taken to scale.</div>
+                                        <div class="creditSrc">Photo credit: Vlad Busuioc</div>
+                    </div>
+                </div>
+
+        <div class="column content-wrapper clearfix" id="contentArea">
+            <div class="content-primary content-primary-col1" id="contentColumn">
+                
+  <div class="region region-content">
+    <div id="block-edf-content">
+  
+    
+      <article role="article" about="/airqualitymaps" class="edf" data-comment-count="">
+
+  
+    
+
+  
+  <div>
+            <div>
+            <div><p class="intro">Our pioneering work with Google in Oakland and Houston shows that levels of air pollution vary much more widely than was previously known.</p>
+
+<p>We now know that levels of air pollution can vary <a href="/airqualitymaps/oakland">by up to eight times</a> within one city block — and that living in areas with the most elevated levels increases heart attack risk in the elderly by 40 percent, similar to a history of smoking.</p>
+
+<p>Also, <a href="/blog/2018/09/20/new-challenge-sensors-24-million-more-americans-breathing-unhealthy-air-previously">new satellite data</a> shows that 24 million more Americans — twice as many than previously thought — live in areas with unhealthy air, making it more important than ever to address the air quality problem.</p>
+
+<!--p>Since living in air pollution hotspots is dangerous — it can <a href="/media/study-street-level-air-pollution-increases-health-risk-among-elderly">increase the risk of heart disease and death in the elderly by 40 percent</a>, as bad as a history of smoking — it's critical to address air pollution anywhere it could harm people.</p-->
+
+<p>So EDF and partners like Google Earth Outreach are piloting a range of studies from Oakland to London featuring new, lower-cost air quality sensors, to help us map air pollution at the hyperlocal level. This new generation of air quality sensors can be mounted on cars, trucks and even bicycles — or in denser stationary networks than previous monitors.</p>
+
+<h2>Mobile sensing offers block-by-block insight</h2>
+
+<p><img alt="Before and after comparison of monitoring technology" border="0" class="caption imgFlex" src="/sites/default/files/west-oakland-sensor-insights-bc-data.jpg" /></p>
+
+<p>For a pilot project in Oakland, California, Aclima outfitted Google Street View cars with air quality sensors to gather air pollution data at street level, where people are actually breathing the air.</p>
+
+<p>This new methodology allowed us to collect much more data at a level of detail that was nearly impossible before — and showed just how much pollution varied over very short distances.</p>
+
+<table class="tinyBotMarg">
+	<tbody>
+		<tr>
+			<th>&nbsp;</th>
+			<th>Low-cost sensors</th>
+			<th>High-grade sensors</th>
+		</tr>
+		<tr>
+			<td><h4 class="noBotMarg">Stationary</h4></td>
+			<td>Can be mounted on buildings and poles, virtually anywhere</td>
+			<td>Durable, providing a stable picture, operational 24/7</td>
+		</tr>
+		<tr>
+			<td><h4 class="noBotMarg">Mobile</h4></td>
+			<td>Scalable for fleets or individuals. Provides wider coverage. Data must be analyzed for quality control</td>
+			<td>Like the EDF/Google Earth Outreach project: reliable, stable data with wide-scale coverage</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="credit noTopMarg" align="center">The various types of sensors we're testing and some of their characteristics.</p>
+
+<p>In Oakland, people are already using the data from our study to push for emission reductions under a new air quality law that seeks to reduce pollution in California’s most affected neighborhoods.</p>
+
+<!--p>These projects help us better understand where people are at the greatest risk and provide powerful advocacy tools for affected communities.</p--> 
+
+<h2>Breathe London extends this approach</h2>
+
+<!-- VIDEO -->
+
+<div class="video vidOverlay">
+  <img class="imgFlex YTOverlay" src="/sites/default/files/Tower-Bridge-600x339.jpg" border="0" data-src="https://www.youtube.com/embed/zTKfmqa52uU">
+</div>
+<p class="credit noTopMarg" align="center">Watch video: The Breathe London project is measuring Londoner’s daily exposure to air pollution.
+</p>
+
+<p>In January, 2019, the Mayor of London, EDF, C40 (an international consortium of 90 cities tackling climate change) and a host of partners launched <a href="https://www.breathelondon.org/">Breathe London</a>, an ambitious project that will measure and map Londoners’ daily exposure to air pollution using a network of advanced air pollution sensors deployed across the city.</p>
+
+<p>Breathe London shows how effective, sometimes unlikely partnerships are essential to unlocking the power of this new data to surface and solve the most serious problems, and then commit to taking those solutions to scale.</p>
+
+<blockquote>
+<p>Seeing pollution mapped this way makes us better advocates for cleaner air and smart development choices.</p>
+<cite>Elena Craft, &nbsp;<span>senior health scientist at EDF</span> </cite></blockquote>
+
+<h2>Taking the model to cities worldwide</h2>
+
+<p>It is now possible to generate detailed, street-by-street maps of air pollution for almost any city, which means that this London model can be replicated in cities around the world to drive transformative environmental change.</p>
+
+<!-- ITEM 3 START -->
+<div class="row">
+<h3 class="underlineTitle">London — data collection started</h3>
+
+<!--div class="captionWrap right floatImgSm" style="width:200px;"><img class="imgFlex caption" src="/sites/default/files/google-car-london.jpg" border="0" alt="[alt text]" />
+<div class="creditAbove">
+<!--p class="creditSrc">Credit: EDF</p-->
+</div>
+</div-->
+
+<div>
+<ul>
+	<li><strong>Sensor types:</strong> Mobile sensors on Google Street View cars and stationary sensors on buildings and lampposts.</li>
+	<li><strong>Goal of research:</strong> Use London’s existing monitoring networks to test the value of a lower-cost sensor network and provide hyperlocal air pollution data to the public.</li>
+	<li><strong>Status:</strong> Driving in progress. <a href="https://www.breathelondon.org/">Learn more at Breathe London&nbsp;»</a></li>
+</ul>
+</div>
+
+<!-- ITEM 2 START -->
+<div class="row">
+<h3 class="underlineTitle">Houston — data analysis complete</h3>
+
+<!--div class="captionWrap right floatImgSm" style="width:200px;"><img class="imgFlex caption" src="/sites/default/files/houston-tech-200x200.jpg" border="0" alt="[alt text]" />
+<div class="creditAbove">
+<!--p class="creditSrc">Credit: EDF</p-->
+</div>
+</div-->
+
+<div>
+<ul>
+	<li><strong>Sensor types:</strong> Low-cost mobile sensors on city fleet vehicles, as well as mobile sensors on Google Street View cars and stationary sensors.</li>
+	<li><strong>Goal of research:</strong> Understand how sensors work on city vehicles in a larger geographic area so approach can be taken to scale, test new sensor types and increase number of pollutants detected.</li>
+	<li><strong>Status:</strong> Data collection and analysis complete. <a href="/airqualitymaps/houston">Learn more&nbsp;»</a></li>
+</ul>
+</div>
+
+<!-- ITEM 1 START -->
+<div class="row">
+<h3 class="underlineTitle">Oakland — projects complete</h3>
+
+<!--div class="captionWrap right floatImgSm" style="width:200px;"><img class="imgFlex caption" src="/sites/default/files/oakland-east-oakland-comp-bc-data-200x200.jpg" border="0" alt="[alt text]" />
+<div class="creditAbove">
+<!--p class="creditSrc">Credit: EDF</p-->
+</div>
+</div-->
+
+<div>
+<ul>
+	<li><strong>Sensor types:</strong> Mobile sensors on Google Street View cars and stationary sensors on homes, businesses and lampposts.</li>
+	<li><strong>Goal of research:</strong> Learn how to interpret millions of sensor readings and make health risks visible so communities can advocate for cleaner air.</li>
+	<li><strong>Key insight:</strong> Pollution varies significantly from block to block and over time.</li>
+	<li><strong>Status:</strong> Data collection and analysis complete. <a href="/airqualitymaps/Oakland">View the maps&nbsp;»</a></li>
+</ul>
+</div>
+
+<h4 class="underlineTitle">Get innovation updates</h4>
+<p>We'll send regular updates about developments in technology, science and the environment.</p>
+<div class="ConvioSignup mc" data-addl="innovation_token" data-lists="50325"></div>
+<p class="confirmation" style="display:none;"><em>Thank you for subscribing to the Climate Tech Brief.</em></p></div>
+      </div>
+      </div>
+</article>
+
+
+  </div>
+
+  </div>
+
+
+                
+            </div>
+
+            
+                    </div>
+
+            </div>
+
+    <div class="social social-sticky" data-url="https://www.edf.org/airqualitymaps" data-tweet="Why new technology is critical for tackling air pollution around the globe" data-url-count="https://www.edf.org/airqualitymaps">
+    <div class="social-container">
+        <div class="social-share">
+            <span>Share</span>
+        </div>
+        <div class="social-platforms">
+            <div class="platform facebook" title="Share on Facebook">
+                <div></div>
+            </div>
+            <div class="platform twitter" title="Share on Twitter">
+                <div></div>
+            </div>
+            <a href="/forward/node/15921">
+                <div class="platform taf" title="Email to a friend">
+                    <div></div>
+                </div>
+            </a>
+            <!--<div class="platform linked_in" title="Share on LinkedIn">
+                <div></div>
+            </div>-->
+            <a href="javascript:window.print();">
+                <div class="platform print_page" title="Print this page">
+                    <div></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</main>
+
+
+	  <div class="region region-cards">
+          <div class="row content-bottom-cards">
+  <div class="pageWidth">
+          <div class="clearfix text-formatted field__item"><div class="row rowStretch">
+ 
+<!-- Card 1 -->
+<div class="column col33-3">
+      <div class="views-element-container"><div class="view view-page-media-contact view-id-page_media_contact view-display-id-block_2 js-view-dom-id-387b2f10c06dcb217187c8670681da5d647895251605b4266d70a740fc1293a5">
+  
+    
+      <div class="view-header">
+      
+    </div>
+      
+      <div class="view-content">
+          <div><div class="views-field views-field-title-1"><span class="field-content"><div class="card-box card-box--media card-box--blue">
+<div class="card-box-content">
+<h3 class="card-box-title">Media contact</h3>
+<div class="cite">
+<strong>Kevin Tuerff</strong>
+<span>(512) 361-3451  (office)<br />
+</span>
+<a href="/contact/email/24383/related/15921" class="contactLink"><img src="/sites/default/files/about/iconSend.png" alt="envelope" width="14" height="14" class="icon" /> Email</a> 
+</div>
+</div>
+</div></span></div></div>
+
+    </div>
+  
+          </div>
+</div>
+
+</div>
+
+
+<!-- Card 2 -->
+<div class="column col33-3">
+<div class="card-box experts-list">
+   <div class="card-box-content">
+<div class="views-element-container"><div class="experts-list view view-related-expert-sidebar view-id-related_expert_sidebar view-display-id-block_2 js-view-dom-id-ce98a43412427d39719e21601a3a1c8daa3189dd25e18e3b3521d34d81cb78c3">
+  
+    
+      <div class="view-header">
+      <h4 class="card-box-title standardBotMarg">Our project experts </h4>
+    </div>
+      
+      <div class="view-content">
+          <div><div class="cite"><div class="citeLeft">  <a href="/people/sarah-vogel" hreflang="en"><img loading="lazy" src="/sites/default/files/styles/related_expert_sidebar_image/public/experts/sarah-vogel.jpg?itok=cj7vFatI" width="70" height="70" alt="Sarah Vogel" title="Sarah Vogel" typeof="Image" class="image-style-related-expert-sidebar-image" />
+
+</a>
+</div><div class="citeRight"><a href="/people/sarah-vogel"><strong>Sarah Vogel</strong></a><span>Senior Vice President, Healthy Communities</span>
+<div class="expert_contact_methods">
+<a href="/contact/email/4449/related/15921" class="contactLink">Email</a> 
+</div></div></div>
+<hr /></div>
+    <div><div class="cite"><div class="citeLeft">  <a href="/people/ramon-alvarez" hreflang="en"><img loading="lazy" src="/sites/default/files/styles/related_expert_sidebar_image/public/experts/Ramon_Alvarez_headshot-300x394.jpg?itok=y6vYX4hG" width="70" height="70" alt="Ramón Alvarez" title="Ramón Alvarez" typeof="Image" class="image-style-related-expert-sidebar-image" />
+
+</a>
+</div><div class="citeRight"><a href="/people/ramon-alvarez"><strong>Ramon Alvarez</strong></a><span>Associate Chief Scientist</span>
+<div class="expert_contact_methods">
+<a href="/contact/email/152/related/15921" class="contactLink">Email</a> 
+</div></div></div>
+<hr /></div>
+
+    </div>
+  
+            <div class="view-footer">
+      <p class="standardTopMarg info"><strong><a href="/people/staff-of-experts/all/health">See all health experts&nbsp;»</a></strong></p>
+
+    </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+ 
+<!-- Card 3 -->
+<div class="column col33-3">
+<a href="/blog/2017/09/22/breakthrough-mobile-air-quality-data-and-3-deceptively-tough-challenges-paved-way">
+<div class="card-box card-box--imgbot card-box--cyan">
+   <div class="card-box-content">
+      <h4 class="card-box-title">Blog post:<br />A breakthrough for mobile air quality data</h4>
+      <img alt="Car with air quality sensor attached" class="card-box-imgbot" src="/sites/default/files/googlecarwithperson_600x400.jpg">
+   </div>
+</div>
+</a>
+</div>
+ 
+</div></div>
+      </div>
+</div>
+  
+
+  </div>
+
+  <footer class="site-footer" role="navigation">
+
+      
+
+<div class="inner">
+  <div class="first-columns">
+    <div class="column branding-column">
+      <a href="/">
+        <img class="site-logo desktop-logo" src="/themes/edf2020/images/source/site-logo--slogan.svg" alt="Environmental Defense Fund Logo" />
+        <img class="site-logo mobile-logo" src="" alt="" />
+      </a>
+    </div>
+          <div class="column link-column">
+        <dl>
+          <dt>About EDF</dt>
+          <dd>
+            <ul>
+                              <li>
+                  <a href="/environmental-careers/diversity">Commitment to diversity</a>
+                </li>
+                              <li>
+                  <a href="/environmental-careers">Careers</a>
+                </li>
+                              <li>
+                  <a href="/our-offices">Offices</a>
+                </li>
+                          </ul>
+          </dd>
+        </dl>
+      </div>
+          <div class="column link-column">
+        <dl>
+          <dt>News and resources</dt>
+          <dd>
+            <ul>
+                              <li>
+                  <a href="/updates">News and updates</a>
+                </li>
+                              <li>
+                  <a href="/resources">Reports and publications</a>
+                </li>
+                              <li>
+                  <a href="/media">For the media</a>
+                </li>
+                          </ul>
+          </dd>
+        </dl>
+      </div>
+          <div class="column link-column">
+        <dl>
+          <dt>Members</dt>
+          <dd>
+            <ul>
+                              <li>
+                  <a href="/donate/?segment=j&amp;addl_info=siteFooter">Become a member</a>
+                </li>
+                              <li>
+                  <a href="/action">Take action</a>
+                </li>
+                              <li>
+                  <a href="/contact">Contact</a>
+                </li>
+                          </ul>
+          </dd>
+        </dl>
+      </div>
+      </div>
+  <div class="second-columns">
+    <ul class="social-networks">
+              <li>
+          <a href="https://twitter.com/envdefensefund" title="Twitter">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+        </li>
+              <li>
+          <a href="https://www.linkedin.com/company/environmental-defense" title="LinkedIn">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </li>
+              <li>
+          <a href="https://www.instagram.com/environmental_defense_fund" title="Instagram">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+          </a>
+        </li>
+              <li>
+          <a href="https://www.facebook.com/EnvDefenseFund" title="Facebook">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </li>
+              <li>
+          <a href="https://www.tiktok.com/@envdefensefund" title="TikTok">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+        </li>
+          </ul>
+    <div class="copyright">
+      <p><a href="/about/this-site/copyright">Copyright © 2023</a> Environmental Defense Fund. All Rights Reserved. <a href="/privacy-statement">Privacy statement.</a></p>
+                  <p>Environmental Defense Fund is a nonprofit, tax-exempt charitable organization under Section 501(c)(3) of the Internal Revenue Code. Donations are tax-deductible as allowed by law. Tax identification number 11-6107128.</p>
+                  <p>EDF operates with the highest <a href="/ethical-conduct">standards of ethics</a> and open, honest communication. Read our whistleblower policy or report a concern through our <a href="https://secure.ethicspoint.com/domain/media/en/gui/53082/index.html">confidential, third-party compliance site</a>.</p>
+    </div>
+  </div>
+</div>
+
+  
+</footer>
+
+
+
+
+
+
+  </div>
+
+            
+        </div>
+
+        <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/15921","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"asset_injector\/css\/layout_misc_alumni_newsletter_signup_page,asset_injector\/css\/layout_misc_carbon_pricing_map,asset_injector\/css\/utilities_and_methane,asset_injector\/js\/temperature_quiz,classy\/base,classy\/messages,core\/normalize,edf\/global-styling,edf\/section-nav-active-links,edf\/topnav,system\/base,typogrify\/typogrify,views\/views.module","theme":"edf","theme_token":null},"ajaxTrustedUrl":[],"user":{"uid":0,"permissionsHash":"3db792757d088e350590909e8a8bc44ac07b9eda86e4e99e53eb7a98b15ad7c8"}}</script>
+<script src="/sites/default/files/js/js_aMlGsFxPj4cwxQXHaW291M5ksv2ET-1_u0nWR28Hn6k.js"></script>
+
+        <div id="page_closure" style="position: fixed; left: -9999px; width: 0; height: 0;">
+              <div class="region region-page-closure">
+    <div id="block-overlaydata">
+  
+    
+      <div>
+            <div><script>var overlayData='[{"nid":"30197","field_inclusion_pages":"\/node\/30012\/\u003Cbr \/\u003E\r\nhttps:\/\/blogs.edf.org\/climate411\/2022\/01\/19\/why-rggi-is-a-good-deal-for-virginians\/\u003Cbr \/\u003E\r\n\/node\/30140\/\u003Cbr \/\u003E\r\n\/node\/30122\/\u003Cbr \/\u003E\r\n\/media\/worldwide-electric-vehicle-investments-will-grow-more-626-billion-2030-new-report\u003Cbr \/\u003E\r\n\/media\/gm-and-edf-announce-recommended-principles-epa-emissions-standards-model-year-2027-and-beyond\u003Cbr \/\u003E\r\n\/events\/sxedf\u003Cbr \/\u003E\r\n\/node\/29961\/\u003Cbr \/\u003E\r\n\/blog\/2022\/11\/21\/what-tech-cant-afford-get-wrong-climate-innovation","field_exclusion_pages":"","field_overlay_split_test":"","field_overlay_cookie_time":"7","field_overlay_known_alternative":"","field_overlay_donor_alternative":"","field_overlay_sustainer_alternat":"","view_node":"\/splash\/climate-tech-overlay","field_overlay_start":"","field_overlay_end":"","field_exit_intent":"True","field_exit_intent_home":"False"},{"nid":"31115","field_inclusion_pages":"\/whats-fastest-way-slow-global-warming-bill-nye-has-answer\u003Cbr \/\u003E\r\n\/article\/bill-nye-climate-guy","field_exclusion_pages":"","field_overlay_split_test":"","field_overlay_cookie_time":"5","field_overlay_known_alternative":"","field_overlay_donor_alternative":"","field_overlay_sustainer_alternat":"","view_node":"\/splash\/bill-nye","field_overlay_start":"","field_overlay_end":"","field_exit_intent":"True","field_exit_intent_home":"False"},{"nid":"31420","field_inclusion_pages":"\/node\/31238","field_exclusion_pages":"","field_overlay_split_test":"","field_overlay_cookie_time":"7","field_overlay_known_alternative":"","field_overlay_donor_alternative":"","field_overlay_sustainer_alternat":"","view_node":"\/splash\/2023-summer-match-home","field_overlay_start":"2023-06-23T04:00:00-0400","field_overlay_end":"2023-07-01T04:00:00-0400","field_exit_intent":"False","field_exit_intent_home":"False"},{"nid":"22179","field_inclusion_pages":"","field_exclusion_pages":"\/*","field_overlay_split_test":"","field_overlay_cookie_time":"30","field_overlay_known_alternative":"","field_overlay_donor_alternative":"","field_overlay_sustainer_alternat":"","view_node":"\/splash\/mailchimp-icymi-signup","field_overlay_start":"2018-12-21T01:00:00-0500","field_overlay_end":"","field_exit_intent":"","field_exit_intent_home":""},{"nid":"30739","field_inclusion_pages":"\/node\/31238","field_exclusion_pages":"","field_overlay_split_test":"","field_overlay_cookie_time":"15","field_overlay_known_alternative":"","field_overlay_donor_alternative":"","field_overlay_sustainer_alternat":"","view_node":"\/splash\/2023-recruit-home","field_overlay_start":"2023-07-01T05:00:00-0400","field_overlay_end":"","field_exit_intent":"False","field_exit_intent_home":"False"},{"nid":"30736","field_inclusion_pages":"\/*","field_exclusion_pages":"\/node\/24612\u003Cbr \/\u003E\r\n\/impact\/\u003Cbr \/\u003E\r\n\/node\/30850\u003Cbr \/\u003E\r\n\/node\/31008\u003Cbr \/\u003E\r\n\/whats-fastest-way-slow-global-warming-bill-nye-has-answer\u003Cbr \/\u003E\r\n\/article\/bill-nye-climate-guy\u003Cbr \/\u003E\r\n\/node\/31153\u003Cbr \/\u003E\r\n\/article\/*\u003Cbr \/\u003E\r\n\/node\/31238","field_overlay_split_test":"","field_overlay_cookie_time":"15","field_overlay_known_alternative":"","field_overlay_donor_alternative":"","field_overlay_sustainer_alternat":"","view_node":"\/splash\/2023-recruit-interior","field_overlay_start":"","field_overlay_end":"","field_exit_intent":"False","field_exit_intent_home":"False"}]';</script></div>
+      </div>
+  </div>
+<div id="block-topnavdonationbutton">
+  
+    
+      <div>
+            <div><input type="hidden" class="starter-form_js" data-top_nav="true" data-onetime="35,50,100,500,other" data-recurring="10,15,25,50,other" data-default_selection="0" /></div>
+      </div>
+  </div>
+
+  </div>
+
+
+            
+<script type="template/text" id="list-stack">
+    <div class="cardstack cardstack-link">
+        <a href="{{url}}">
+            <div class="cards-inner">
+                <h3 class="cards-title">{{title}}</h3>
+                <p class="cards-teaser">{{description}}</p><span class="cards-arrow-right">{{cards}}&nbsp;cards</span>
+            </div>
+        </a>
+    </div>
+</script>
+<script type="template/text" id="list-stack-full">
+    <div class="cardstack cardstack-single">
+        <a href="{{urlTop}}" class="cards-launcher-top">
+            <p class="left cards-number">Card&nbsp;{{card}}&nbsp;of&nbsp;{{cards}}</p><p class="right cards-pointer">Launch cards</p>
+        </a>
+        <div class="cards-inner">
+            <h2>{{card_title}}</h2>{{content}}<a href="{{urlBottom}}" class="cards-launcher-bot">
+                <h3 class="cards-title">{{title}}</h3>
+                <p class="cards-teaser">{{description}}</p><span class="cards-arrow-right">{{cards}}&nbsp;cards</span>
+            </a>
+        </div>
+    </div>
+</script>
+
+<script type="template/text" id="userTimeline">
+    <h4 class="noBotMarg">{{handle}}&nbsp;on Twitter</h4>
+    <p><strong><a href="http://twitter.com/{{screen}}">Follow {{handle}} &raquo;</a></strong></p>
+    <ul class="newsList">{{data}}</ul>
+    <p><strong><a href="https://twitter.com/i/lists/2389953">See all EDF Twitter feeds &raquo;</a></strong></p>
+</script>
+
+<script type="text/template" id="postSignup">
+    <p class="signup-confirmation">Thank you for signing up!</p>
+</script>
+
+<script type="text/template" id="mediaCard">
+    <div class="card-box card-box--blue card-box--media">
+        <div class="card-box-content">
+            <h4 class="card-box-title">Media contact</h4>
+            <div class="cite">
+                <p><strong>{{name}}</strong><span>{{phone}}</span><a href="mailto:{{email}}" class="contactLink{{hide}}">Contact</a></p>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="pressRelease">
+    {{contacts}}
+</script>
+
+
+<script type="text/template" id="replace_mc_inno">
+    <div class="card-box mailchimp" id="mc_inno_replacement">
+        <div class="card-box-content">
+            <h4 class="underlineTitle">Get innovation updates</h4>
+            <p>We'll send regular updates about developments in technology, science and the environment.</p>
+            <!--[custom:mc_innovation_form]-->
+            <form class="mc" data-list="aac19ca065" method="post" target="_blank">
+                <input name="email" type="email" maxlength="128" placeholder="Email address" required />
+                <input name="subscribe" type="submit" class="button buttonBlue" value="Sign up" />
+                <input name="tracking_id" type="hidden" value="" />
+                <div class="clear"></div>
+            </form>
+            <!--[custom:mc_innovation_form]-->
+            <p class="formSuccess hide"><em>Thanks for subscribing to Innovation and the Environment.</em></p>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="replace_mc_icymi">
+    <div class="card-box mailchimp" id="mc_icymi_replacement">
+        <div class="card-box-content">
+            <h4 class="underlineTitle">Get policy and political updates</h4>
+            <p>Friday digests from our staff keep you up to date on the week's events.</p>
+            <!--[custom:mc_in_case_you_missed_it_form]-->
+            <form class="mc" data-list="32dd4382b3" method="post" target="_blank">
+                <input name="email" type="email" maxlength="128" placeholder="Email address" required />
+                <input name="subscribe" type="submit" class="button buttonBlue" value="Sign up" />
+                <input name="tracking_id" type="hidden" value="" />
+                <div class="clear"></div>
+            </form>
+            <!--[custom:mc_in_case_you_missed_it_form]-->
+
+            <p class="formSuccess hide">Thanks for subscribing to <em>In case you missed it</em></p>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="replace_email_signup">
+    <div class="card-box" id="email_signup_replacement">
+        <div class="card-box-content">
+            <div class="ConvioSignup verticalStacked" data-addl="MC_VR" data-label="Signup voices replacement">
+                <h2 class="underlineTitle">Act when it matters most</h2>
+                <p>Every day <strong>more than 60 people sign up</strong> for news and alerts, to find out when their support helps most. Will you join them? (Read our <a href="/about/this-site/privacy">privacy policy</a>.)</p>
+            </div>
+        </div>
+    </div>
+</script>
+        </div>
+
+        <noscript><style>#content{opacity:1 !important;}</style></noscript>
+
+        
+        <script>
+            (function(document){
+                var body = document.body,
+                    content = document.getElementById('content'),
+                    side = document.getElementById('sideColumn');
+
+                var proceed = true;
+                forAll(document, 'nav.breadcrumb li a', function(a){
+                    var href = a.href;
+                    if (proceed && href){
+                        href = href.replace('//', '').split('/');
+                        if (href.length > 1 && href[1]){
+                            proceed = false;
+                            body.className += ' crumb-1-'+href[1].replace(/%20/g, '-').replace(/ /g, '-').replace(/_/g, '-');
+                        }
+                    }
+                });
+
+                if ((body.className+'').indexOf('has-2col') > -1 && side){
+                    var text = trim(side.innerText);
+
+                    if ((!text || (isAdmin && !(text.replace(/Open  configuration optionsConfigure block/g, '')))) && location.pathname.indexOf('/comment/') !== 0){
+                        side.parentNode.removeChild(side);
+                        body.className = body.className.replace('has-2col', '')+' has-1col';
+                    }
+                }
+
+                if (content && content.style.opacity === '0') {
+                    content.style.opacity = null;
+                }
+            })(document);
+        </script>
+
+                <link rel="stylesheet" href="/themes/edf/css/non_critical_styles.css?v=20230708" />
+            <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6ead9fff98","applicationID":"201767135","transactionName":"NVFabBZSVkBQUxZbCgwbeVsQWlddHkADVQA9V1lbDFY=","queueTime":0,"applicationTime":46,"atts":"GRZZGl5IRU4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

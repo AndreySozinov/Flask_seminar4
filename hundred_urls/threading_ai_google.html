@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <title>Google AI</title>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Google AI",
+        "url": "https://ai.google",
+        "logo": "https://ai.google/static/images/share.png"
+      }
+    </script>
+
+    <meta property="og:image" content="https://ai.google/static/images/share.png">
+    <meta property="og:title" content="Google AI">
+    <meta property="og:site_name" content="Google AI">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ai.google/">
+
+    <meta name="description" content="At Google, we think that AI can meaningfully improve people&#39;s lives and that the biggest impact will come when everyone can access it.">
+    <meta property="og:description" content="At Google, we think that AI can meaningfully improve people&#39;s lives and that the biggest impact will come when everyone can access it.">
+    <link rel="shortcut icon" href="/static/images/favicon.ico"  type="image/x-icon">
+    <link rel="preload" href="https://www.gstatic.com/glue/v27_1/glue.min.css?cache=124abc" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link href="https://www.gstatic.com/glue/v27_1/glue.min.css?cache=124abc" rel="stylesheet">
+    </noscript>
+    <link href="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.css" rel="stylesheet">
+    <link rel='stylesheet' href="/css/main.min.css?cache=124efg">
+    <noscript><link href="/css/main.min.css" rel="stylesheet"></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:+400,500,700|Product+Sans:400|Roboto+Mono:500&display=swap" media="all" rel="stylesheet" rel="preload" as="font">
+    <!-- Google Tag Manager -->
+    <script>
+      function glueCookieNotificationBarLoaded() {
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MTDXW5P');
+      }
+    </script>
+    <!-- End Google Tag Manager -->
+    <script rel="preload" as="script" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js?cache=124eff"></script>
+    <script rel="preload" as="script" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js?cache=124eff"></script>
+
+    <!-- HaTS Survey API -->
+    <script type="text/javascript" src="https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js?cache=123efg" async></script>
+    <script>
+      window.setTimeout(() =>{
+        helpApi = window.help.service.Lazy.create(0, {
+          apiKey: 'AIzaSyDe7OKxRllcPjRwvZdSftLIYlpqP-QRTXo',
+          locale: 'en-US'
+        });
+
+        helpApi.requestSurvey({
+          triggerId: '11gopKrj40eBRg1cvMm0TaQYHFsq',
+          enableTestingMode: false, // Will always trigger a survey. Do not set this to prod!
+          callback: function(requestSurveyCallbackParam) {
+            if (!requestSurveyCallbackParam.surveyData) {
+              return;
+            }
+            helpApi.presentSurvey({
+              surveyData: requestSurveyCallbackParam.surveyData,
+              colorScheme: 1, // light
+              customZIndex: 10000,
+            });
+          }
+        });
+      },1000);
+    </script>
+    <!-- End HaTS Survey API -->
+  </head>
+  <body class="page--home">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDXW5P"
+    height="0" width="0" style="display:none;visibility:hidden" async></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+ 
+
+<header ng-controller="HeaderController as headerCtrl" id="headerToWatch">
+  <div class="header__top">
+    <a href="" class="header__hamburger" ng-click="headerCtrl.open()" aria-expanded="false" aria-label="Open the navigation drawer" aria-controls="header__nav">
+      <div class="header__hamburger-burger"></div>
+    </a>
+ 
+    <a href="/" class="header__lockup">
+      <div class="header__logo">
+        <svg>
+          <path fill="#4285F4" d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z"></path>
+          <path fill="#EA4335" d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+          <path fill="#4285F4" d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"></path>
+          <path fill="#FBBC05" d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+          <path fill="#34A853" d="M58 .24h2.51v17.57H58z"></path>
+          <path fill="#EA4335" d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"></path>
+        </svg>
+      </div>
+      <div class="header__product">AI</div>
+    </a>
+ 
+    <nav class="header__nav" id="header__nav" aria-label="Navigation">
+      <a href="/" class="header__lockup">
+        <div class="header__logo">
+          <svg>
+            <path fill="#4285F4" d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z"></path>
+            <path fill="#EA4335" d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+            <path fill="#4285F4" d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"></path>
+            <path fill="#FBBC05" d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+            <path fill="#34A853" d="M58 .24h2.51v17.57H58z"></path>
+            <path fill="#EA4335" d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"></path>
+          </svg>
+        </div>
+        <div class="header__product">AI</div>
+      </a>
+ 
+ 
+ 
+          <div class="header__item mega-list" aria-level="1" role="heading">
+            <a href="/why-ai/" data-attri-id="Why-ai" data-event-type="header" data-event-label="Why AI" class="navigation-track-js parent__link header__link header-nav-js first-header-link">
+              Why AI
+<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.99997 0L0.589966 1.41L5.16997 6L0.589966 10.59L1.99997 12L7.99997 6L1.99997 0Z" fill="#5F6368"/>
+</svg>            </a>
+          </div>
+ 
+          <div class="header__item mega-list" aria-level="1" role="heading">
+            <a data-attri-id="Responsibility" data-event-type="header" data-event-label="Responsibility" class="navigation-track-js parent__link header__link header-nav-js">
+              Responsibility
+<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.99997 0L0.589966 1.41L5.16997 6L0.589966 10.59L1.99997 12L7.99997 6L1.99997 0Z" fill="#5F6368"/>
+</svg>            </a>
+              <div class="mega-parent mega-menu-hide mega-menu-js" id="Responsibility">
+                <div class="mega-child">
+                  <div class="mega-menu glue-page">
+                    <div class="mega-menu__content">
+                      <a class="mega-menu__link" data-event-name="Responsibility">
+<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.00003 12L7.41003 10.59L2.83003 6L7.41003 1.41L6.00003 0L3.43323e-05 6L6.00003 12Z" fill="#5F6368"/>
+</svg>                        <h3 class="mega-menu__link-header">Responsibility</h3>
+                      </a>
+                        <div class="mega-menu__sub-items mega-menu__sub-items-hover">
+
+
+                          <!---->
+                          <a href="/responsibility/principles/" class="mega-menu__anchor-parent">
+                            <h3 class="mega-menu__title navigation-track-js"
+                                data-event-type="subheader"
+                                data-event-label="Responsibility:AI Principles"
+                                aria-label="Overview">AI Principles</h3>
+                            <p class="mega-menu__description">Objectives for building beneficial AI</p>
+                          </a>
+                          <!---->
+                        </div>
+                        <div class="mega-menu__sub-items mega-menu__sub-items-hover">
+
+
+                          <!---->
+                          <a href="/responsibility/responsible-ai-practices/" class="mega-menu__anchor-parent">
+                            <h3 class="mega-menu__title navigation-track-js"
+                                data-event-type="subheader"
+                                data-event-label="Responsibility:Responsible AI Practices"
+                                aria-label="Overview">Responsible AI Practices</h3>
+                            <p class="mega-menu__description">Guiding responsible AI development</p>
+                          </a>
+                          <!---->
+                        </div>
+                        <div class="mega-menu__sub-items mega-menu__sub-items-hover">
+
+
+                          <!---->
+                          <a href="/responsibility/ai-governance-operations/" class="mega-menu__anchor-parent">
+                            <h3 class="mega-menu__title navigation-track-js"
+                                data-event-type="subheader"
+                                data-event-label="Responsibility:AI Governance &amp; Operations"
+                                aria-label="Overview">AI Governance &amp; Operations</h3>
+                            <p class="mega-menu__description">Our review and approval process</p>
+                          </a>
+                          <!---->
+                        </div>
+                        <div class="mega-menu__sub-items mega-menu__sub-items-hover">
+
+
+                          <!---->
+                          <a href="/responsibility/social-good/" class="mega-menu__anchor-parent">
+                            <h3 class="mega-menu__title navigation-track-js"
+                                data-event-type="subheader"
+                                data-event-label="Responsibility:Social Good"
+                                aria-label="Overview">Social Good</h3>
+                            <p class="mega-menu__description">Addressing societal challenges with AI</p>
+                          </a>
+                          <!---->
+                        </div>
+                        <div class="mega-menu__sub-items mega-menu__sub-items-hover">
+
+
+                          <!---->
+                          <a href="/responsibility/public-policy-perspectives/" class="mega-menu__anchor-parent">
+                            <h3 class="mega-menu__title navigation-track-js"
+                                data-event-type="subheader"
+                                data-event-label="Responsibility:Policy"
+                                aria-label="Overview">Policy</h3>
+                            <p class="mega-menu__description">Our contributions to AI Governance</p>
+                          </a>
+                          <!---->
+                        </div>
+                    </div>
+                    <div class="mega-menu__details">
+                      <div class="mega-menu__details-wrapper">
+                          <div class="mega-menu__details-wrapper-list">
+                            <a href="/responsibility/social-good/" data-event-feature="1" data-event-type="feature" data-event-label="Responsibility:AI for the benefit of humanity" class="navigation-track-js">
+                              <p class="content__brow">FEATURED RESEARCH</p>
+                                <img class="content__image" src="https://kstatic.googleusercontent.com/files/c656b21c7034f97b39ea1d6dd632465b7193d5c25cc580abc6b70049f94d075e3ee2b115f7202cdbb95628e042e701c584d43a56a00ecd4252d85d3f678cd950" role="presenatation">
+                              <h3 class="content__sub-title">AI for the benefit of humanity</h3>
+                            </a>
+                          </div>
+                          <div class="mega-menu__details-wrapper-list">
+                            <a href="/responsibility/principles/" data-event-feature="2" data-event-type="feature" data-event-label="Responsibility:Improving skin tone evaluation in machine learning to uphold our AI principles" class="navigation-track-js">
+                              <p class="content__brow">EXAMPLES OF OUR WORK</p>
+                                <img class="content__image" src="https://kstatic.googleusercontent.com/files/6bd129650ecf4b3970c0c382aa930e81128e8f6fe030d42a0e8ad116449f6931813fc572f2134be1633508a07ba569af80c4bd66b48b626320464897aa2ea17e" role="presenatation">
+                              <h3 class="content__sub-title">Improving skin tone evaluation in machine learning to uphold our AI principles</h3>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+ 
+          <div class="header__item mega-list" aria-level="1" role="heading">
+            <a data-attri-id="Discover" data-event-type="header" data-event-label="Discover" class="navigation-track-js parent__link header__link header-nav-js">
+              Discover
+<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.99997 0L0.589966 1.41L5.16997 6L0.589966 10.59L1.99997 12L7.99997 6L1.99997 0Z" fill="#5F6368"/>
+</svg>            </a>
+              <div class="mega-parent mega-menu-hide mega-menu-js" id="Discover">
+                <div class="mega-child">
+                  <div class="mega-menu glue-page">
+                    <div class="mega-menu__content mega-menu__header">
+                      <a class="mega-menu__link" data-event-name="Discover">
+<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.00003 12L7.41003 10.59L2.83003 6L7.41003 1.41L6.00003 0L3.43323e-05 6L6.00003 12Z" fill="#5F6368"/>
+</svg>                        <h3 class="mega-menu__link-header">Discover</h3>
+                      </a>
+                        <div class="mega-menu__sub-items mega-menu__sub-items-new">
+                            <p class="content__brow mega-menu__heading">Ai across Google</p>
+
+                            <a class="mega-menu--details" href="/discover/generativeai/">
+                              <h3 class="mega-menu__title navigation-track-js"
+                                  data-event-type="subheader"
+                                  data-event-label="Discover:Generative AI"
+                                  aria-label="Overview">Generative AI</h3>
+                            <p class="mega-menu__description">How teams at Google are using AI</p>
+                          </a>
+                            <a class="mega-menu--details" href="/discover/palm2/">
+                            <h3 class="mega-menu__title navigation-track-js"
+                                data-event-type="subheader"
+                                data-event-label="Discover:PaLM 2"
+                                aria-label="Overview">PaLM 2</h3>
+                            <p class="mega-menu__description">Next generation large language model</p>
+                            </a>
+                            <a class="mega-menu--details" href="/discover/foundation-models/">
+                              <h3 class="mega-menu__title navigation-track-js"
+                                  data-event-type="subheader"
+                                  data-event-label="Discover:Foundation Models"
+                                  aria-label="Overview">Foundation Models</h3>
+                              <p class="mega-menu__description">Learn more about our models</p>
+                            </a>
+
+                          <!---->
+                          </a>
+                          <!---->
+                        </div>
+                        <div class="mega-menu__sub-items mega-menu__sub-items-new">
+                            <p class="content__brow mega-menu__heading">Learn</p>
+
+                            <a class="mega-menu--details" href="/discover/research/">
+                              <h3 class="mega-menu__title navigation-track-js"
+                                  data-event-type="subheader"
+                                  data-event-label="Discover:Research"
+                                  aria-label="Overview">Research</h3>
+                            <p class="mega-menu__description">AI publications, tools, and datasets</p>
+                          </a>
+
+                          <!---->
+                          </a>
+                          <!---->
+                        </div>
+                        <div class="mega-menu__sub-items mega-menu__sub-items-new">
+                            <p class="content__brow mega-menu__heading">Blogs</p>
+
+                            <a class="mega-menu--details" href="/discover/blogs/">
+                              <h3 class="mega-menu__title navigation-track-js"
+                                  data-event-type="subheader"
+                                  data-event-label="Discover:AI Blogs"
+                                  aria-label="Overview">AI Blogs</h3>
+                            <p class="mega-menu__description">Current news and stories from Google</p>
+                          </a>
+
+                          <!---->
+                          </a>
+                          <!---->
+                        </div>
+                    </div>
+                    <div class="mega-menu__details mega-menu__details-new">
+                      <div class="mega-menu__details-wrapper">
+                          <div class="mega-menu__details-wrapper-list">
+                            <a href="https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html" data-event-feature="1" data-event-type="feature" data-event-label="Discover:Learn more about our PaLM model" class="navigation-track-js">
+                              <p class="content__brow">FEATURED CONTENT</p>
+                                <img class="content__image" src="https://kstatic.googleusercontent.com/files/6d5f9822dfc0d0bc4097c76dd6317714603edacc918d8262ba2e59e50704d05f363b403fd6a07f01011f86e114f9e5590f2fa2d8399382d75a3ca9687d66a3b8" role="presenatation">
+                              <h3 class="content__sub-title">Learn more about our PaLM model</h3>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+ 
+          <div class="header__item mega-list" aria-level="1" role="heading">
+            <a href="/build/machine-learning/" data-attri-id="Build" data-event-type="header" data-event-label="Build" class="navigation-track-js parent__link header__link header-nav-js first-header-link">
+              Build
+<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.99997 0L0.589966 1.41L5.16997 6L0.589966 10.59L1.99997 12L7.99997 6L1.99997 0Z" fill="#5F6368"/>
+</svg>            </a>
+          </div>
+    </nav>
+ 
+    <div class="header__overlay" ng-click="headerCtrl.close()"></div>
+  </div>
+</header>    <main class="section-wrapper" id="section-main-wrapper" ng-controller="MainController as mainCtrl">
+      <div class="main-overlay">
+
+<section class="glue-page homepage-carousel">
+  <div class="header__copy">
+    <h1 class="homepage-carousel__headline carousel-module-js" data-event-label="Advancing AI for everyone">Advancing AI for everyone</h1>
+    <span class="content__brow">See our latest news</span>
+  </div>
+  <div id="glue-carousel" class="glue-carousel" aria-label="Carousel featuring the Advancing AI latest news">
+    <button class="glue-carousel__button glue-carousel__button--prev carousel-track-js"
+        aria-label="Previous slide"
+        data-event-type="left">
+      <svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--32px">
+        <use href="/static/images/glue-icons.svg#chevron-left"></use>
+      </svg>
+    </button>
+    <button class="glue-carousel__button glue-carousel__button--next carousel-track-js"
+        aria-label="Next slide"
+        data-event-type="right">
+      <svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--32px">
+        <use href="/static/images/glue-icons.svg#chevron-right"></use>
+      </svg>
+    </button>
+    <div class="glue-carousel__viewport">
+      <div class="glue-carousel__list">
+          <div class="glue-carousel__item" id="homepage-carousel-slide-1"
+              aria-label="None">
+            <a class="homepage-carousel__item" href="/discover/palm2/">
+              <div class="home-carousel__media-desk">
+                  <picture>
+      <source media="(min-width:360px)" srcset="https://lh3.googleusercontent.com/k7I3j0YA0ufQvNyECIMwQY4YMLaQvAhzskB9xsAs_UX-Gg2lLB3-tYZGgOrG_EOqitvz1MKbTxVQ_Uhh3PaoR3geZJd38p6_b304YucFMcWWG7FU0U0=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/k7I3j0YA0ufQvNyECIMwQY4YMLaQvAhzskB9xsAs_UX-Gg2lLB3-tYZGgOrG_EOqitvz1MKbTxVQ_Uhh3PaoR3geZJd38p6_b304YucFMcWWG7FU0U0=w4912-l100-sg-rj-c0xffffff 2x">
+      <source media="(min-width:1680px)" srcset="https://lh3.googleusercontent.com/k7I3j0YA0ufQvNyECIMwQY4YMLaQvAhzskB9xsAs_UX-Gg2lLB3-tYZGgOrG_EOqitvz1MKbTxVQ_Uhh3PaoR3geZJd38p6_b304YucFMcWWG7FU0U0=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/k7I3j0YA0ufQvNyECIMwQY4YMLaQvAhzskB9xsAs_UX-Gg2lLB3-tYZGgOrG_EOqitvz1MKbTxVQ_Uhh3PaoR3geZJd38p6_b304YucFMcWWG7FU0U0=w4912-l100-sg-rj-c0xffffff 2x">
+    <img src="https://lh3.googleusercontent.com/k7I3j0YA0ufQvNyECIMwQY4YMLaQvAhzskB9xsAs_UX-Gg2lLB3-tYZGgOrG_EOqitvz1MKbTxVQ_Uhh3PaoR3geZJd38p6_b304YucFMcWWG7FU0U0=w2456-l100-sg-rj-c0xffffff" class="home-carousel__image" alt="Introducing our next generation large language model"
+ loading="lazy">
+  </picture>
+              </div>
+              <div class="home-carousel__media-mobile">
+                <img src="https://lh3.googleusercontent.com/0roAzAHgCn3Ap8RxaWWU6LZghxPV_MpEr2hiSf9QkbjCj6Ql7mVJrkWRqE6Rq1s_ePF-A737Un2NxM6o0_mAA-tuZ_6QJaZekaxl1KbdHQZ67SLVNbg=s0" role="presentation" class="home-carousel__image" width="668" height="448" loading="lazy">
+              </div>
+                <div class="homepage-carousel__content">
+                  <div class="carousel-content-wrapper">
+                    <h2 class="homepage-carousel__content-title">Introducing our next generation large language model</h2>
+                        <p>PaLM 2 is our next generation large language model that builds on Googleâs legacy of breakthrough research in machine learning and responsible AI. Learn more about how PaLM 2 powers Google's generative AI features and tools like Bard and the PaLM API.</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+          <div class="glue-carousel__item" id="homepage-carousel-slide-2"
+              aria-label="None">
+            <a class="homepage-carousel__item" href="https://blog.google/technology/ai/google-responsible-ai-io-2023/">
+              <div class="home-carousel__media-desk">
+                  <picture>
+      <source media="(min-width:360px)" srcset="https://lh3.googleusercontent.com/HhOpkPlHbOGtQFHOndgc_BkV7Q2_Y5iO_yyyGgdfuBxwQCh8X8Achsf_AoeVqG7i03FlNvZn0BFHBQQUt4osykQnClnXvlLLfEXJpKzZH5XJhPR0XGo=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/HhOpkPlHbOGtQFHOndgc_BkV7Q2_Y5iO_yyyGgdfuBxwQCh8X8Achsf_AoeVqG7i03FlNvZn0BFHBQQUt4osykQnClnXvlLLfEXJpKzZH5XJhPR0XGo=w4912-l100-sg-rj-c0xffffff 2x">
+      <source media="(min-width:1680px)" srcset="https://lh3.googleusercontent.com/HhOpkPlHbOGtQFHOndgc_BkV7Q2_Y5iO_yyyGgdfuBxwQCh8X8Achsf_AoeVqG7i03FlNvZn0BFHBQQUt4osykQnClnXvlLLfEXJpKzZH5XJhPR0XGo=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/HhOpkPlHbOGtQFHOndgc_BkV7Q2_Y5iO_yyyGgdfuBxwQCh8X8Achsf_AoeVqG7i03FlNvZn0BFHBQQUt4osykQnClnXvlLLfEXJpKzZH5XJhPR0XGo=w4912-l100-sg-rj-c0xffffff 2x">
+    <img src="https://lh3.googleusercontent.com/HhOpkPlHbOGtQFHOndgc_BkV7Q2_Y5iO_yyyGgdfuBxwQCh8X8Achsf_AoeVqG7i03FlNvZn0BFHBQQUt4osykQnClnXvlLLfEXJpKzZH5XJhPR0XGo=w2456-l100-sg-rj-c0xffffff" class="home-carousel__image" alt="Updates from 2023 I/O: Our Bold and Responsible Approach to AI in action"
+ loading="lazy">
+  </picture>
+              </div>
+              <div class="home-carousel__media-mobile">
+                <img src="https://lh3.googleusercontent.com/4JuTBWkCA9B3ft6WrlA8GD6WK2EbSaeXbWcd0jb8xZeUqP2oZ08_c4FwZdR0tqwBLT5dRizz1PDhMZT8uyG0Wtmv4fy8pBVPzv7qp_lzK4P0cR7a7ASA=s0" role="presentation" class="home-carousel__image" width="668" height="448" loading="lazy">
+              </div>
+                <div class="homepage-carousel__content">
+                  <div class="carousel-content-wrapper">
+                    <h2 class="homepage-carousel__content-title">Updates from 2023 I/O: Our Bold and Responsible Approach to AI in action</h2>
+                        <p>How Google is applying AI to benefit people and society - through products, science, and more.</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+          <div class="glue-carousel__item" id="homepage-carousel-slide-3"
+              aria-label="None">
+            <a class="homepage-carousel__item">
+              <div class="home-carousel__media-desk">
+                  <picture>
+      <source media="(min-width:360px)" srcset="https://lh3.googleusercontent.com/2Y_gMF8zsnkpBpAZsW9_jBt5NG43ScnGR4KOuhDD83mOlRZkaS1dgQBYshohmUtaQFRTSOfMlRbUWcsMpxHFHtekoAsX9pqmBbuvIyA6oqh8QJg08Q=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/2Y_gMF8zsnkpBpAZsW9_jBt5NG43ScnGR4KOuhDD83mOlRZkaS1dgQBYshohmUtaQFRTSOfMlRbUWcsMpxHFHtekoAsX9pqmBbuvIyA6oqh8QJg08Q=w4912-l100-sg-rj-c0xffffff 2x">
+      <source media="(min-width:1680px)" srcset="https://lh3.googleusercontent.com/2Y_gMF8zsnkpBpAZsW9_jBt5NG43ScnGR4KOuhDD83mOlRZkaS1dgQBYshohmUtaQFRTSOfMlRbUWcsMpxHFHtekoAsX9pqmBbuvIyA6oqh8QJg08Q=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/2Y_gMF8zsnkpBpAZsW9_jBt5NG43ScnGR4KOuhDD83mOlRZkaS1dgQBYshohmUtaQFRTSOfMlRbUWcsMpxHFHtekoAsX9pqmBbuvIyA6oqh8QJg08Q=w4912-l100-sg-rj-c0xffffff 2x">
+    <img src="https://lh3.googleusercontent.com/2Y_gMF8zsnkpBpAZsW9_jBt5NG43ScnGR4KOuhDD83mOlRZkaS1dgQBYshohmUtaQFRTSOfMlRbUWcsMpxHFHtekoAsX9pqmBbuvIyA6oqh8QJg08Q=w2456-l100-sg-rj-c0xffffff" class="home-carousel__image" alt="None"
+ loading="lazy">
+  </picture>
+              </div>
+              <div class="home-carousel__media-mobile">
+                <img src="https://lh3.googleusercontent.com/lLMG_m_AuestVjK5Hvqk9flmZehSkG1pfREVTiHY6XHSToW5bADeVcDTkZZov9NcL7ilv_tqQj_AaZ-Ai5oVTU6KAM8nu-u_ZooJG_dIpIH1yJ7R9g=s0" role="presentation" class="home-carousel__image" width="668" height="448" loading="lazy">
+              </div>
+                <div class="home-carousel__cta-wrapper">
+                    <a class="glue-button glue-button--high-emphasis home-cta-right-space"
+                        href="/static/documents/google-about-bard.pdf" target="_blank">
+                      Explore an overview of Bard
+                    </a>
+                    <a class="glue-button glue-button--medium-emphasis"
+                        href="https://bard.google.com" target="_blank">
+                      Visit bard.google.com
+                    </a>
+                </div>
+            </a>
+          </div>
+          <div class="glue-carousel__item" id="homepage-carousel-slide-4"
+              aria-label="None">
+            <a class="homepage-carousel__item" href="https://blog.google/inside-google/message-ceo/our-progress-toward-quantum-error-correction/">
+              <div class="home-carousel__media-desk">
+                  <picture>
+      <source media="(min-width:360px)" srcset="https://lh3.googleusercontent.com/kYVkFalHhG5_-_JBgUBtaisL2Fk42auvGdyiqnobbc1DUp9eflEC01qN7hPM7nwtVn4Y62YWAIvJsH2mb8mT2kybWR5ZMOnYuiOQRKukNPROQ8aNeQ=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/kYVkFalHhG5_-_JBgUBtaisL2Fk42auvGdyiqnobbc1DUp9eflEC01qN7hPM7nwtVn4Y62YWAIvJsH2mb8mT2kybWR5ZMOnYuiOQRKukNPROQ8aNeQ=w4912-l100-sg-rj-c0xffffff 2x">
+      <source media="(min-width:1680px)" srcset="https://lh3.googleusercontent.com/kYVkFalHhG5_-_JBgUBtaisL2Fk42auvGdyiqnobbc1DUp9eflEC01qN7hPM7nwtVn4Y62YWAIvJsH2mb8mT2kybWR5ZMOnYuiOQRKukNPROQ8aNeQ=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/kYVkFalHhG5_-_JBgUBtaisL2Fk42auvGdyiqnobbc1DUp9eflEC01qN7hPM7nwtVn4Y62YWAIvJsH2mb8mT2kybWR5ZMOnYuiOQRKukNPROQ8aNeQ=w4912-l100-sg-rj-c0xffffff 2x">
+    <img src="https://lh3.googleusercontent.com/kYVkFalHhG5_-_JBgUBtaisL2Fk42auvGdyiqnobbc1DUp9eflEC01qN7hPM7nwtVn4Y62YWAIvJsH2mb8mT2kybWR5ZMOnYuiOQRKukNPROQ8aNeQ=w2456-l100-sg-rj-c0xffffff" class="home-carousel__image" alt="Our quantum error correction milestone"
+ loading="lazy">
+  </picture>
+              </div>
+              <div class="home-carousel__media-mobile">
+                <img src="https://lh3.googleusercontent.com/dZcm2iFId_6VoZaPYlTBaz2Bw6oHImAO8DrFxHh4cq6oDD2gz3ZW1fOmt1udwjtNqfjWvTgjh8HzxOHhjXfEn-mhqstDsAOpJlyUa0PHmkFPzqENhOY=s0" role="presentation" class="home-carousel__image" width="668" height="448" loading="lazy">
+              </div>
+                <div class="homepage-carousel__content">
+                  <div class="carousel-content-wrapper">
+                    <h2 class="homepage-carousel__content-title">Our quantum error correction milestone</h2>
+                        <p>The Google Quantum AI team has made an important step towards the development of a large-scale useful quantum computer. This breakthrough is the first demonstration of a logical qubit prototype, showing that itâs possible to reduce errors by increasing the number of qubits in a scheme known as quantum error correction.</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+          <div class="glue-carousel__item" id="homepage-carousel-slide-5"
+              aria-label="None">
+            <a class="homepage-carousel__item" href="https://blog.google/products/search/monk-skin-tone-scale/">
+              <div class="home-carousel__media-desk">
+                  <picture>
+      <source media="(min-width:360px)" srcset="https://lh3.googleusercontent.com/RYzdtnd9pcK372QTQLa0MogwQNtCiFN6jitLjdO90Q1ib6cOuIdZCtjEwOJQO-wu6dq27PqOKCL03fsxvAvVuqDUqrcUJflFJaUAHl84fdXkS4vXboc=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/RYzdtnd9pcK372QTQLa0MogwQNtCiFN6jitLjdO90Q1ib6cOuIdZCtjEwOJQO-wu6dq27PqOKCL03fsxvAvVuqDUqrcUJflFJaUAHl84fdXkS4vXboc=w4912-l100-sg-rj-c0xffffff 2x">
+      <source media="(min-width:1680px)" srcset="https://lh3.googleusercontent.com/RYzdtnd9pcK372QTQLa0MogwQNtCiFN6jitLjdO90Q1ib6cOuIdZCtjEwOJQO-wu6dq27PqOKCL03fsxvAvVuqDUqrcUJflFJaUAHl84fdXkS4vXboc=w2456-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/RYzdtnd9pcK372QTQLa0MogwQNtCiFN6jitLjdO90Q1ib6cOuIdZCtjEwOJQO-wu6dq27PqOKCL03fsxvAvVuqDUqrcUJflFJaUAHl84fdXkS4vXboc=w4912-l100-sg-rj-c0xffffff 2x">
+    <img src="https://lh3.googleusercontent.com/RYzdtnd9pcK372QTQLa0MogwQNtCiFN6jitLjdO90Q1ib6cOuIdZCtjEwOJQO-wu6dq27PqOKCL03fsxvAvVuqDUqrcUJflFJaUAHl84fdXkS4vXboc=w2456-l100-sg-rj-c0xffffff" class="home-carousel__image" alt="The story behind the skin tone work at Google"
+ loading="lazy">
+  </picture>
+              </div>
+              <div class="home-carousel__media-mobile">
+                <img src="https://lh3.googleusercontent.com/rMl8JftWmY8v5GwFsAG7LRnD9ZAMyQaW01uV7KK35cFlE5SEtKahOsXClx2HJufNlLF6mPCszkoh_QhmlSwuqsSY5cBCYyeud-tx4STX_jjFeANLgw=s0" role="presentation" class="home-carousel__image" width="668" height="448" loading="lazy">
+              </div>
+                <div class="homepage-carousel__content">
+                  <div class="carousel-content-wrapper">
+                    <h2 class="homepage-carousel__content-title">The story behind the skin tone work at Google</h2>
+                        <p>Make better, more inclusive AI with the Monk Skin Tone Scaleâa free development tool from Google Responsible AI.</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="glue-carousel__navigation" aria-label="Advancing AI for everyone"></div>
+  </div>
+</section>
+<section class="home-about">
+      <div class="home-about-desktop">
+        <div class="glue-grid">
+          <div class="glue-grid__col glue-grid__col--span-12
+              glue-grid__col--span-12-md wrapper home-about__wrapper">
+            <style>
+    .home-about__media {
+      background-image: url(https://lh3.googleusercontent.com/s8g6upvPgt0jggS_td0LdgqfgyKpGv6rhPwZpkUmnQ18qSbQbjR7OMfkj6OdyJ0Fbg3OfUnwpt5fjxjTDBN8c3tEQDWyszYQssn3Bk-XrevygGdEbPrs=w3056-l100-sg-rj-c0xffffff);
+    }
+  </style>
+            <div class="home-about__media"></div>
+            <div class="block__content">
+              <div class="content__text">
+                <span class="content__brow">About</span>
+                <div class="content__header">
+                  <h2 class="content__title">Bringing the benefits of AI to everyone</h2>
+                </div>
+                <div class="content__body">
+                      <p>Google's mission has always been to organize the world's information and make it universally accessible and useful.<br><br>
+We're excited about the transformational power of AI and the helpful new ways it can be applied. From research that expands what's possible, to product integrations designed to make everyday things easier, and applying AI to make a difference in the lives of those who need it most-we're committed to responsible innovation and technologies that benefit all of humanity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="circle-wrapper">
+              <svg fill="none" height="404" viewBox="0 0 241 404" width="241" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="39" cy="202" r="199" stroke="#dadce0" stroke-dasharray=".01 16" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+              </svg>
+            </div>
+            <div class="home-about__quote-wrapper">
+              <p class="home-about__quote-text">We want to use AI to augment the abilities of people, to enable us to accomplish more and to allow us to spend more time on our creative endeavors.</p>
+              <div class="profile__content">
+                <img src="https://lh3.googleusercontent.com/SUu34LRnROFKIjoN-KQLW7zof6cxVH7jaNPvnmKiADQ2h3oNGrvdEPMZu8MF-r8NCdlDcvo-XVaYc0KLmEcvFIm-oaYzN5sFHZykGwq1VsF35CsYUHbd" alt="Jeff Dean" height="55" width="55" loading="lazy">
+                <span class="profile__text">
+                  <h3 class="profile__title">Jeff Dean</h3>
+                  <p class="profile__role">Google Chief Scientist</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-about-mobile">
+        <div class="glue-grid">
+          <div class="glue-grid__col glue-grid__col--span-9
+              glue-grid__col--span-12-sm glue-grid__col--span-12-md">
+            <style>
+    .home-about-mobile__image {
+      background-image: url(https://lh3.googleusercontent.com/FqtBR-t_6CEKAN4zYiw_4hEiuUgWNNNYhk_b3oFYT1AjbDVo0vl_knOttXXHjcOEuGVVpgGTAJ1vXTBrFJkP7O4iCOUWyHfjmaF1IWWGWjTLZEt85Q-E=w1164-l100-sg-rj-c0xffffff);
+    }
+  </style>
+            <div class="home-about-mobile__image"></div>
+          </div>
+          <div class="glue-grid__col glue-grid__col--span-3
+              glue-grid__col--span-12-sm glue-grid__col--span-12-md home-about-mobile__content">
+            <div class="block__content">
+              <div class="content__text">
+                <span class="content__brow">About</span>
+                <div class="content__header">
+                  <h2 class="content__title">Bringing the benefits of AI to everyone</h2>
+                </div>
+                <div class="content__body">
+                      <p>Google's mission has always been to organize the world's information and make it universally accessible and useful.<br><br>
+We're excited about the transformational power of AI and the helpful new ways it can be applied. From research that expands what's possible, to product integrations designed to make everyday things easier, and applying AI to make a difference in the lives of those who need it most-we're committed to responsible innovation and technologies that benefit all of humanity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="home-about__quote-wrapper">
+              <p>We want to use AI to augment the abilities of people, to enable us to accomplish more and to allow us to spend more time on our creative endeavors.</p>
+              <div class="profile__content">
+                <img src="https://lh3.googleusercontent.com/SUu34LRnROFKIjoN-KQLW7zof6cxVH7jaNPvnmKiADQ2h3oNGrvdEPMZu8MF-r8NCdlDcvo-XVaYc0KLmEcvFIm-oaYzN5sFHZykGwq1VsF35CsYUHbd" alt="Photo of Jeff Dean" height="55" width="55" loading="lazy">
+                <span class="profile__text">
+                  <h3 class="profile__title">Jeff Dean</h3>
+                  <p class="profile__role">Google Chief Scientist</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<section class="home-focus">
+      <div class="home-focus__desktop">
+        <div class="glue-grid">
+          <div class="glue-grid__col glue-grid__col--span-6
+              glue-grid__col--span-12-sm glue-grid__col--span-12-md content-section">
+            <div class="block__content">
+              <div class="content__text">
+                <div class="content__header">
+                  <h2 class="content__title">Why AI</h2>
+                </div>
+                <div class="content__body">
+                      <p>Read about our approach to developing and harnessing artificial intelligence.</p>
+                </div>
+              </div>
+              <div class="content__ctas">
+                  <a class="glue-button glue-button--medium-emphasis content__ctas-link content-tract-js" href="/why-ai/"                      data-event-content="Why AI: Read more" data-event-content-type="internal">
+                      Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="glue-grid__col glue-grid__col--span-6
+              glue-grid__col--span-12-sm glue-grid__col--span-12-md">
+              <picture>
+      <source media="(min-width:360px)" srcset="https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w1560-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w3120-l100-sg-rj-c0xffffff 2x">
+      <source media="(min-width:1680px)" srcset="https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w1560-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w3120-l100-sg-rj-c0xffffff 2x">
+    <img src="https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w1560-l100-sg-rj-c0xffffff" class="home-focus__desktop-image" alt="Why AI"
+ loading="lazy">
+  </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-focus__mobile">
+        <div class="home-focus__mobile-img-wrapper">
+            <picture>
+      <source media="(min-width:360px)" srcset="https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w668-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w1336-l100-sg-rj-c0xffffff 2x">
+      <source media="(min-width:1680px)" srcset="https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w1560-l100-sg-rj-c0xffffff, https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w3120-l100-sg-rj-c0xffffff 2x">
+    <img src="https://lh3.googleusercontent.com/k5MvzdTvxGmL2nFp8owbFWT4R6aGY1C4W0Sr6PNw1aIbURAhg6GUKOt2r9W4GBE0LFqF7102bdhbJHc5Z3nUph3FCe2m4VpjScJ76B0b6s6mzGgLk0M=w1560-l100-sg-rj-c0xffffff" class="home-focus__mobile-image" alt="Why AI"
+ width="780" height="487" loading="lazy">
+  </picture>
+        </div>
+        <div class="home-focus__mobile-content">
+          <div class="block__content">
+            <div class="content__text">
+              <div class="content__header">
+                <h2 class="content__title">Why AI</h2>
+              </div>
+              <div class="content__body">
+                    <p>Read about our approach to developing and harnessing artificial intelligence.</p>
+              </div>
+            </div>
+            <div class="content__ctas">
+                <a class="glue-button glue-button--medium-emphasis content__ctas-link content-tract-js" href="/why-ai/"                    data-event-content="Why AI: Read more" data-event-content-type="internal">
+                    Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</section><section class=" group group--default home-cards__first    "
+>
+  <div class="group__content-wrapper">
+
+
+
+
+  </div>
+      <div class="group__gallery-wrapper">
+
+
+
+
+<div class="gallery gallery--image-card
+        gallery--variable
+gallery--2-cards 
+
+
+
+
+    "
+
+    >
+
+  <div class="gallery__wrapper">
+
+          <div class="gallery__item">
+  <div
+    class="card card--default has-dark-background   "
+    data-card-type="card">
+      <a class="card__link content-tract-js" data-event-content="Responsibilities" data-event-content-type="internal"   href="/responsibility/principles/"
+ title="Responsibilities"><span class="hidden-text">Responsibilities</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/home/responsibilities-desk.webp)"></div>
+
+
+
+<div class="content     "
+>
+    <div class="content__text" >
+      <div class="content__header">
+          <div class="content__title ">
+            Responsibilities
+          </div>
+
+      </div>
+
+        <div class="content__body">
+              <p>Learn about how we're working <br> to develop AI responsibly to<br>benefit people and society.</p>
+        </div>
+    </div>
+
+</div>  </div>
+          </div>
+          <div class="gallery__item">
+  <div
+    class="card card--default has-dark-background   "
+    data-card-type="card">
+      <a class="card__link content-tract-js" data-event-content="Research" data-event-content-type="internal"   href="/discover/research/"
+ title="Research"><span class="hidden-text">Research</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/home/research-desk.webp)"></div>
+
+
+
+<div class="content     "
+>
+    <div class="content__text" >
+      <div class="content__header">
+          <div class="content__title ">
+            Research
+          </div>
+
+      </div>
+
+        <div class="content__body">
+              <p>Learn about how our research teams are advancing the state-of-the- art in computer science to empower billions of users every day.</p>
+        </div>
+    </div>
+
+</div>  </div>
+          </div>
+
+
+
+
+
+
+
+
+
+  </div>
+</div>      </div>
+</section><section class=" group group--default home-cards__second    "
+>
+  <div class="group__content-wrapper">
+
+
+
+
+  </div>
+      <div class="group__gallery-wrapper">
+
+
+
+
+<div class="gallery gallery--image-card
+        gallery--variable
+gallery--2-cards 
+      gallery--2-columns
+
+
+
+
+    "
+
+    >
+
+  <div class="gallery__wrapper">
+
+          <div class="gallery__item">
+  <div
+    class="card card--default    "
+    data-card-type="card">
+      <a class="card__link content-tract-js" data-event-content="Google Workspace" data-event-content-type="outbound"   href="https://workspace.google.com/solutions/ai/"
+ title="Google Workspace"><span class="hidden-text">Google Workspace</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/home/education_01_desktop.webp)"></div>
+          <div class="card__image card__image--mobile" style="background-image: url(/static/images/home/google-workspace-mob.jpg)"></div>
+
+
+
+<div class="content     "
+>
+    <div class="content__text" >
+      <div class="content__header">
+          <div class="content__title ">
+            Google Workspace
+          </div>
+
+      </div>
+
+        <div class="content__body">
+              <p>Harnessing the power of generative AI to create, connect, and collaborate like never before.</p>
+        </div>
+    </div>
+
+</div>  </div>
+          </div>
+          <div class="gallery__item">
+  <div
+    class="card card--default    "
+    data-card-type="card">
+      <a class="card__link content-tract-js" data-event-content="Machine Learning" data-event-content-type="internal"   href="/build/machine-learning"
+ title="Machine Learning"><span class="hidden-text">Machine Learning</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/home/machine-learning-desktop.webp)"></div>
+          <div class="card__image card__image--mobile" style="background-image: url(/static/images/home/machine-learning-mob.jpg)"></div>
+
+
+
+<div class="content     "
+>
+    <div class="content__text" >
+      <div class="content__header">
+          <div class="content__title ">
+            Machine Learning
+          </div>
+
+      </div>
+
+        <div class="content__body">
+              <p>Build and explore machine learning solutions with our ecosystem of open-source tools, datasets, APIs and more.</p>
+        </div>
+    </div>
+
+</div>  </div>
+          </div>
+
+
+
+
+
+
+
+
+
+  </div>
+</div>      </div>
+</section><section class=" group group--default home-cards__third    "
+>
+  <div class="group__content-wrapper">
+
+
+
+
+  </div>
+      <div class="group__gallery-wrapper">
+
+
+
+
+<div class="gallery gallery--image-card
+        gallery--variable
+gallery--2-cards 
+      gallery--2-columns
+
+
+
+
+    "
+
+    >
+
+  <div class="gallery__wrapper">
+
+          <div class="gallery__item">
+  <div
+    class="card card--default    "
+    data-card-type="card">
+      <a class="card__link content-tract-js" data-event-content="Generative AI" data-event-content-type="internal"   href="/discover/generativeai"
+ title="Generative AI"><span class="hidden-text">Generative AI</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/home/tools-desk.webp)"></div>
+          <div class="card__image card__image--mobile" style="background-image: url(/static/images/home/generativeai-mob.jpg)"></div>
+
+
+
+<div class="content     "
+>
+    <div class="content__text" >
+      <div class="content__header">
+          <div class="content__title ">
+            Generative AI
+          </div>
+
+      </div>
+
+        <div class="content__body">
+              <p>Explore how teams at Google are using AI to create innovative new products and services.</p>
+        </div>
+    </div>
+
+</div>  </div>
+          </div>
+          <div class="gallery__item">
+  <div
+    class="card card--default    "
+    data-card-type="card">
+      <a class="card__link content-tract-js" data-event-content="Try Google's latest experiments in Labs" data-event-content="Try Google's latest<br>experiments in Labs" data-event-content-type="oubound"   href="https://labs.withgoogle.com/"
+ title="Try Google's latest<br>experiments in Labs"><span class="hidden-text">Try Google's latest<br>experiments in Labs</span></a>
+
+        <div class="card__image" style="background-image: url(/static/images/home/ai-social-good-desk.jpg)"></div>
+
+
+
+<div class="content     "
+>
+    <div class="content__text" >
+      <div class="content__header">
+          <div class="content__title ">
+            Try Google's latest<br>experiments in Labs
+          </div>
+
+      </div>
+
+        <div class="content__body">
+              <p>Test early-stage AI experiments and help shape the future of technology.</p>
+        </div>
+    </div>
+
+</div>  </div>
+          </div>
+
+
+
+
+
+
+
+
+
+  </div>
+</div>      </div>
+</section>      </div>
+    </main>
+
+<footer>
+  <a href="https://www.google.com" target="_blank" aria-label="Google" class="footer__logo">
+    <svg role="img" aria-hidden="true" viewBox="0 0 396 130">
+      <path d="M51.0745265,101.038701 C23.3283097,101.038701 9.65724009e-07,78.4212338 9.65724009e-07,50.645974 C-0.00548030982,22.8707143 23.3228284,0.253246753 51.0745265,0.253246753 C66.4220981,0.253246753 77.3517615,6.27798701 85.5736748,14.1408766 L75.8718171,23.8528896 C69.9794459,18.3219805 61.9987087,14.0201623 51.0690452,14.0201623 C30.8102508,14.0201623 14.9693645,30.365974 14.9693645,50.645974 C14.9693645,70.925974 30.8102508,87.2717857 51.0690452,87.2717857 C64.2076627,87.2717857 71.6950851,81.9877922 76.48572,77.1921429 C80.4157945,73.2579545 82.991994,67.6063312 83.9731424,59.8641558 L51.0745265,59.8641558 L51.0745265,46.1027273 L97.3638985,46.1027273 C97.8572133,48.5609091 98.0983894,51.5129221 98.0983894,54.7063636 C98.0983894,65.0329221 95.2755325,77.8121753 86.1875777,86.9096429 C77.3462802,96.1223377 66.0548526,101.038701 51.0745265,101.038701 L51.0745265,101.038701 Z"></path>
+      <path d="M167.573556,68.369026 C167.573556,87.0523052 152.965957,100.813734 135.036704,100.813734 C117.112933,100.813734 102.499853,87.0468182 102.499853,68.369026 C102.499853,49.5650325 117.112933,35.9188312 135.036704,35.9188312 C152.965957,35.9188312 167.573556,49.5650325 167.573556,68.369026 L167.573556,68.369026 Z M153.333202,68.369026 C153.333202,56.6926623 144.85915,48.7035714 135.036704,48.7035714 C125.214259,48.7035714 116.740207,56.6926623 116.740207,68.369026 C116.740207,79.9191883 125.214259,88.0344805 135.036704,88.0344805 C144.85915,88.0344805 153.333202,79.9191883 153.333202,68.369026 L153.333202,68.369026 Z"></path>
+      <path d="M238.282011,68.369026 C238.282011,87.0523052 223.674411,100.813734 205.745159,100.813734 C187.821388,100.813734 173.208307,87.0468182 173.208307,68.369026 C173.208307,49.5650325 187.821388,35.9188312 205.745159,35.9188312 C223.674411,35.9188312 238.282011,49.5650325 238.282011,68.369026 L238.282011,68.369026 Z M224.041657,68.369026 C224.041657,56.6926623 215.567605,48.7035714 205.745159,48.7035714 C195.922713,48.7035714 187.448661,56.6926623 187.448661,68.369026 C187.448661,79.9191883 195.922713,88.0344805 205.745159,88.0344805 C215.567605,88.0344805 224.041657,79.9191883 224.041657,68.369026 L224.041657,68.369026 Z"></path>
+      <path d="M306.04702,37.943539 L306.04702,96.1442857 C306.04702,120.111558 291.927254,129.944286 275.231289,129.944286 C259.516472,129.944286 250.061272,119.376299 246.498443,110.772662 L258.897088,105.609383 C261.106042,110.893377 266.51058,117.159545 275.225808,117.159545 C285.908814,117.159545 292.535676,110.52026 292.535676,98.1086364 L292.535676,93.4391883 L292.047842,93.4391883 C288.85774,97.3733766 282.71323,100.813734 274.97915,100.813734 C258.771019,100.813734 243.916762,86.6791883 243.916762,68.4897403 C243.916762,50.1740909 258.771019,35.9188312 274.97915,35.9188312 C282.71323,35.9188312 288.852259,39.3591883 292.047842,43.1726623 L292.535676,43.1726623 L292.535676,37.943539 L306.04702,37.943539 L306.04702,37.943539 Z M293.522306,68.4897403 C293.522306,57.0602922 285.908814,48.7035714 276.212437,48.7035714 C266.389992,48.7035714 258.162597,57.0602922 258.162597,68.4897403 C258.162597,79.798474 266.389992,88.0344805 276.212437,88.0344805 C285.908814,88.0344805 293.522306,79.798474 293.522306,68.4897403 L293.522306,68.4897403 Z"></path>
+      <path d="M329.961825,3.54545455 L329.961825,98.9207143 L315.721472,98.9207143 L315.721472,3.54545455 L329.961825,3.54545455 L329.961825,3.54545455 Z"></path>
+      <path d="M383.755064,79.0577273 L394.805315,86.4322727 C391.242486,91.7162662 382.647846,100.813734 367.793589,100.813734 C349.376503,100.813734 336.002191,86.558474 336.002191,68.369026 C336.002191,49.0712013 349.497091,35.9188312 366.198538,35.9188312 C383.020573,35.9188312 391.247967,49.3181169 393.944755,56.566461 L395.419218,60.2537338 L352.078772,78.1962662 C355.394944,84.7093506 360.552824,88.0289935 367.793589,88.0289935 C375.039836,88.0289935 380.071647,84.4624351 383.755064,79.0577273 L383.755064,79.0577273 Z M349.743749,67.3813636 L378.717771,55.3373701 C377.12272,51.2824675 372.332085,48.4566558 366.686372,48.4566558 C359.445607,48.4511688 349.376503,54.843539 349.743749,67.3813636 L349.743749,67.3813636 Z"></path>
+    </svg>
+  </a>
+
+  <div class="footer__links">
+      <a   href="https://www.google.com/intl/en/policies/privacy/"
+ class="footer__link navigation-track-js" data-event-type="footer" data-event-label="Privacy">Privacy</a>
+      <a   href="https://www.google.com/intl/en/policies/terms/"
+ class="footer__link navigation-track-js" data-event-type="footer" data-event-label="Terms">Terms</a>
+      <a   href="https://about.google/"
+ class="footer__link navigation-track-js" data-event-type="footer" data-event-label="About Google">About Google</a>
+      <a   href="https://about.google/products/"
+ class="footer__link navigation-track-js" data-event-type="footer" data-event-label="Google Products">Google Products</a>
+    <button aria-hidden="true" class="glue-cookie-notification-bar-control footer__link">Cookies management controls</button>
+  </div>
+
+  <div class="footer__tertiary">
+
+    <a href="" class="footer__link footer__link--support navigation-track-js" data-event-label="Feedback" data-event-type="footer" onclick="sendFeedback()">
+      Feedback
+    </a>
+  </div>
+
+  <script>
+    function sendFeedback() {
+      var config = {
+        'productId': '720193',
+        'bucket': 'site',
+        'allowNonLoggedInFeedback' : true
+      };
+      userfeedback.api.startFeedback(config);
+    }
+  </script>
+  <script src="//www.gstatic.com/feedback/api.js" defer></script>
+</footer>
+    <div id="breakpoints"></div>
+    <script src="https://www.youtube.com/player_api" async></script>
+    <script src="https://www.gstatic.com/glue/v27_1/glue.min.js?cache=124efg" async></script>
+    <script src="/js/main.min.js?cache=124efg" async></script>
+
+
+    <script src="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js" 
+        data-glue-cookie-notification-bar-category="2A"
+        data-glue-cookie-notification-bar-language="en"
+        data-glue-cookie-notification-bar-site-id="ai.google">
+    </script>
+  </body>
+</html>

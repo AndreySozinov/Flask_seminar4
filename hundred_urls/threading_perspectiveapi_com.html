@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+  <title>Perspective API</title>
+  <meta name="description" content="Combatting toxicity online.">
+
+    <meta name="referrer" content="no-referrer">
+    <link rel="shortcut icon" href="/static/img/favicon.ico?cache=aad0fa5">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400|Merriweather:100,300,400,500,700|Playfair+Display:100,300,400,500,700&amp;lang=en">
+    <link href="/static/css/index.min.css?cache=c08e188" rel="stylesheet">
+    <script src="/static/js/detect.min.js?cache=44d9479"></script>
+    <script src="https://storage.googleapis.com/checker_source/perspective_authorship_widget_with_recaptcha.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfGNb0UAAAAAATjUqxL3E0jEMN0XIaUPWHUTh82"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WB08X4ELFD"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WB08X4ELFD', {'anonymize_ip': true});
+      </script>
+  </head>
+  <body class="js-header-animation">
+<header class="header">
+  <div class="header__area">
+    <div class="header__area-container">
+      <nav class="header__area-container-navbar">
+        <div class="glue-header__lock-up">
+          <div class="glue-header__logo">
+            <a class="glue-header__logo-link"
+                href="/"
+                aria-label="Perspective" tabindex="0">
+              <img src="/static/img/perspective-logo.svg" alt="Perspective" class="header__area-container-logo">
+            </a>
+          </div>
+          <a href="#page-content" class="glue-header__skip-content" aria-label="Jump to Content">
+            <p class="glue-header__skip-content-text">Jump to Content</p>
+          </a>
+        </div>
+        <ul class="header__list">
+            <li class="header__list-item">
+              <a class="header__list-link header__list-link-is-active"
+                  title="Why Perspective" aria-label="Why Perspective"
+                  href="/">
+                Why Perspective
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link"
+                  title="How it Works" aria-label="How it Works"
+                  href="/how-it-works/">
+                How it Works
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link"
+                  title="Case Studies" aria-label="Case Studies"
+                  href="/case-studies/">
+                Case Studies
+              </a>
+            </li>
+          <li class="header__list-item header__list-submenu">
+            <span class="glue-button glue-button--medium-emphasis js-submenu">
+              Get Started
+              <span class="js-icon-down">
+                <svg role="img" class="glue-icon">
+                  <use class="icon-down" href="/static/img/glue-icons.svg#arrow-drop-down"></use>
+                </svg>
+              </span>
+              <span class="js-icon-up icon-hide">
+                <svg role="img" class="glue-icon">
+                  <use class="icon-up" href="/static/img/glue-icons.svg#arrow-drop-up"></use>
+                </svg>
+              </span>
+            </span>
+            <ul class="header__list-submenu-list">
+                <li>
+                  <a class="header__list-link"
+                      aria-label="Developers"
+                      href="https://developers.perspectiveapi.com/s/"
+                      title="Developers" target="_blank" rel="noopener noreferrer">
+                    Developers
+                      <svg role="img" class="glue-icon glue-icon--20px">
+                        <use xlink:href="/static/img/glue-icons.svg#open-in-new"></use>
+                      </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="header__list-link"
+                      aria-label="Partners"
+                      href="/faq/"
+                      title="Partners">
+                    Partners
+                  </a>
+                </li>
+                <li>
+                  <a class="header__list-link"
+                      aria-label="Researchers"
+                      href="/research/"
+                      title="Researchers">
+                    Researchers
+                  </a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+        <span class="header__toggler">
+          <span></span>
+        </span>
+      </nav>
+    </div>
+  </div>
+</header>    <main id="page-content">
+  <section class="bg-white landing landing__intro">
+    <div class="glue-page glue-mod-text-center">
+      <h1>Using machine learning to reduce toxicity online</h1>
+
+<h2>Perspective API by <a href="https://jigsaw.google.com/" rel="noopener noreferrer" target="_blank">Jigsaw</a> can help mitigate toxicity and ensure healthy dialogue online.</h2>
+      <a class="glue-button glue-button--medium-emphasis" aria-label="How it works"
+          title="How it works"
+          href="/how-it-works/"
+          tabindex="0">
+        How it works
+      </a>
+    </div>
+    <div class="glue-mod-text-center landing__intro-alignment">
+      <video class="video-illustration" src="/static/video/illustration/landing.mp4" autoplay loop muted></video>
+    </div>
+  </section>
+
+  <section class="bg-purple landing__toxicity-intro">
+    <div class="glue-page glue-mod-text-center">
+      <p>Toxicity online poses a serious challenge for platforms and publishers. Online abuse and harassment silence important voices in conversation, forcing already marginalized people offline.</p>
+    </div>
+  </section>
+
+  <section class="bg-white perspective-intro" id="demo">
+    <div class="glue-page">
+      <div class="glue-grid">
+        <div class="glue-grid__col glue-grid__col--span-6 glue-grid__col--span-12-md glue-grid__col--span-12-sm">
+          <h3 class="perspective-intro__heading">What is Perspective?</h3>
+          <div class="perspective-intro__content">
+            <div class="perspective-intro__content-top"><p>Perspective is a free API that uses machine learning to identify "<span class="toxic-popup toxic__landing" id="perspective-popup">toxic<span class="toxic-popup__text"> We define toxicity as a rude, disrespectful, or unreasonable comment that is likely to make someone leave a discussion.</span></span>" comments, making it easier to host better conversations online.</p></div>
+            <div class="perspective-intro__content-middle"><h4>See how it works for yourself:</h4>
+
+<p>Type a sentence into the box to see its toxicity score. Perspective returns a percentage that represents the likelihood that someone will perceive the text as toxic.</p></div>
+            <div class="perspective-intro__content-bottom">
+              <a title="Learn More" class="perspective-intro__content-link"
+                  aria-label="Learn More"
+                  href="/how-it-works/"
+                  tabindex="0">
+                Learn More
+              </a>
+            </div>
+            <div class="perspective-intro__content-try-out">
+              <a title="Try it out"
+                  aria-label="Try it out"
+                  class="glue-button glue-button--medium-emphasis js-try-out data-modal-trigger js-custom-demo js-demo-button"
+                  data-placeholder="Type here to see the potential effect of your comment."
+                  data-modal-id="glue-modal-try-out">
+                Try it out
+              </a>
+<div class="glue-modal-try-out glue-modal" role="dialog" aria-modal="true" aria-labelledby="modal-label" aria-describedby="modal-content">
+  <div class="glue-modal__content-wrapper demo-overlay__content-wrapper">
+    <div class="overlay-header">
+      <picture>
+        <source srcset="/static/img/arrow-btn.svg">
+        <img src="/static/img/arrow-btn.svg"
+            class="glue-modal__close-btn close-btn"
+            role="presentation">
+      </picture>
+      <p>Try it out</p>
+    </div>
+    <div class="overlay-content">
+<div class="perspective-intro__demo-container" data-toxicity-api>
+  <textarea class="perspective-intro__demo-textbox" data-toxicity-api-input aria-label="check" name="textarea" id="client_text_area"
+      placeholder="Type here to see the potential effect of your comment." maxlength="3000"></textarea>
+  <div class="perspective-intro__result perspective-api">
+    <div class="shapes"></div>
+    <div class="emoji">
+      <img class="grinning" src="/static/img/home/demo/emoji/grinning-face.svg" role="presentation">
+      <img class="thinking" src="/static/img/home/demo/emoji/thinking-face.svg" role="presentation">
+      <img class="disappointed" src="/static/img/home/demo/emoji/disappointed-face.svg" role="presentation">
+    </div>
+    <div class="perspective-intro__score" data-toxicity-api-score></div>
+    <div class="feedback-container">
+      <div class="feedback-container__toxic">
+        <p>Is this comment <span class="toxic-modal">toxic</span>?</p>
+      </div>
+      <div class="feedback-container__buttons">
+        <span class="feedback-container__yes">Yes</span>
+        <span class="feedback-container__no">No</span>
+      </div>
+      <div class="feedback-container__thanks">
+        Thanks for your feedback!
+      </div>
+    </div>
+  </div>
+  <p class="disagree-link">
+    disagree?
+  </p>
+</div>      <div class="perspective-intro__demo perspective-intro__demo__editor modal-editor">
+<div class="demo-tabpanels data-tabpanels-responsive">
+  <div class="demo-tabs">
+    <svg role="presentation" class="glue-icon glue-icon--18px demo-tabs-pencil">
+      <use xlink:href="/static/img/edit-btn.svg#edit-btn"></use>
+    </svg> Advanced Options
+    <svg role="presentation" class="glue-icon glue-icon--18px demo-tabs-arrow">
+      <use xlink:href="/static/img/down-arrow.svg#down-arrow"></use>
+    </svg>
+  </div>
+  <div class="glue-tabpanels glue-tabpanels--centeredtabs demo-tabpanels-responsive glue-tabset" data-glue-tabpanels="tabs-icons">
+    <ul class="glue-tabpanels__page-list glue-tabset__tablist" data-glue-pagination="tabs-icons" role="tablist">
+        <li class="glue-tabset__tab">
+          <a href="#edit-feedback" class="false glue-tabset__button" data-glue-pagination-page="&lt;LoopContext 1/3&gt;" role="tab" aria-controls="edit-feedback-styles" aria-selected="true" tabindex="0">
+            <img class="glue-icon--24px tab-icon-inactive" alt="Edit feedback icon" src="/static/img/home/demo/feedback-icon.svg">
+            <img class="glue-icon--24px tab-icon-active" alt="Edit feedback icon" src="/static/img/home/demo/feedback-icon-active.svg">
+              Edit Feedback
+          </a>
+        </li>
+        <li class="glue-tabset__tab">
+          <a href="#edit-style" class="false glue-tabset__button" data-glue-pagination-page="&lt;LoopContext 2/3&gt;" role="tab" aria-controls="edit-style-styles" aria-selected="true" tabindex="0">
+            <img class="glue-icon--24px tab-icon-inactive" alt="Edit style icon" src="/static/img/home/demo/edit-icon.svg">
+            <img class="glue-icon--24px tab-icon-active" alt="Edit style icon" src="/static/img/home/demo/edit-icon-active.svg">
+              Edit Styles
+          </a>
+        </li>
+        <li class="glue-tabset__tab">
+          <a href="#view-code" class="false glue-tabset__button" data-glue-pagination-page="&lt;LoopContext 3/3&gt;" role="tab" aria-controls="view-code-styles" aria-selected="true" tabindex="0">
+            <img class="glue-icon--24px tab-icon-inactive" alt="View  code icon" src="/static/img/home/demo/view-code-icon.svg">
+            <img class="glue-icon--24px tab-icon-active" alt="View  code icon" src="/static/img/home/demo/view-code-icon-active.svg">
+              View Code
+          </a>
+        </li>
+    </ul>
+    <div class="glue-tabpanels__panel-list glue-tabset__panel-container glue-pagination__pages glue-is-ready" data-glue-pagination="tabs-icons">
+      <div id="edit-feedback" class="glue-pagination__page glue-tabset__page glue-is-shown" role="tabpanel">
+        <div class="glue-tabpanels__panel-content edit-feedback-tab">
+          <div class="demo-feedback-inline-content model-label-container">
+            <span class="demo-feedback-label model-label">Give users feedback for</span>
+            <div class="demo-select model-switch">
+              <span class="selected-option" data-value="toxic"></span>
+              <ul class="select-item-list select-hide">
+                  <li class="select-item" data-value="toxic">toxic</li>
+                  <li class="select-item" data-value="obscene">obscene</li>
+                  <li class="select-item" data-value="insulting">insulting</li>
+                  <li class="select-item" data-value="threatening">threatening</li>
+              </ul>
+            </div>
+            <div class="demo-feeback-tail-label">comments.</div>
+          </div>
+          <div class="perspective-demo-slider demo-feedback-inline-content negative-result">
+            <span class="demo-feedback-label">Show negative feedback when a comment is over</span>
+            <span class="popover-slide-text slider-result-negative">70%</span>
+            <div class="container slide-container">
+              <h4 class="glue-headline glue-headline--4">Confidence level</h4>
+              <div class="box-minmax-up">
+                <span>0%</span>
+                <span>50%</span>
+                <span>100%</span>
+              </div>
+              <form class="range-slider">
+                <div class="range-value" id="bubble-value"><span></span></div>
+                <input class="slider-range-line slider-range" type="range" value="0" min="0" max="100">
+                <span class="marker marker-zero"></span>
+                <span class="marker marker-half"></span>
+                <span class="marker marker-full"></span>
+              </form>
+              <div class="box-minmax-down">
+                <span>Not likely</span>
+                <span>Unsure</span>
+                <span>Very likely</span>
+              </div>
+              <div>
+                <span class="recommend-line"></span>
+                <span class="recommend-arrow"></span>
+                <span class="recommend-content">Recommended</span>
+              </div>
+            </div>
+          </div>
+          <div class="demo-positive-error">Must be &#8805; <span class="positive-content"></span>%</div>
+          <div class="demo-feedback-content negative-result-input">
+            <span class="demo-feedback-label">likely to be perceived as toxic with a message that says,</span>
+            <div class="js-message-container message-container">
+              <form class="js-message-input-container message-input-container demo-feedback-container-hide">
+                <input type="text" name="negative-toxic-message" class="js-textbox custom-input-text">
+                <label for="negative-toxic-message" class="input-static-value">Add Custom Message:</label>
+              </form>
+              <div class="demo-select">
+                <span class="selected-option" data-value="toxic"></span>
+                <ul class="select-item-list select-hide negative-toxic-message">
+                    <li class="select-item" data-value="x% likely to be toxic.">x% likely to be <span>toxic</span>.</li>
+                    <li class="select-item" data-value="Please remember to follow our community guidelines.">Please remember to follow our community guidelines.</li>
+                    <li class="select-item" data-value="Custom Message">Add Custom Message</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="js-positive-feedback positive-feedback">
+            <div class="perspective-demo-slider demo-feedback-inline-content positive-result">
+              <span class="demo-feedback-label">Show positive feedback when a comment is under</span>
+              <span class="popover-slide-text slider-result-positive">30%</span>
+              <div class="container slide-container">
+                <h4 class="glue-headline glue-headline--4">Confidence level</h4>
+                <div class="box-minmax-up">
+                  <span>0%</span>
+                  <span>50%</span>
+                  <span>100%</span>
+                </div>
+                <form class="range-slider">
+                  <div class="range-value" id="bubble-value"><span></span></div>
+                  <input class="slider-range-line slider-range" type="range" value="0" min="0" max="100">
+                  <span class="marker marker-zero"></span>
+                  <span class="marker marker-half"></span>
+                  <span class="marker marker-full"></span>
+                </form>
+                <div class="box-minmax-down">
+                  <span>Not likely</span>
+                  <span>Unsure</span>
+                  <span>Very likely</span>
+                </div>
+                <div>
+                  <span class="recommend-line"></span>
+                  <span class="recommend-arrow"></span>
+                  <span class="recommend-content">Recommended</span>
+                </div>
+              </div>
+            </div>
+            <div class="demo-negative-error">Must be &lt; <span class="negative-content"></span>%</div>
+            <div class="demo-feedback-content positive-result-input">
+              <span class="demo-feedback-label">likely to be perceived as toxic with a message that says</span>
+              <div class="js-message-container message-container">
+                <form class="js-message-input-container message-input-container demo-feedback-container-hide">
+                  <input type="text" name="positive-toxic-message" class="js-textbox custom-input-text">
+                  <label for="positive-toxic-message" class="input-static-value">Add Custom Message:</label>
+                </form>
+                <div class="demo-select">
+                  <span class="selected-option" data-value="toxic"></span>
+                  <ul class="select-item-list positive-toxic-message">
+                      <li class="select-item" data-value="x% likely to be toxic. Great job!">x% likely to be <span>toxic</span>. Great job!</li>
+                      <li class="select-item" data-value="Thank you for your positive contribution to our community!">Thank you for your positive contribution to our community!</li>
+                      <li class="select-item" data-value="Custom Message">Add Custom Message</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-buttons js-feedback-content">
+            <a class="glue-button glue-button--medium-emphasis remove-feedback">Remove Positive Feedback</a>
+            <a class="glue-button glue-button--medium-emphasis add-feedback">Add Positive Feedback</a>
+            <a class="glue-button glue-button--medium-emphasis add-neutral">Add Neutral Feedback</a>
+          </div>
+          <div class="js-neutral-feedback neutral-feedback demo-feedback-content neutral-result-input">
+            <span class="demo-feedback-label">Anything in between <span class="positive-threshold"></span> - <span class="negative-threshold"></span>% should get a message like,</span>
+            <div class="js-message-container message-container">
+              <form class="js-message-input-container message-input-container demo-feedback-container-hide">
+                <input type="text" name="neutral-toxic-message" class="js-textbox custom-input-text">
+                <label for="neutral-toxic-message" class="input-static-value">Add Custom Message:</label>
+              </form>
+              <div class="demo-select">
+                <span class="selected-option" data-value="toxic"></span>
+                <ul class="select-item-list neutral-toxic-message">
+                    <li class="select-item" data-value="We&#39;re not sure about that.">We're not sure about that.</li>
+                    <li class="select-item" data-value="Unsure if this follows community guidelines (x%)">Unsure if this follows community guidelines (x%)</li>
+                    <li class="select-item" data-value="Custom Message">Add Custom Message</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="edit-style" class="glue-pagination__page glue-tabset__page" role="tabpanel" aria-hidden="true">
+        <div id="tab-compatapps-content" class="glue-tabpanels__panel-content edit-style-tab">
+          <h5>Customize display settings:</h5>
+          <div class="edit-style-tab__panel">
+              <div class="edit-style-tab__container icon-theme">
+                <p>Icon Theme</p>
+                <div class="demo-select">
+                  <span class="selected-option" data-value="toxic"></span>
+                  <ul class="select-item-list">
+                      <li class="select-item" data-value="Shapes"
+ data-style="Shapes">
+                        <img src="/static/img/home/demo/shape-shapes.svg" alt="">
+                        <span class="">Shapes</span>
+                      </li>
+                      <li class="select-item" data-value="Emoji"
+ data-style="Emoji">
+                        <img src="/static/img/home/demo/shape-emoji.svg" alt="">
+                        <span class="">Emoji</span>
+                      </li>
+                      <li class="select-item" data-value="No icon"
+ data-style="No icon">
+                        <img src="/static/img/home/demo/shape-none.svg" alt="">
+                        <span class="">No icon</span>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="edit-style-tab__container color-theme">
+                <p>Color Theme</p>
+                <div class="demo-select">
+                  <span class="selected-option" data-value="toxic"></span>
+                  <ul class="select-item-list">
+                      <li class="select-item" data-value="Perspective API"
+ data-style="Perspective API">
+                        <img src="/static/img/home/demo/color-perspective.svg" alt="">
+                        <span class="">Perspective API</span>
+                      </li>
+                      <li class="select-item" data-value="Primary Colors"
+ data-style="Primary Colors">
+                        <img src="/static/img/home/demo/color-primary.svg" alt="">
+                        <span class="">Primary Colors</span>
+                      </li>
+                      <li class="select-item" data-value="Traffic Light"
+ data-style="Traffic Light">
+                        <img src="/static/img/home/demo/color-traffic.svg" alt="">
+                        <span class="">Traffic Light</span>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="edit-style-tab__container web-font">
+                <p>Web Font</p>
+                <div class="demo-select">
+                  <span class="selected-option" data-value="toxic"></span>
+                  <ul class="select-item-list">
+                      <li class="select-item" data-value="Google Sans"
+ data-style="Google Sans">
+                        <img src="/static/img/home/demo/font-google-san.png" alt="">
+                        <span class="google-san">Google Sans</span>
+                      </li>
+                      <li class="select-item" data-value="Roboto"
+ data-style="Roboto">
+                        <img src="/static/img/home/demo/font-roboto.png" alt="">
+                        <span class="roboto">Roboto</span>
+                      </li>
+                      <li class="select-item" data-value="Open Sans"
+ data-style="Open Sans">
+                        <img src="/static/img/home/demo/font-open-san.png" alt="">
+                        <span class="open-san">Open Sans</span>
+                      </li>
+                      <li class="select-item" data-value="Playfair Display"
+ data-style="Playfair Display">
+                        <img src="/static/img/home/demo/font-playfair.png" alt="">
+                        <span class="playfair-display">Playfair Display</span>
+                      </li>
+                      <li class="select-item" data-value="Marriweather"
+ data-style="Marriweather">
+                        <img src="/static/img/home/demo/font-merriweather.png" alt="">
+                        <span class="marriweather">Marriweather</span>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-code glue-pagination__page glue-tabset__page" role="tabpanel" aria-hidden="true">
+        <div id="tab-howtodownload-content" class="glue-tabpanels__panel-content view-code-tab glue-copy">
+          <div class="view-code-tab__container">
+            <h5>Hereâs your custom code snippet:</h5>
+            <a title="copy" aria-label="copy" class="glue-button glue-button--medium-emphasis js-code-copy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="white" role="presentation">
+                <path d="M10.423 0.121826H2.05778C1.68801 0.121826 1.33339 0.268715 1.07193 0.53018C0.810463 0.791644 0.663574 1.14627 0.663574 1.51603V11.2755H2.05778V1.51603H10.423V0.121826ZM12.5143 2.91024H4.84619C4.47642 2.91024 4.1218 3.05713 3.86034 3.31859C3.59887 3.58006 3.45199 3.93468 3.45199 4.30444V14.0639C3.45199 14.4337 3.59887 14.7883 3.86034 15.0497C4.1218 15.3112 4.47642 15.4581 4.84619 15.4581H12.5143C12.8841 15.4581 13.2387 15.3112 13.5002 15.0497C13.7616 14.7883 13.9085 14.4337 13.9085 14.0639V4.30444C13.9085 3.93468 13.7616 3.58006 13.5002 3.31859C13.2387 3.05713 12.8841 2.91024 12.5143 2.91024ZM12.5143 14.0639H4.84619V4.30444H12.5143V14.0639Z"/>
+              </svg>
+              Copy
+            </a>
+            <div class="snackbar">Copied to clipboard</div>
+          </div>
+          <div class="view-code-tab__code code-block">
+            <div class="view-code-tab__code-container">
+              <pre>&lt;!-- Perspective API widget code --&gt;</pre>
+              <pre>&lt;html&gt;</pre>
+              <pre>&nbsp;&lt;head&gt;</pre>
+              <pre>&nbsp;&nbsp;&lt;script src='https://storage.googleapis.com/checker_source/perspective_authorship_widget.js'&gt;&lt;/script&gt;</pre>
+              <pre>&nbsp;&lt;/head&gt;</pre>
+              <pre>&nbsp;&lt;body&gt;</pre>
+              <pre>&nbsp;&nbsp;&lt;textarea id='client_text_area'&gt;&lt;/textarea&gt;</pre>
+              <pre>&nbsp;&nbsp;&lt;convai-checker</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input-id='client_text_area'</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;demo-settings-json="{</pre>
+              <pre class="gradient-colors">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;gradientColors&amp;quot;: [&amp;quot;#25C1F9&amp;quot;,&amp;quot;#7C4DFF&amp;quot;,&amp;quot;#D400F9&amp;quot;],</pre>
+              <pre class="toxic-threashold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;toxicScoreThreshold&amp;quot;:&amp;quot;0.7&amp;quot;,</pre>
+              <pre class="neutral-threashold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;neutralScoreThreshold&amp;quot;:&amp;quot;0.3&amp;quot;,</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;showFeedbackForNeutralScores&amp;quot;: false,</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;showFeedbackForLowScores&amp;quot;: false,</pre>
+              <pre class="model-comments">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;feedbackText&amp;quot;: [&amp;quot;x% likely to be toxic. Great job!&amp;quot;,&amp;quot;We're not sure about that.&amp;quot;,&amp;quot;x% likely to be toxic. Please edit.&amp;quot;],</pre>
+              <pre class="icon-style">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;loadingIconStyle&amp;quot;: &amp;quot;circle_square_diamond&amp;quot;,</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;usePluginEndpoint&amp;quot;: true,</pre>
+              <pre class="model-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp &amp;quot;modelName&amp;quot;: &amp;quot;TOXICITY&amp;quot;,</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;communityId&amp;quot;: &amp;quot;plugin-user_1610529593886-239823&amp;quot;,</pre>
+              <pre class="font-family">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;fontFamily&amp;quot;: &amp;quot;Merriweather, serif&amp;quot;</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}"&gt;</pre>
+              <pre>&nbsp;&nbsp;&lt;/convai-checker&gt;</pre>
+              <pre>&nbsp;&lt;/body&gt;</pre>
+              <pre>&lt;/html&gt;</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="tab-footer">
+          <a tabindex="0" class="data-modal-trigger" data-modal-id="glue-modal-About-mobile">
+            About
+          </a>
+          <a tabindex="0" class="data-modal-trigger" data-modal-id="glue-modal-reCAPTCHA-mobile">
+            reCAPTCHA
+          </a>
+          <a tabindex="0" href="https://github.com/conversationai/perspectiveapi-authorship-demo" target="_blank"
+              rel="noopener noreferrer">
+            GitHub
+          </a>
+      </div>
+
+        <div class="glue-modal-About-mobile glue-modal glue-modal--dark" role="dialog" aria-modal="true" aria-labelledby="modal-label" aria-describedby="modal-content">
+          <div class="glue-modal__content-wrapper popup-overlay">
+            <div class="popup-container">
+              <h5 class="popup-heading">Experiments with real-time feedback</h5>
+              <div class="popup-content">
+                <p>We are experimenting with ways Perspective can be used to give feedback to authors. The examples here show some options, such as adjusting thresholds for when to show feedback (you can get more info on <a href="https://medium.com/the-false-positive/what-do-perspectives-scores-mean-113b37788a5d" rel="noopener noreferrer" target="_blank">understanding scores on our blog</a>). To refine the experiment further, you can also <a href="https://github.com/conversationai/perspectiveapi-authorship-demo" rel="noopener noreferrer" target="_blank">fork the code</a>. <a href="https://support.perspectiveapi.com/s/contactsupport" rel="noopener noreferrer" target="_blank">We&rsquo;d love to hear</a> which configurations are most effective for you.</p>
+              </div>
+              <div class="popup-button">
+                <button class="glue-modal__close-btn" tabindex="0">Got It</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glue-modal-reCAPTCHA-mobile glue-modal glue-modal--dark" role="dialog" aria-modal="true" aria-labelledby="modal-label" aria-describedby="modal-content">
+          <div class="glue-modal__content-wrapper popup-overlay">
+            <div class="popup-container">
+              <h5 class="popup-heading">Site protection</h5>
+              <div class="popup-content">
+                <p>This demo is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" rel="noopener noreferrer" target="_blank">Terms of Service</a> apply.</p>
+              </div>
+              <div class="popup-button">
+                <button class="glue-modal__close-btn" tabindex="0">Got It</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>      </div>
+    </div>
+    <div class="overlay-footer perspective-intro__information">
+      <p>* Please use this demo only if you are older than 13. Please do not enter personally identifiable information.</p>
+    </div>
+  </div>
+</div>            </div>
+          </div>
+        </div>
+        <div class="glue-grid__col glue-grid__col--span-6 glue-grid__col--span-12-md glue-grid__col--span-12-sm">
+          <div class="perspective-intro__demo">
+            <div class="perspective-intro__buttons">
+              <a class="glue-button glue-button--medium-emphasis js-demo-button active"
+                  data-placeholder="Type here to see the potential effect of your comment.">
+                Try it out
+              </a>
+              <a class="glue-button glue-button--medium-emphasis js-custom-demo js-demo-button"
+                  data-placeholder="Edit feedback, confidence thresholds, styles, and get code.">
+                Create custom demo
+              </a>
+            </div>
+<div class="perspective-intro__demo-container" data-toxicity-api>
+  <textarea class="perspective-intro__demo-textbox" data-toxicity-api-input aria-label="check" name="textarea" id="client_text_area"
+      placeholder="Type here to see the potential effect of your comment." maxlength="3000"></textarea>
+  <div class="perspective-intro__result perspective-api">
+    <div class="shapes"></div>
+    <div class="emoji">
+      <img class="grinning" src="/static/img/home/demo/emoji/grinning-face.svg" role="presentation">
+      <img class="thinking" src="/static/img/home/demo/emoji/thinking-face.svg" role="presentation">
+      <img class="disappointed" src="/static/img/home/demo/emoji/disappointed-face.svg" role="presentation">
+    </div>
+    <div class="perspective-intro__score" data-toxicity-api-score></div>
+    <div class="feedback-container">
+      <div class="feedback-container__toxic">
+        <p>Is this comment <span class="toxic-modal">toxic</span>?</p>
+      </div>
+      <div class="feedback-container__buttons">
+        <span class="feedback-container__yes">Yes</span>
+        <span class="feedback-container__no">No</span>
+      </div>
+      <div class="feedback-container__thanks">
+        Thanks for your feedback!
+      </div>
+    </div>
+  </div>
+  <p class="disagree-link">
+    disagree?
+  </p>
+</div>            <div class="perspective-intro__demo__editor js-demo-desktop">
+<div class="demo-tabpanels data-tabpanels-responsive">
+  <div class="demo-tabs">
+    <svg role="presentation" class="glue-icon glue-icon--18px demo-tabs-pencil">
+      <use xlink:href="/static/img/edit-btn.svg#edit-btn"></use>
+    </svg> Advanced Options
+    <svg role="presentation" class="glue-icon glue-icon--18px demo-tabs-arrow">
+      <use xlink:href="/static/img/down-arrow.svg#down-arrow"></use>
+    </svg>
+  </div>
+  <div class="glue-tabpanels glue-tabpanels--centeredtabs demo-tabpanels-responsive glue-tabset" data-glue-tabpanels="tabs-icons">
+    <ul class="glue-tabpanels__page-list glue-tabset__tablist" data-glue-pagination="tabs-icons" role="tablist">
+        <li class="glue-tabset__tab">
+          <a href="#edit-feedback" class="false glue-tabset__button" data-glue-pagination-page="&lt;LoopContext 1/3&gt;" role="tab" aria-controls="edit-feedback-styles" aria-selected="true" tabindex="0">
+            <img class="glue-icon--24px tab-icon-inactive" alt="Edit feedback icon" src="/static/img/home/demo/feedback-icon.svg">
+            <img class="glue-icon--24px tab-icon-active" alt="Edit feedback icon" src="/static/img/home/demo/feedback-icon-active.svg">
+              Edit Feedback
+          </a>
+        </li>
+        <li class="glue-tabset__tab">
+          <a href="#edit-style" class="false glue-tabset__button" data-glue-pagination-page="&lt;LoopContext 2/3&gt;" role="tab" aria-controls="edit-style-styles" aria-selected="true" tabindex="0">
+            <img class="glue-icon--24px tab-icon-inactive" alt="Edit style icon" src="/static/img/home/demo/edit-icon.svg">
+            <img class="glue-icon--24px tab-icon-active" alt="Edit style icon" src="/static/img/home/demo/edit-icon-active.svg">
+              Edit Styles
+          </a>
+        </li>
+        <li class="glue-tabset__tab">
+          <a href="#view-code" class="false glue-tabset__button" data-glue-pagination-page="&lt;LoopContext 3/3&gt;" role="tab" aria-controls="view-code-styles" aria-selected="true" tabindex="0">
+            <img class="glue-icon--24px tab-icon-inactive" alt="View  code icon" src="/static/img/home/demo/view-code-icon.svg">
+            <img class="glue-icon--24px tab-icon-active" alt="View  code icon" src="/static/img/home/demo/view-code-icon-active.svg">
+              View Code
+          </a>
+        </li>
+    </ul>
+    <div class="glue-tabpanels__panel-list glue-tabset__panel-container glue-pagination__pages glue-is-ready" data-glue-pagination="tabs-icons">
+      <div id="edit-feedback" class="glue-pagination__page glue-tabset__page glue-is-shown" role="tabpanel">
+        <div class="glue-tabpanels__panel-content edit-feedback-tab">
+          <div class="demo-feedback-inline-content model-label-container">
+            <span class="demo-feedback-label model-label">Give users feedback for</span>
+            <div class="demo-select model-switch">
+              <span class="selected-option" data-value="toxic"></span>
+              <ul class="select-item-list select-hide">
+                  <li class="select-item" data-value="toxic">toxic</li>
+                  <li class="select-item" data-value="obscene">obscene</li>
+                  <li class="select-item" data-value="insulting">insulting</li>
+                  <li class="select-item" data-value="threatening">threatening</li>
+              </ul>
+            </div>
+            <div class="demo-feeback-tail-label">comments.</div>
+          </div>
+          <div class="perspective-demo-slider demo-feedback-inline-content negative-result">
+            <span class="demo-feedback-label">Show negative feedback when a comment is over</span>
+            <span class="popover-slide-text slider-result-negative">70%</span>
+            <div class="container slide-container">
+              <h4 class="glue-headline glue-headline--4">Confidence level</h4>
+              <div class="box-minmax-up">
+                <span>0%</span>
+                <span>50%</span>
+                <span>100%</span>
+              </div>
+              <form class="range-slider">
+                <div class="range-value" id="bubble-value"><span></span></div>
+                <input class="slider-range-line slider-range" type="range" value="0" min="0" max="100">
+                <span class="marker marker-zero"></span>
+                <span class="marker marker-half"></span>
+                <span class="marker marker-full"></span>
+              </form>
+              <div class="box-minmax-down">
+                <span>Not likely</span>
+                <span>Unsure</span>
+                <span>Very likely</span>
+              </div>
+              <div>
+                <span class="recommend-line"></span>
+                <span class="recommend-arrow"></span>
+                <span class="recommend-content">Recommended</span>
+              </div>
+            </div>
+          </div>
+          <div class="demo-positive-error">Must be &#8805; <span class="positive-content"></span>%</div>
+          <div class="demo-feedback-content negative-result-input">
+            <span class="demo-feedback-label">likely to be perceived as toxic with a message that says,</span>
+            <div class="js-message-container message-container">
+              <form class="js-message-input-container message-input-container demo-feedback-container-hide">
+                <input type="text" name="negative-toxic-message" class="js-textbox custom-input-text">
+                <label for="negative-toxic-message" class="input-static-value">Add Custom Message:</label>
+              </form>
+              <div class="demo-select">
+                <span class="selected-option" data-value="toxic"></span>
+                <ul class="select-item-list select-hide negative-toxic-message">
+                    <li class="select-item" data-value="x% likely to be toxic.">x% likely to be <span>toxic</span>.</li>
+                    <li class="select-item" data-value="Please remember to follow our community guidelines.">Please remember to follow our community guidelines.</li>
+                    <li class="select-item" data-value="Custom Message">Add Custom Message</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="js-positive-feedback positive-feedback">
+            <div class="perspective-demo-slider demo-feedback-inline-content positive-result">
+              <span class="demo-feedback-label">Show positive feedback when a comment is under</span>
+              <span class="popover-slide-text slider-result-positive">30%</span>
+              <div class="container slide-container">
+                <h4 class="glue-headline glue-headline--4">Confidence level</h4>
+                <div class="box-minmax-up">
+                  <span>0%</span>
+                  <span>50%</span>
+                  <span>100%</span>
+                </div>
+                <form class="range-slider">
+                  <div class="range-value" id="bubble-value"><span></span></div>
+                  <input class="slider-range-line slider-range" type="range" value="0" min="0" max="100">
+                  <span class="marker marker-zero"></span>
+                  <span class="marker marker-half"></span>
+                  <span class="marker marker-full"></span>
+                </form>
+                <div class="box-minmax-down">
+                  <span>Not likely</span>
+                  <span>Unsure</span>
+                  <span>Very likely</span>
+                </div>
+                <div>
+                  <span class="recommend-line"></span>
+                  <span class="recommend-arrow"></span>
+                  <span class="recommend-content">Recommended</span>
+                </div>
+              </div>
+            </div>
+            <div class="demo-negative-error">Must be &lt; <span class="negative-content"></span>%</div>
+            <div class="demo-feedback-content positive-result-input">
+              <span class="demo-feedback-label">likely to be perceived as toxic with a message that says</span>
+              <div class="js-message-container message-container">
+                <form class="js-message-input-container message-input-container demo-feedback-container-hide">
+                  <input type="text" name="positive-toxic-message" class="js-textbox custom-input-text">
+                  <label for="positive-toxic-message" class="input-static-value">Add Custom Message:</label>
+                </form>
+                <div class="demo-select">
+                  <span class="selected-option" data-value="toxic"></span>
+                  <ul class="select-item-list positive-toxic-message">
+                      <li class="select-item" data-value="x% likely to be toxic. Great job!">x% likely to be <span>toxic</span>. Great job!</li>
+                      <li class="select-item" data-value="Thank you for your positive contribution to our community!">Thank you for your positive contribution to our community!</li>
+                      <li class="select-item" data-value="Custom Message">Add Custom Message</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-buttons js-feedback-content">
+            <a class="glue-button glue-button--medium-emphasis remove-feedback">Remove Positive Feedback</a>
+            <a class="glue-button glue-button--medium-emphasis add-feedback">Add Positive Feedback</a>
+            <a class="glue-button glue-button--medium-emphasis add-neutral">Add Neutral Feedback</a>
+          </div>
+          <div class="js-neutral-feedback neutral-feedback demo-feedback-content neutral-result-input">
+            <span class="demo-feedback-label">Anything in between <span class="positive-threshold"></span> - <span class="negative-threshold"></span>% should get a message like,</span>
+            <div class="js-message-container message-container">
+              <form class="js-message-input-container message-input-container demo-feedback-container-hide">
+                <input type="text" name="neutral-toxic-message" class="js-textbox custom-input-text">
+                <label for="neutral-toxic-message" class="input-static-value">Add Custom Message:</label>
+              </form>
+              <div class="demo-select">
+                <span class="selected-option" data-value="toxic"></span>
+                <ul class="select-item-list neutral-toxic-message">
+                    <li class="select-item" data-value="We&#39;re not sure about that.">We're not sure about that.</li>
+                    <li class="select-item" data-value="Unsure if this follows community guidelines (x%)">Unsure if this follows community guidelines (x%)</li>
+                    <li class="select-item" data-value="Custom Message">Add Custom Message</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="edit-style" class="glue-pagination__page glue-tabset__page" role="tabpanel" aria-hidden="true">
+        <div id="tab-compatapps-content" class="glue-tabpanels__panel-content edit-style-tab">
+          <h5>Customize display settings:</h5>
+          <div class="edit-style-tab__panel">
+              <div class="edit-style-tab__container icon-theme">
+                <p>Icon Theme</p>
+                <div class="demo-select">
+                  <span class="selected-option" data-value="toxic"></span>
+                  <ul class="select-item-list">
+                      <li class="select-item" data-value="Shapes"
+ data-style="Shapes">
+                        <img src="/static/img/home/demo/shape-shapes.svg" alt="">
+                        <span class="">Shapes</span>
+                      </li>
+                      <li class="select-item" data-value="Emoji"
+ data-style="Emoji">
+                        <img src="/static/img/home/demo/shape-emoji.svg" alt="">
+                        <span class="">Emoji</span>
+                      </li>
+                      <li class="select-item" data-value="No icon"
+ data-style="No icon">
+                        <img src="/static/img/home/demo/shape-none.svg" alt="">
+                        <span class="">No icon</span>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="edit-style-tab__container color-theme">
+                <p>Color Theme</p>
+                <div class="demo-select">
+                  <span class="selected-option" data-value="toxic"></span>
+                  <ul class="select-item-list">
+                      <li class="select-item" data-value="Perspective API"
+ data-style="Perspective API">
+                        <img src="/static/img/home/demo/color-perspective.svg" alt="">
+                        <span class="">Perspective API</span>
+                      </li>
+                      <li class="select-item" data-value="Primary Colors"
+ data-style="Primary Colors">
+                        <img src="/static/img/home/demo/color-primary.svg" alt="">
+                        <span class="">Primary Colors</span>
+                      </li>
+                      <li class="select-item" data-value="Traffic Light"
+ data-style="Traffic Light">
+                        <img src="/static/img/home/demo/color-traffic.svg" alt="">
+                        <span class="">Traffic Light</span>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="edit-style-tab__container web-font">
+                <p>Web Font</p>
+                <div class="demo-select">
+                  <span class="selected-option" data-value="toxic"></span>
+                  <ul class="select-item-list">
+                      <li class="select-item" data-value="Google Sans"
+ data-style="Google Sans">
+                        <img src="/static/img/home/demo/font-google-san.png" alt="">
+                        <span class="google-san">Google Sans</span>
+                      </li>
+                      <li class="select-item" data-value="Roboto"
+ data-style="Roboto">
+                        <img src="/static/img/home/demo/font-roboto.png" alt="">
+                        <span class="roboto">Roboto</span>
+                      </li>
+                      <li class="select-item" data-value="Open Sans"
+ data-style="Open Sans">
+                        <img src="/static/img/home/demo/font-open-san.png" alt="">
+                        <span class="open-san">Open Sans</span>
+                      </li>
+                      <li class="select-item" data-value="Playfair Display"
+ data-style="Playfair Display">
+                        <img src="/static/img/home/demo/font-playfair.png" alt="">
+                        <span class="playfair-display">Playfair Display</span>
+                      </li>
+                      <li class="select-item" data-value="Marriweather"
+ data-style="Marriweather">
+                        <img src="/static/img/home/demo/font-merriweather.png" alt="">
+                        <span class="marriweather">Marriweather</span>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-code glue-pagination__page glue-tabset__page" role="tabpanel" aria-hidden="true">
+        <div id="tab-howtodownload-content" class="glue-tabpanels__panel-content view-code-tab glue-copy">
+          <div class="view-code-tab__container">
+            <h5>Hereâs your custom code snippet:</h5>
+            <a title="copy" aria-label="copy" class="glue-button glue-button--medium-emphasis js-code-copy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="white" role="presentation">
+                <path d="M10.423 0.121826H2.05778C1.68801 0.121826 1.33339 0.268715 1.07193 0.53018C0.810463 0.791644 0.663574 1.14627 0.663574 1.51603V11.2755H2.05778V1.51603H10.423V0.121826ZM12.5143 2.91024H4.84619C4.47642 2.91024 4.1218 3.05713 3.86034 3.31859C3.59887 3.58006 3.45199 3.93468 3.45199 4.30444V14.0639C3.45199 14.4337 3.59887 14.7883 3.86034 15.0497C4.1218 15.3112 4.47642 15.4581 4.84619 15.4581H12.5143C12.8841 15.4581 13.2387 15.3112 13.5002 15.0497C13.7616 14.7883 13.9085 14.4337 13.9085 14.0639V4.30444C13.9085 3.93468 13.7616 3.58006 13.5002 3.31859C13.2387 3.05713 12.8841 2.91024 12.5143 2.91024ZM12.5143 14.0639H4.84619V4.30444H12.5143V14.0639Z"/>
+              </svg>
+              Copy
+            </a>
+            <div class="snackbar">Copied to clipboard</div>
+          </div>
+          <div class="view-code-tab__code code-block">
+            <div class="view-code-tab__code-container">
+              <pre>&lt;!-- Perspective API widget code --&gt;</pre>
+              <pre>&lt;html&gt;</pre>
+              <pre>&nbsp;&lt;head&gt;</pre>
+              <pre>&nbsp;&nbsp;&lt;script src='https://storage.googleapis.com/checker_source/perspective_authorship_widget.js'&gt;&lt;/script&gt;</pre>
+              <pre>&nbsp;&lt;/head&gt;</pre>
+              <pre>&nbsp;&lt;body&gt;</pre>
+              <pre>&nbsp;&nbsp;&lt;textarea id='client_text_area'&gt;&lt;/textarea&gt;</pre>
+              <pre>&nbsp;&nbsp;&lt;convai-checker</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input-id='client_text_area'</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;demo-settings-json="{</pre>
+              <pre class="gradient-colors">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;gradientColors&amp;quot;: [&amp;quot;#25C1F9&amp;quot;,&amp;quot;#7C4DFF&amp;quot;,&amp;quot;#D400F9&amp;quot;],</pre>
+              <pre class="toxic-threashold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;toxicScoreThreshold&amp;quot;:&amp;quot;0.7&amp;quot;,</pre>
+              <pre class="neutral-threashold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;neutralScoreThreshold&amp;quot;:&amp;quot;0.3&amp;quot;,</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;showFeedbackForNeutralScores&amp;quot;: false,</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;showFeedbackForLowScores&amp;quot;: false,</pre>
+              <pre class="model-comments">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;feedbackText&amp;quot;: [&amp;quot;x% likely to be toxic. Great job!&amp;quot;,&amp;quot;We're not sure about that.&amp;quot;,&amp;quot;x% likely to be toxic. Please edit.&amp;quot;],</pre>
+              <pre class="icon-style">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;loadingIconStyle&amp;quot;: &amp;quot;circle_square_diamond&amp;quot;,</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;usePluginEndpoint&amp;quot;: true,</pre>
+              <pre class="model-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp &amp;quot;modelName&amp;quot;: &amp;quot;TOXICITY&amp;quot;,</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;communityId&amp;quot;: &amp;quot;plugin-user_1610529593886-239823&amp;quot;,</pre>
+              <pre class="font-family">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;quot;fontFamily&amp;quot;: &amp;quot;Merriweather, serif&amp;quot;</pre>
+              <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}"&gt;</pre>
+              <pre>&nbsp;&nbsp;&lt;/convai-checker&gt;</pre>
+              <pre>&nbsp;&lt;/body&gt;</pre>
+              <pre>&lt;/html&gt;</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="tab-footer">
+          <a tabindex="0" class="data-modal-trigger" data-modal-id="glue-modal-About">
+            About
+          </a>
+          <a tabindex="0" class="data-modal-trigger" data-modal-id="glue-modal-reCAPTCHA">
+            reCAPTCHA
+          </a>
+          <a tabindex="0" href="https://github.com/conversationai/perspectiveapi-authorship-demo" target="_blank"
+              rel="noopener noreferrer">
+            GitHub
+          </a>
+      </div>
+
+        <div class="glue-modal-About glue-modal glue-modal--dark" role="dialog" aria-modal="true" aria-labelledby="modal-label" aria-describedby="modal-content">
+          <div class="glue-modal__content-wrapper popup-overlay">
+            <div class="popup-container">
+              <h5 class="popup-heading">Experiments with real-time feedback</h5>
+              <div class="popup-content">
+                <p>We are experimenting with ways Perspective can be used to give feedback to authors. The examples here show some options, such as adjusting thresholds for when to show feedback (you can get more info on <a href="https://medium.com/the-false-positive/what-do-perspectives-scores-mean-113b37788a5d" rel="noopener noreferrer" target="_blank">understanding scores on our blog</a>). To refine the experiment further, you can also <a href="https://github.com/conversationai/perspectiveapi-authorship-demo" rel="noopener noreferrer" target="_blank">fork the code</a>. <a href="https://support.perspectiveapi.com/s/contactsupport" rel="noopener noreferrer" target="_blank">We&rsquo;d love to hear</a> which configurations are most effective for you.</p>
+              </div>
+              <div class="popup-button">
+                <button class="glue-modal__close-btn" tabindex="0">Got It</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glue-modal-reCAPTCHA glue-modal glue-modal--dark" role="dialog" aria-modal="true" aria-labelledby="modal-label" aria-describedby="modal-content">
+          <div class="glue-modal__content-wrapper popup-overlay">
+            <div class="popup-container">
+              <h5 class="popup-heading">Site protection</h5>
+              <div class="popup-content">
+                <p>This demo is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" rel="noopener noreferrer" target="_blank">Terms of Service</a> apply.</p>
+              </div>
+              <div class="popup-button">
+                <button class="glue-modal__close-btn" tabindex="0">Got It</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>            </div>
+            <div class="perspective-intro__information">
+              <p>* Please use this demo only if you are older than 13. Please do not enter personally identifiable information.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-grey landing landing__developer">
+    <div class="glue-page glue-mod-text-center">
+      <h3>What can you build with Perspective?</h3>
+      <div class="landing__developer-content">
+        <p>Publishers, platforms, and individuals can use Perspective to power a variety of different use cases, in comment sections, forums, or any text-based conversations. Developers integrate and customize Perspective for many different audiences.</p>
+      </div>
+      <div class="landing__developer-card">
+        <div class="glue-tile-set aligned-centers">
+            <div class="glue-tile__container">
+              <div>
+                <div class="glue-tile__header">
+                  <video class="video-illustration" src="/static/video/illustration/moderator.mp4" autoplay loop muted></video>
+                </div>
+                <div class="glue-tile__body glue-mod-text-left">
+                  <h4 class="glue-tile__headline">
+                    For moderators
+                  </h4>
+                  <p class="glue-tile__description">
+                    Moderators use Perspective to quickly prioritize and review comments that have been reported.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="glue-tile__container">
+              <div>
+                <div class="glue-tile__header">
+                  <video class="video-illustration" src="/static/video/illustration/commenter.mp4" autoplay loop muted></video>
+                </div>
+                <div class="glue-tile__body glue-mod-text-left">
+                  <h4 class="glue-tile__headline">
+                    For commenters
+                  </h4>
+                  <p class="glue-tile__description">
+                    Perspective can give feedback to commenters who post toxic comments.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="glue-tile__container">
+              <div>
+                <div class="glue-tile__header">
+                  <video class="video-illustration" src="/static/video/illustration/readers.mp4" autoplay loop muted></video>
+                </div>
+                <div class="glue-tile__body glue-mod-text-left">
+                  <h4 class="glue-tile__headline">
+                    For readers
+                  </h4>
+                  <p class="glue-tile__description">
+                    Developers create tools so readers can control which comments they see, like hiding comments.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white landing landing__why-perspective">
+    <div class="glue-page glue-mod-text-center">
+      <div>
+        <h3>Why should you use Perspective?</h3>
+        <div class="landing__why-perspective-content">
+          <p>Perspective has been shown to increase engagement by helping platforms and publishers create safe environments for conversation, and by helping individuals make healthier contributions online.</p>
+        </div>
+      </div>
+      <div>
+          <div class="landing__why-perspective__grid">
+            <div class="landing__why-perspective__grid-icon">
+              <img src="/static/img/home/checkmark.svg" alt="check mark icon">
+            </div>
+            <p class="landing__why-perspective__grid-content">Enables healthy conversations</p>
+          </div>
+          <div class="landing__why-perspective__grid">
+            <div class="landing__why-perspective__grid-icon">
+              <img src="/static/img/home/checkmark.svg" alt="check mark icon">
+            </div>
+            <p class="landing__why-perspective__grid-content">Reduces toxicity and abusive behavior</p>
+          </div>
+          <div class="landing__why-perspective__grid">
+            <div class="landing__why-perspective__grid-icon">
+              <img src="/static/img/home/checkmark.svg" alt="check mark icon">
+            </div>
+            <p class="landing__why-perspective__grid-content">Free. Self-Serve. Customizable.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-purple landing__case-studies">
+    <div class="glue-page glue-mod-text-center">
+      <h3>Trusted by partners</h3>
+      <div class="landing__case-studies-container">
+          <div class="landing__case-studies-logo-grid ">
+            <img src="/static/img/home/reddit.svg" alt="reddit logo">
+          </div>
+          <div class="landing__case-studies-logo-grid large-logo">
+            <img src="/static/img/home/the-new-york-times.svg" alt="The New York Times logo">
+          </div>
+          <div class="landing__case-studies-logo-grid small-logo">
+            <img src="/static/img/home/wall-street-journal.svg" alt="wall street journal logo">
+          </div>
+          <div class="landing__case-studies-logo-grid ">
+            <img src="/static/img/home/disqus.svg" alt="Disqus logo">
+          </div>
+          <div class="landing__case-studies-logo-grid ">
+            <img src="/static/img/home/financal-times.svg" alt="financial times logo">
+          </div>
+          <div class="landing__case-studies-logo-grid ">
+            <img src="/static/img/home/taringa.svg" alt="Taringa logo">
+          </div>
+          <div class="landing__case-studies-logo-grid large-logo">
+            <img src="/static/img/home/open-web.png" alt="open web logo">
+          </div>
+          <div class="landing__case-studies-logo-grid ">
+            <img src="/static/img/home/le-monde.svg" alt="le monde logo">
+          </div>
+          <div class="landing__case-studies-logo-grid ">
+            <img src="/static/img/home/el-pais.svg" alt="El pais logo">
+          </div>
+          <div class="landing__case-studies-logo-grid ">
+            <img src="/static/img/home/coral-logo.svg" alt="coral logo">
+          </div>
+      </div>
+      <div class="landing__case-studies-cta">
+        <a aria-label="View featured case studies"
+            title="View featured case studies"
+            href="/case-studies/"
+            tabindex="0">
+          View featured case studies
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-purple landing landing__get-started">
+    <div class="glue-page glue-mod-text-center">
+      <h3 class="landing__get-started-heading">Get started today</h3>
+      <div class="landing__get-started-card">
+        <div class="glue-tile-set aligned-centers">
+            <div class="glue-tile__container">
+              <div class="glue-tile__body">
+                <h4 class="glue-tile__headline glue-mod-text-center">
+                  Developers
+                </h4>
+                <div class="glue-tile__description">
+                  <p>Learn how to integrate the API and start building today.</p>
+                  <a class="glue-button glue-button--medium-emphasis no-arrow" aria-label="Get started"
+                      title="Get started"
+                      href="https://developers.perspectiveapi.com/s/"
+                      tabindex="0" target="_blank" rel="noopener noreferrer">
+                    Get started
+                      <svg role="img" class="glue-icon glue-icon--20px">
+                        <use xlink:href="/static/img/glue-icons.svg#open-in-new"></use>
+                      </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="glue-tile__container">
+              <div class="glue-tile__body">
+                <h4 class="glue-tile__headline glue-mod-text-center">
+                  Partners
+                </h4>
+                <div class="glue-tile__description">
+                  <p>Read our guide to starting with Perspective.</p>
+                  <a class="glue-button glue-button--medium-emphasis" aria-label="Get started"
+                      title="Get started"
+                      href="/faq/"
+                      tabindex="0">
+                    Get started
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="glue-tile__container">
+              <div class="glue-tile__body">
+                <h4 class="glue-tile__headline glue-mod-text-center">
+                  Researchers
+                </h4>
+                <div class="glue-tile__description">
+                  <p>See our academic research, datasets, and open source code.</p>
+                  <a class="glue-button glue-button--medium-emphasis" aria-label="Get started"
+                      title="Get started"
+                      href="/research/"
+                      tabindex="0">
+                    Get started
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="toxic-dialogue__overlay"></div>
+<div class="toxic-dialogue" role="dialog">
+  <span class="toxic-dialogue__title">What&#39;s toxic?</span>
+  <p class="toxic-dialogue__desc">This model was trained by asking people to rate internet comments on a scale from &#34;Very toxic&#34; to &#34;Very healthy&#34; contribution. We define &#34;toxic&#34; as &#34;a rude, disrespectful, or unreasonable comment that is likely to make you leave a discussion&#34;.</p>
+  <button class="toxic-dialogue__close" type="button">Got it</button>
+</div>    </main>
+<footer class="footer">
+  <div class="glue-grid">
+    <div class="glue-grid__col glue-grid__col--span-3 glue-grid__col--span-3-md glue-grid__col--span-12-sm">
+      <a href="https://jigsaw.google.com/" target="_blank" rel="noopener noreferrer" class="footer__logo-container">
+        <img src="/static/img/jigsaw-logo.svg" alt="Jigsaw logo" class="footer__logo-container-logo">
+      </a>
+    </div>
+    <div class="glue-grid__col glue-grid__col--span-4 glue-grid__col--span-5-md glue-grid__col--span-12-sm footer__contain">
+      <p>Perspective API is the product of a collaborative research effort by <a href="https://jigsaw.google.com/" rel="noopener noreferrer" target="_blank">Jigsaw</a> and Google&rsquo;s Counter Abuse Technology team. We open source experiments, tools, and research data that explore ways to combat online toxicity and harassment.</p>
+    </div>
+    <div class="glue-grid__col glue-grid__col--span-2 glue-grid__col--span-0-md glue-grid__col--span-0-sm"></div>
+    <div class="glue-grid__col glue-grid__col--span-3 glue-grid__col--span-4-md glue-grid__col--span-12-sm">
+      <ul class="footer__item">
+        <li class="footer__language">
+          <div class="footer__language-selected"></div>
+          <ul class="footer__language-items footer__language-hide">
+              <li class="js-lang-item footer__language-active"
+                  data-value="/">
+                  English (United States)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/ar/">
+                  Ø§ÙØ¹Ø±Ø¨ÙØ©&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/cs_cz/">
+                  ÄeÅ¡tina (Äesko)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/de_de/">
+                  Deutsch (Deutschland)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/en-GB/">
+                  English (United Kingdom)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/es_es/">
+                  espaÃ±ol (EspaÃ±a)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/fr_fr/">
+                  franÃ§ais (France)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/hi_in/">
+                  à¤¹à¤¿à¤¨à¥à¤¦à¥ (à¤­à¤¾à¤°à¤¤)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/id/">
+                  Indonesia&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/it_it/">
+                  italiano (Italia)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/ja_jp/">
+                  æ¥æ¬èª (æ¥æ¬)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/ko_kr/">
+                  íêµ­ì´ (ëíë¯¼êµ­)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/nl_nl/">
+                  Nederlands (Nederland)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/pl_pl/">
+                  polski (Polska)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/pt_br/">
+                  portuguÃªs (Brasil)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/ru_ru/">
+                  ÑÑÑÑÐºÐ¸Ð¹ (Ð Ð¾ÑÑÐ¸Ñ)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/sv_se/">
+                  svenska (Sverige)&lrm;
+              </li>
+              <li class="js-lang-item"
+                  data-value="/intl/zh-CN/">
+                  ä¸­æ (ç®ä½)&lrm;
+              </li>
+          </ul>
+        </li>
+          <li>
+            <a class="footer__item-link" title="Perspective Developers" aria-label="Perspective Developers"
+                href="https://developers.perspectiveapi.com/s/" target="_blank" rel="noopener noreferrer">
+              Perspective Developers
+            </a>
+          </li>
+          <li>
+            <a class="footer__item-link" title="Medium" aria-label="Medium"
+                href="https://medium.com/jigsaw/toxicity/home" target="_blank" rel="noopener noreferrer">
+              Medium
+            </a>
+          </li>
+          <li>
+            <a class="footer__item-link" title="Jigsaw" aria-label="Jigsaw"
+                href="https://jigsaw.google.com/" target="_blank" rel="noopener noreferrer">
+              Jigsaw
+            </a>
+          </li>
+          <li>
+            <a class="footer__item-link" title="Contact Us" aria-label="Contact Us"
+                href="https://developers.perspectiveapi.com/s/contact-us" target="_blank" rel="noopener noreferrer">
+              Contact Us
+            </a>
+          </li>
+      </ul>
+      <ul class="footer__item">
+        <li class="footer__item-feedback-link">
+          <a title="Privacy" aria-label="Privacy"
+              href="https://policies.google.com/privacy" target="_blank"
+              rel="noopener noreferrer">
+            Privacy
+          </a> -
+          <a title="Site Terms" aria-label="Site Terms"
+              href="https://policies.google.com/terms" target="_blank"
+              rel="noopener noreferrer">
+            Site Terms
+          </a>
+        </li>
+        <li class="footer__item-feedback-link">
+          <a title="API Terms" aria-label="API Terms"
+              href="https://developers.google.com/terms/" target="_blank"
+              rel="noopener noreferrer">
+            API Terms
+          </a>
+        </li>
+      </ul>
+      <span class="footer__copy">2023 Â© All rights reserved</span>
+    </div>
+  </div>
+</footer>    <script src="https://www.gstatic.com/external_hosted/hammerjs/v2_0_2/hammer.min.js"></script>
+    <script src="/static/js/lottie-player.min.js?cache=bb75af6"></script>
+    <script src="/static/js/index.min.js?cache=f2bfe72"></script>
+  </body>
+</html>
